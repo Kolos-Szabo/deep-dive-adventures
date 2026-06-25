@@ -63,7 +63,7 @@ export const services = [
     ],
     long: "A közös merülés egészen más szintre emeli a csapatélményt. Cégek, baráti társaságok és családok számára állítunk össze kalandprogramokat — minden szintre, minden hangulatra.",
   },
-] as const;
+];
 
 export const Route = createFileRoute("/szolgaltatasok/")({
   head: () => ({

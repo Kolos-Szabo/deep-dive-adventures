@@ -9,13 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SzolgaltatasokRouteImport } from './routes/szolgaltatasok'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RolunkRouteImport } from './routes/rolunk'
+import { Route as KapcsolatRouteImport } from './routes/kapcsolat'
+import { Route as GaleriaRouteImport } from './routes/galeria'
+import { Route as BiztonsagRouteImport } from './routes/biztonsag'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SzolgaltatasokIndexRouteImport } from './routes/szolgaltatasok.index'
+import { Route as SzolgaltatasokSlugRouteImport } from './routes/szolgaltatasok.$slug'
 
-const SzolgaltatasokRoute = SzolgaltatasokRouteImport.update({
-  id: '/szolgaltatasok',
-  path: '/szolgaltatasok',
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RolunkRoute = RolunkRouteImport.update({
@@ -23,49 +28,119 @@ const RolunkRoute = RolunkRouteImport.update({
   path: '/rolunk',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KapcsolatRoute = KapcsolatRouteImport.update({
+  id: '/kapcsolat',
+  path: '/kapcsolat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GaleriaRoute = GaleriaRouteImport.update({
+  id: '/galeria',
+  path: '/galeria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BiztonsagRoute = BiztonsagRouteImport.update({
+  id: '/biztonsag',
+  path: '/biztonsag',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SzolgaltatasokIndexRoute = SzolgaltatasokIndexRouteImport.update({
+  id: '/szolgaltatasok/',
+  path: '/szolgaltatasok/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SzolgaltatasokSlugRoute = SzolgaltatasokSlugRouteImport.update({
+  id: '/szolgaltatasok/$slug',
+  path: '/szolgaltatasok/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/biztonsag': typeof BiztonsagRoute
+  '/galeria': typeof GaleriaRoute
+  '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
-  '/szolgaltatasok': typeof SzolgaltatasokRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
+  '/szolgaltatasok/': typeof SzolgaltatasokIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/biztonsag': typeof BiztonsagRoute
+  '/galeria': typeof GaleriaRoute
+  '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
-  '/szolgaltatasok': typeof SzolgaltatasokRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
+  '/szolgaltatasok': typeof SzolgaltatasokIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/biztonsag': typeof BiztonsagRoute
+  '/galeria': typeof GaleriaRoute
+  '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
-  '/szolgaltatasok': typeof SzolgaltatasokRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
+  '/szolgaltatasok/': typeof SzolgaltatasokIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/rolunk' | '/szolgaltatasok'
+  fullPaths:
+    | '/'
+    | '/biztonsag'
+    | '/galeria'
+    | '/kapcsolat'
+    | '/rolunk'
+    | '/sitemap.xml'
+    | '/szolgaltatasok/$slug'
+    | '/szolgaltatasok/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/rolunk' | '/szolgaltatasok'
-  id: '__root__' | '/' | '/rolunk' | '/szolgaltatasok'
+  to:
+    | '/'
+    | '/biztonsag'
+    | '/galeria'
+    | '/kapcsolat'
+    | '/rolunk'
+    | '/sitemap.xml'
+    | '/szolgaltatasok/$slug'
+    | '/szolgaltatasok'
+  id:
+    | '__root__'
+    | '/'
+    | '/biztonsag'
+    | '/galeria'
+    | '/kapcsolat'
+    | '/rolunk'
+    | '/sitemap.xml'
+    | '/szolgaltatasok/$slug'
+    | '/szolgaltatasok/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BiztonsagRoute: typeof BiztonsagRoute
+  GaleriaRoute: typeof GaleriaRoute
+  KapcsolatRoute: typeof KapcsolatRoute
   RolunkRoute: typeof RolunkRoute
-  SzolgaltatasokRoute: typeof SzolgaltatasokRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SzolgaltatasokSlugRoute: typeof SzolgaltatasokSlugRoute
+  SzolgaltatasokIndexRoute: typeof SzolgaltatasokIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/szolgaltatasok': {
-      id: '/szolgaltatasok'
-      path: '/szolgaltatasok'
-      fullPath: '/szolgaltatasok'
-      preLoaderRoute: typeof SzolgaltatasokRouteImport
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/rolunk': {
@@ -75,6 +150,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RolunkRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/kapcsolat': {
+      id: '/kapcsolat'
+      path: '/kapcsolat'
+      fullPath: '/kapcsolat'
+      preLoaderRoute: typeof KapcsolatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galeria': {
+      id: '/galeria'
+      path: '/galeria'
+      fullPath: '/galeria'
+      preLoaderRoute: typeof GaleriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/biztonsag': {
+      id: '/biztonsag'
+      path: '/biztonsag'
+      fullPath: '/biztonsag'
+      preLoaderRoute: typeof BiztonsagRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -82,13 +178,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/szolgaltatasok/': {
+      id: '/szolgaltatasok/'
+      path: '/szolgaltatasok'
+      fullPath: '/szolgaltatasok/'
+      preLoaderRoute: typeof SzolgaltatasokIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/szolgaltatasok/$slug': {
+      id: '/szolgaltatasok/$slug'
+      path: '/szolgaltatasok/$slug'
+      fullPath: '/szolgaltatasok/$slug'
+      preLoaderRoute: typeof SzolgaltatasokSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BiztonsagRoute: BiztonsagRoute,
+  GaleriaRoute: GaleriaRoute,
+  KapcsolatRoute: KapcsolatRoute,
   RolunkRoute: RolunkRoute,
-  SzolgaltatasokRoute: SzolgaltatasokRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SzolgaltatasokSlugRoute: SzolgaltatasokSlugRoute,
+  SzolgaltatasokIndexRoute: SzolgaltatasokIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

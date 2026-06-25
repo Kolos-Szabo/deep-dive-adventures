@@ -70,7 +70,7 @@ function ServiceDetail() {
 
             <h3 className="mt-12 font-display text-xl font-semibold">Mit kapsz?</h3>
             <ul className="mt-4 space-y-3">
-              {service.benefits.map((b) => (
+              {service.benefits.map((b: string) => (
                 <li key={b} className="flex items-start gap-3">
                   <span className="mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-secondary/20">
                     <Check className="h-3.5 w-3.5 text-primary" />

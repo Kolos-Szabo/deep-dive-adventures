@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import hero from "@/assets/hero.jpg";
-import experience from "@/assets/experience.jpg";
-import course from "@/assets/course.jpg";
-import group from "@/assets/group.jpg";
-import practice from "@/assets/practice.jpg";
-import gear from "@/assets/gear.jpg";
-import g1 from "@/assets/gallery1.jpg";
-import g2 from "@/assets/gallery2.jpg";
-import g3 from "@/assets/gallery3.jpg";
+import hero from "@/assets/csoportos-merules-erdelyi-tonal.jpg";
+import experience from "@/assets/naui-buvaroktato-tanitvany-gyakorlat.jpg";
+import course from "@/assets/naui-buvartanfolyam-medencei-oktatas.jpg";
+import group from "@/assets/buvarcsoport-erdelyi-to-parton.jpg";
+import practice from "@/assets/buvarpalack-bcd-medencei-gyakorlas.jpg";
+import gear from "@/assets/buvarfelszereles-medence-szelen.jpg";
+import g1 from "@/assets/buvarcsapat-csoportkep-erdely.jpg";
+import g2 from "@/assets/buvarfelszereles-ellenorzes-stegen.jpg";
+import g3 from "@/assets/buvar-ok-jelzes-felszinen.jpg";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/galeria")({

@@ -60,7 +60,8 @@ function Home() {
       <section className="relative min-h-screen w-full overflow-hidden">
         <img
           src={hero}
-          alt="Búvár ereszkedik le a mély türkiz óceánba"
+          alt="Csoportos búvármerülés egy erdélyi tó tükörsima vizén"
+          title="Csoportos merülés Erdélyben"
           width={1920}
           height={1280}
           className="absolute inset-0 h-full w-full object-cover"

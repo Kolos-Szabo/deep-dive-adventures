@@ -1,10 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, GraduationCap, Compass, Waves, Award, Check } from "lucide-react";
-import course from "@/assets/naui-buvartanfolyam-medencei-oktatas.jpg";
-import experience from "@/assets/naui-buvaroktato-tanitvany-gyakorlat.jpg";
-import practice from "@/assets/buvarpalack-bcd-medencei-gyakorlas.jpg";
-import group from "@/assets/buvarcsoport-erdelyi-to-parton.jpg";
+import courseAsset from "@/assets/naui-oktato-briefing-medenceben.jpg.asset.json";
+import experienceAsset from "@/assets/viz-alatti-csiki-sor-elmenymerules.jpg.asset.json";
+import practiceAsset from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.json";
+import groupAsset from "@/assets/buvarcsapat-stegen-teli-merules.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
+
+const course = courseAsset.url;
+const experience = experienceAsset.url;
+const practice = practiceAsset.url;
+const group = groupAsset.url;
 
 export const services = [
   {

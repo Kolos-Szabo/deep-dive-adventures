@@ -45,7 +45,7 @@ function About() {
       <section className="bg-background py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-5 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
           <Reveal>
-            <img src={course} alt="NAUI oktatás" width={1280} height={896} loading="lazy" className="rounded-2xl shadow-deep w-full" />
+            <img src={teamPhoto} alt="Búvárkodás Erdély csapata neoprén ruhában, Erdély hegyei előtt" title="A Búvárkodás Erdély csapata" width={1600} height={900} loading="lazy" className="rounded-2xl shadow-deep w-full" />
           </Reveal>
           <Reveal delay={150}>
             <span className="text-xs font-semibold uppercase tracking-[0.25em] text-primary">NAUI oktatási rendszer</span>

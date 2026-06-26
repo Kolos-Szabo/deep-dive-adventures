@@ -1,12 +1,19 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Award, Phone, ShieldCheck, Waves, Compass, GraduationCap } from "lucide-react";
 import hero from "@/assets/csoportos-merules-erdelyi-tonal.jpg";
-import course from "@/assets/naui-buvartanfolyam-medencei-oktatas.jpg";
-import experience from "@/assets/naui-buvaroktato-tanitvany-gyakorlat.jpg";
-import group from "@/assets/buvarcsoport-erdelyi-to-parton.jpg";
-import practice from "@/assets/buvarpalack-bcd-medencei-gyakorlas.jpg";
+import courseAsset from "@/assets/naui-oktato-briefing-medenceben.jpg.asset.json";
+import experienceAsset from "@/assets/viz-alatti-csiki-sor-elmenymerules.jpg.asset.json";
+import groupAsset from "@/assets/buvarcsapat-stegen-teli-merules.jpg.asset.json";
+import practiceAsset from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.json";
+import introAsset from "@/assets/naui-oktato-tanitvanyok-medencei-eligazitas.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
 import { Bubbles } from "@/components/site/Bubbles";
+
+const course = courseAsset.url;
+const experience = experienceAsset.url;
+const group = groupAsset.url;
+const practice = practiceAsset.url;
+const intro = introAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({

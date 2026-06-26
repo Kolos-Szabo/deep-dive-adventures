@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ShieldCheck, Users, ClipboardCheck, Wrench, Radio, BookOpen, ArrowRight } from "lucide-react";
-import practice from "@/assets/practice.jpg";
+import practice from "@/assets/buvarfelszereles-ellenorzes-stegen.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { Bubbles } from "@/components/site/Bubbles";
 

@@ -1,8 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ShieldCheck, Users, ClipboardCheck, Wrench, Radio, BookOpen, ArrowRight } from "lucide-react";
 import practice from "@/assets/buvarfelszereles-ellenorzes-stegen.jpg";
+import signAsset from "@/assets/buvar-viz-alatti-tabla-sas-jelzes.jpg.asset.json";
+import structureAsset from "@/assets/buvar-viz-alatti-szerkezet-mellett.jpg.asset.json";
+import okSign from "@/assets/buvar-ok-jelzes-felszinen.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { Bubbles } from "@/components/site/Bubbles";
+
+const sign = signAsset.url;
+const structure = structureAsset.url;
 
 export const Route = createFileRoute("/biztonsag")({
   head: () => ({
@@ -46,6 +52,28 @@ function Safety() {
           </Reveal>
         </div>
       </section>
+
+      <section className="bg-background pt-20 lg:pt-28 pb-4">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="grid gap-4 sm:grid-cols-3">
+            {[
+              { src: sign, alt: "Búvár a víz alatti tájékozódási táblát vizsgálja sas ábrázolással", title: "Tájékozódás és kommunikáció a víz alatt", caption: "Tájékozódás" },
+              { src: structure, alt: "Búvár víz alatti acélszerkezet mellett, kontrollált ereszkedés közben", title: "Környezetismeret minden merülésen", caption: "Környezetismeret" },
+              { src: okSign, alt: "Búvár OK jelzéssel a víz felszínén, sikeres és biztonságos merülés után", title: "OK jelzés — sikeres merülés a felszínen", caption: "OK jelzés" },
+            ].map((img, i) => (
+              <Reveal key={img.caption} delay={i * 100}>
+                <figure className="group relative overflow-hidden rounded-2xl shadow-sm">
+                  <img src={img.src} alt={img.alt} title={img.title} loading="lazy" className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <figcaption className="absolute bottom-3 left-3 rounded-full bg-deep/70 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur-md">
+                    {img.caption}
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       <section className="bg-background py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">

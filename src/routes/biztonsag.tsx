@@ -49,6 +49,7 @@ function Safety() {
             <p className="mt-6 max-w-2xl text-lg text-white/85 leading-relaxed">
               Egy jól szervezett merülés a legtöbb kockázatot a vízbe lépés előtt kezeli. Nálunk minden a tervezésnél kezdődik — és csak akkor merülünk, amikor minden rendben.
             </p>
+          </Reveal>
         </div>
       </section>
 

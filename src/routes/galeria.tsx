@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import hero from "@/assets/hero.jpg";
-import experience from "@/assets/experience.jpg";
-import course from "@/assets/course.jpg";
-import group from "@/assets/group.jpg";
-import practice from "@/assets/practice.jpg";
-import gear from "@/assets/gear.jpg";
-import g1 from "@/assets/gallery1.jpg";
-import g2 from "@/assets/gallery2.jpg";
-import g3 from "@/assets/gallery3.jpg";
+import hero from "@/assets/csoportos-merules-erdelyi-tonal.jpg";
+import experience from "@/assets/naui-buvaroktato-tanitvany-gyakorlat.jpg";
+import course from "@/assets/naui-buvartanfolyam-medencei-oktatas.jpg";
+import group from "@/assets/buvarcsoport-erdelyi-to-parton.jpg";
+import practice from "@/assets/buvarpalack-bcd-medencei-gyakorlas.jpg";
+import gear from "@/assets/buvarfelszereles-medence-szelen.jpg";
+import g1 from "@/assets/buvarcsapat-csoportkep-erdely.jpg";
+import g2 from "@/assets/buvarfelszereles-ellenorzes-stegen.jpg";
+import g3 from "@/assets/buvar-ok-jelzes-felszinen.jpg";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/galeria")({
@@ -26,15 +26,15 @@ export const Route = createFileRoute("/galeria")({
 });
 
 const images = [
-  { src: hero, alt: "Búvár ereszkedik le", span: "md:col-span-2 md:row-span-2" },
-  { src: g1, alt: "Búvár sziluett" },
-  { src: experience, alt: "Korallzátony", span: "md:col-span-2" },
-  { src: g2, alt: "Búvármaszk közelről" },
-  { src: course, alt: "NAUI képzés" },
-  { src: group, alt: "Csoportos merülés", span: "md:col-span-2" },
-  { src: practice, alt: "Gyakorló merülés" },
-  { src: g3, alt: "Buborékok" },
-  { src: gear, alt: "Búvárfelszerelés", span: "md:col-span-2" },
+  { src: hero, alt: "Csoportos búvármerülés egy erdélyi tó tükörsima vizén", span: "md:col-span-2 md:row-span-2" },
+  { src: g1, alt: "Búvárkodás Erdély csapata neoprén ruhában, hegyek előtt" },
+  { src: experience, alt: "NAUI búvároktató személyre szabott gyakorlatot vezet a tanítványnak", span: "md:col-span-2" },
+  { src: g3, alt: "Búvár OK jelzéssel a víz felszínén, sikeres merülés után" },
+  { src: course, alt: "NAUI búvártanfolyam — csoportos medencei oktatás" },
+  { src: group, alt: "Búvárcsoport teljes felszerelésben egy erdélyi tó partján", span: "md:col-span-2" },
+  { src: practice, alt: "Búvárpalack és BCD a medence szélén gyakorló merülés előtt" },
+  { src: g2, alt: "Búvárfelszerelés-ellenőrzés a stégen, briefing közben" },
+  { src: gear, alt: "Búvárfelszerelés sorba rendezve a medence szélén", span: "md:col-span-2" },
 ];
 
 function Gallery() {

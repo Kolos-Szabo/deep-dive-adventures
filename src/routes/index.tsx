@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Award, Phone, ShieldCheck, Waves, Compass, GraduationCap } from "lucide-react";
-import hero from "@/assets/hero.jpg";
-import course from "@/assets/course.jpg";
-import experience from "@/assets/experience.jpg";
-import group from "@/assets/group.jpg";
-import practice from "@/assets/practice.jpg";
+import hero from "@/assets/csoportos-merules-erdelyi-tonal.jpg";
+import course from "@/assets/naui-buvartanfolyam-medencei-oktatas.jpg";
+import experience from "@/assets/naui-buvaroktato-tanitvany-gyakorlat.jpg";
+import group from "@/assets/buvarcsoport-erdelyi-to-parton.jpg";
+import practice from "@/assets/buvarpalack-bcd-medencei-gyakorlas.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { Bubbles } from "@/components/site/Bubbles";
 
@@ -60,7 +60,8 @@ function Home() {
       <section className="relative min-h-screen w-full overflow-hidden">
         <img
           src={hero}
-          alt="Búvár ereszkedik le a mély türkiz óceánba"
+          alt="Csoportos búvármerülés egy erdélyi tó tükörsima vizén"
+          title="Csoportos merülés Erdélyben"
           width={1920}
           height={1280}
           className="absolute inset-0 h-full w-full object-cover"
@@ -139,7 +140,8 @@ function Home() {
                 <div className="absolute -inset-4 bg-gradient-ocean rounded-3xl blur-3xl opacity-30" />
                 <img
                   src={experience}
-                  alt="Búvár felfedezi a korallzátonyt"
+                  alt="NAUI búvároktató személyre szabott gyakorlatot vezet a tanítványnak"
+                  title="NAUI oktató és tanítvány gyakorlat közben"
                   width={1280}
                   height={896}
                   loading="lazy"

@@ -8,6 +8,15 @@ import gear from "@/assets/buvarfelszereles-medence-szelen.jpg";
 import g1 from "@/assets/buvarcsapat-csoportkep-erdely.jpg";
 import g2 from "@/assets/buvarfelszereles-ellenorzes-stegen.jpg";
 import g3 from "@/assets/buvar-ok-jelzes-felszinen.jpg";
+import nTeam from "@/assets/buvarcsapat-stegen-teli-merules.jpg.asset.json";
+import nStruct from "@/assets/buvar-viz-alatti-szerkezet-mellett.jpg.asset.json";
+import nCsiki from "@/assets/viz-alatti-csiki-sor-elmenymerules.jpg.asset.json";
+import nBeraria from "@/assets/viz-alatti-beraria-subacvatica-merules.jpg.asset.json";
+import nPortrait from "@/assets/buvar-portre-viz-alatt-kozelrol.jpg.asset.json";
+import nSign from "@/assets/buvar-viz-alatti-tabla-sas-jelzes.jpg.asset.json";
+import nNight from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.json";
+import nBriefing from "@/assets/naui-oktato-briefing-medenceben.jpg.asset.json";
+import nPointing from "@/assets/naui-oktato-tanitvanyok-medencei-eligazitas.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/galeria")({
@@ -28,12 +37,21 @@ export const Route = createFileRoute("/galeria")({
 const images = [
   { src: hero, alt: "Csoportos búvármerülés egy erdélyi tó tükörsima vizén", span: "md:col-span-2 md:row-span-2" },
   { src: g1, alt: "Búvárkodás Erdély csapata neoprén ruhában, hegyek előtt" },
+  { src: nTeam.url, alt: "Búvárcsapat felszerelésben a stégen, téli merülés előtt", title: "Téli merülés — csapat a stégen" },
   { src: experience, alt: "NAUI búvároktató személyre szabott gyakorlatot vezet a tanítványnak", span: "md:col-span-2" },
+  { src: nBriefing.url, alt: "NAUI oktató eligazítást tart a tanítványoknak a medencében", title: "Eligazítás a medencében" },
   { src: g3, alt: "Búvár OK jelzéssel a víz felszínén, sikeres merülés után" },
   { src: course, alt: "NAUI búvártanfolyam — csoportos medencei oktatás" },
+  { src: nPointing.url, alt: "NAUI oktató irányt mutat a tanítványoknak a vízbe ereszkedés előtt", span: "md:col-span-2", title: "Indulás előtti utolsó instrukciók" },
+  { src: nPortrait.url, alt: "Búvár portré víz alatt, közelről — maszk és légzőautomata", title: "Búvár portré a mélyben" },
+  { src: nStruct.url, alt: "Búvár víz alatti acélszerkezet mellett ereszkedés közben", title: "Felfedezés a mélyben" },
   { src: group, alt: "Búvárcsoport teljes felszerelésben egy erdélyi tó partján", span: "md:col-span-2" },
+  { src: nCsiki.url, alt: "Víz alatti élménymerülés — Csíki Sör koccintás a mélyben", title: "Víz alatti pillanat — Csíki Sör" },
+  { src: nBeraria.url, alt: "Berăria Subacvatică — víz alatti sörözés élménymerülés közben", title: "Berăria Subacvatică élmény" },
   { src: practice, alt: "Búvárpalack és BCD a medence szélén gyakorló merülés előtt" },
+  { src: nSign.url, alt: "Búvár a víz alatti tájékozódási táblát vizsgálja sas ábrázolással", title: "Víz alatti tájékozódási gyakorlat" },
   { src: g2, alt: "Búvárfelszerelés-ellenőrzés a stégen, briefing közben" },
+  { src: nNight.url, alt: "Éjszakai merülés — búvár felszerelést igazít a medence sötét vizében", span: "md:col-span-2", title: "Éjszakai merülés gyakorlat" },
   { src: gear, alt: "Búvárfelszerelés sorba rendezve a medence szélén", span: "md:col-span-2" },
 ];
 
@@ -59,10 +77,11 @@ function Gallery() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] sm:auto-rows-[240px]">
             {images.map((img, i) => (
-              <Reveal key={i} delay={i * 60} className={`overflow-hidden rounded-2xl group ${img.span ?? ""}`}>
+              <Reveal key={i} delay={i * 40} className={`overflow-hidden rounded-2xl group ${img.span ?? ""}`}>
                 <img
                   src={img.src}
                   alt={img.alt}
+                  title={img.title ?? img.alt}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

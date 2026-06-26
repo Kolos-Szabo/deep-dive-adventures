@@ -140,7 +140,8 @@ function Home() {
                 <div className="absolute -inset-4 bg-gradient-ocean rounded-3xl blur-3xl opacity-30" />
                 <img
                   src={experience}
-                  alt="Búvár felfedezi a korallzátonyt"
+                  alt="NAUI búvároktató személyre szabott gyakorlatot vezet a tanítványnak"
+                  title="NAUI oktató és tanítvány gyakorlat közben"
                   width={1280}
                   height={896}
                   loading="lazy"

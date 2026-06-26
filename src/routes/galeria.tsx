@@ -26,15 +26,15 @@ export const Route = createFileRoute("/galeria")({
 });
 
 const images = [
-  { src: hero, alt: "Búvár ereszkedik le", span: "md:col-span-2 md:row-span-2" },
-  { src: g1, alt: "Búvár sziluett" },
-  { src: experience, alt: "Korallzátony", span: "md:col-span-2" },
-  { src: g2, alt: "Búvármaszk közelről" },
-  { src: course, alt: "NAUI képzés" },
-  { src: group, alt: "Csoportos merülés", span: "md:col-span-2" },
-  { src: practice, alt: "Gyakorló merülés" },
-  { src: g3, alt: "Buborékok" },
-  { src: gear, alt: "Búvárfelszerelés", span: "md:col-span-2" },
+  { src: hero, alt: "Csoportos búvármerülés egy erdélyi tó tükörsima vizén", span: "md:col-span-2 md:row-span-2" },
+  { src: g1, alt: "Búvárkodás Erdély csapata neoprén ruhában, hegyek előtt" },
+  { src: experience, alt: "NAUI búvároktató személyre szabott gyakorlatot vezet a tanítványnak", span: "md:col-span-2" },
+  { src: g3, alt: "Búvár OK jelzéssel a víz felszínén, sikeres merülés után" },
+  { src: course, alt: "NAUI búvártanfolyam — csoportos medencei oktatás" },
+  { src: group, alt: "Búvárcsoport teljes felszerelésben egy erdélyi tó partján", span: "md:col-span-2" },
+  { src: practice, alt: "Búvárpalack és BCD a medence szélén gyakorló merülés előtt" },
+  { src: g2, alt: "Búvárfelszerelés-ellenőrzés a stégen, briefing közben" },
+  { src: gear, alt: "Búvárfelszerelés sorba rendezve a medence szélén", span: "md:col-span-2" },
 ];
 
 function Gallery() {

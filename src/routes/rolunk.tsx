@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, Compass, Heart, ShieldCheck, ArrowRight } from "lucide-react";
-import course from "@/assets/course.jpg";
+import teamPhoto from "@/assets/buvarcsapat-csoportkep-erdely.jpg";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/rolunk")({

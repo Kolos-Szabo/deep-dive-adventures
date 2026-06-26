@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, GraduationCap, Compass, Waves, Award, Check } from "lucide-react";
-import course from "@/assets/course.jpg";
-import experience from "@/assets/experience.jpg";
-import practice from "@/assets/practice.jpg";
-import group from "@/assets/group.jpg";
+import course from "@/assets/naui-buvartanfolyam-medencei-oktatas.jpg";
+import experience from "@/assets/naui-buvaroktato-tanitvany-gyakorlat.jpg";
+import practice from "@/assets/buvarpalack-bcd-medencei-gyakorlas.jpg";
+import group from "@/assets/buvarcsoport-erdelyi-to-parton.jpg";
 import { Reveal } from "@/components/site/Reveal";
 
 export const services = [

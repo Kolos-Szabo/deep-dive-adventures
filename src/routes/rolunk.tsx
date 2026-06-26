@@ -1,7 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, Compass, Heart, ShieldCheck, ArrowRight } from "lucide-react";
 import teamPhoto from "@/assets/buvarcsapat-csoportkep-erdely.jpg";
+import portraitAsset from "@/assets/buvar-portre-viz-alatt-kozelrol.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
+
+const portrait = portraitAsset.url;
 
 export const Route = createFileRoute("/rolunk")({
   head: () => ({

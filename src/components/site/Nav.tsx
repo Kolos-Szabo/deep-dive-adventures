@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logoAsset from "@/assets/buvarkodas-erdely-logo.png.asset.json";
 
 const links = [
   { to: "/", label: "Főoldal" },
@@ -33,10 +33,10 @@ export function Nav() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="Búvárkodás Erdély logó" width={40} height={40} className="h-10 w-10 transition-transform group-hover:scale-110" />
+          <img src={logoAsset.url} alt="Búvárkodás Erdély logó" width={44} height={44} className="h-11 w-11 object-contain transition-transform group-hover:scale-110" />
           <div className="flex flex-col leading-none">
-            <span className="font-display text-xs font-bold tracking-[0.2em] text-primary uppercase">Búvárkodás</span>
-            <span className="font-display text-lg font-bold tracking-tight text-foreground">Erdély</span>
+            <span className="font-display text-base font-extrabold tracking-tight text-primary uppercase">Búvárkodás</span>
+            <span className="font-display text-xs font-semibold tracking-[0.3em] text-secondary uppercase">Erdély</span>
           </div>
         </Link>
 

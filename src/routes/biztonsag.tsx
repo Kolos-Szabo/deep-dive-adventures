@@ -3,13 +3,12 @@ import { ShieldCheck, Users, ClipboardCheck, Wrench, Radio, BookOpen, ArrowRight
 import practice from "@/assets/buvarfelszereles-ellenorzes-stegen.jpg";
 import signAsset from "@/assets/buvar-viz-alatti-tabla-sas-jelzes.jpg.asset.json";
 import structureAsset from "@/assets/buvar-viz-alatti-szerkezet-mellett.jpg.asset.json";
-import okAsset from "@/assets/buvar-ok-jelzes-felszinen.jpg.asset.json";
+import okSign from "@/assets/buvar-ok-jelzes-felszinen.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { Bubbles } from "@/components/site/Bubbles";
 
 const sign = signAsset.url;
 const structure = structureAsset.url;
-const okSign = okAsset.url;
 
 export const Route = createFileRoute("/biztonsag")({
   head: () => ({

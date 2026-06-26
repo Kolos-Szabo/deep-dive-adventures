@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Award, Phone, ShieldCheck, Waves, Compass, GraduationCap } from "lucide-react";
-import hero from "@/assets/hero.jpg";
-import course from "@/assets/course.jpg";
-import experience from "@/assets/experience.jpg";
-import group from "@/assets/group.jpg";
-import practice from "@/assets/practice.jpg";
+import hero from "@/assets/csoportos-merules-erdelyi-tonal.jpg";
+import course from "@/assets/naui-buvartanfolyam-medencei-oktatas.jpg";
+import experience from "@/assets/naui-buvaroktato-tanitvany-gyakorlat.jpg";
+import group from "@/assets/buvarcsoport-erdelyi-to-parton.jpg";
+import practice from "@/assets/buvarpalack-bcd-medencei-gyakorlas.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { Bubbles } from "@/components/site/Bubbles";
 

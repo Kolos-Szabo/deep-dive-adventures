@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <img src={logoAsset.url} alt="" width={56} height={56} className="h-14 w-14 object-contain bg-white/95 rounded-full p-1" />
+              <img src={logoAsset.url} alt="" width={56} height={56} className="h-14 w-14 object-contain" />
               <div>
                 <div className="font-display text-lg font-extrabold tracking-tight uppercase">Búvárkodás</div>
                 <div className="font-display text-xs font-semibold tracking-[0.3em] text-secondary uppercase">Erdély</div>

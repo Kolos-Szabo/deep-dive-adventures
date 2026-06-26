@@ -146,9 +146,9 @@ function Home() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-ocean rounded-3xl blur-3xl opacity-30" />
                 <img
-                  src={experience}
-                  alt="NAUI búvároktató személyre szabott gyakorlatot vezet a tanítványnak"
-                  title="NAUI oktató és tanítvány gyakorlat közben"
+                  src={intro}
+                  alt="NAUI oktató személyre szabott eligazítást tart tanítványoknak a medencében"
+                  title="NAUI oktatás — eligazítás a vízbe lépés előtt"
                   width={1280}
                   height={896}
                   loading="lazy"

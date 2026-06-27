@@ -13,6 +13,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RolunkRouteImport } from './routes/rolunk'
 import { Route as KapcsolatRouteImport } from './routes/kapcsolat'
 import { Route as GaleriaRouteImport } from './routes/galeria'
+import { Route as CsapatunkRouteImport } from './routes/csapatunk'
 import { Route as BiztonsagRouteImport } from './routes/biztonsag'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SzolgaltatasokIndexRouteImport } from './routes/szolgaltatasok.index'
@@ -36,6 +37,11 @@ const KapcsolatRoute = KapcsolatRouteImport.update({
 const GaleriaRoute = GaleriaRouteImport.update({
   id: '/galeria',
   path: '/galeria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CsapatunkRoute = CsapatunkRouteImport.update({
+  id: '/csapatunk',
+  path: '/csapatunk',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BiztonsagRoute = BiztonsagRouteImport.update({
@@ -62,6 +68,7 @@ const SzolgaltatasokSlugRoute = SzolgaltatasokSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/biztonsag': typeof BiztonsagRoute
+  '/csapatunk': typeof CsapatunkRoute
   '/galeria': typeof GaleriaRoute
   '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
@@ -72,6 +79,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/biztonsag': typeof BiztonsagRoute
+  '/csapatunk': typeof CsapatunkRoute
   '/galeria': typeof GaleriaRoute
   '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
@@ -83,6 +91,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/biztonsag': typeof BiztonsagRoute
+  '/csapatunk': typeof CsapatunkRoute
   '/galeria': typeof GaleriaRoute
   '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
@@ -95,6 +104,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/biztonsag'
+    | '/csapatunk'
     | '/galeria'
     | '/kapcsolat'
     | '/rolunk'
@@ -105,6 +115,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/biztonsag'
+    | '/csapatunk'
     | '/galeria'
     | '/kapcsolat'
     | '/rolunk'
@@ -115,6 +126,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/biztonsag'
+    | '/csapatunk'
     | '/galeria'
     | '/kapcsolat'
     | '/rolunk'
@@ -126,6 +138,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BiztonsagRoute: typeof BiztonsagRoute
+  CsapatunkRoute: typeof CsapatunkRoute
   GaleriaRoute: typeof GaleriaRoute
   KapcsolatRoute: typeof KapcsolatRoute
   RolunkRoute: typeof RolunkRoute
@@ -164,6 +177,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GaleriaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/csapatunk': {
+      id: '/csapatunk'
+      path: '/csapatunk'
+      fullPath: '/csapatunk'
+      preLoaderRoute: typeof CsapatunkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/biztonsag': {
       id: '/biztonsag'
       path: '/biztonsag'
@@ -198,6 +218,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BiztonsagRoute: BiztonsagRoute,
+  CsapatunkRoute: CsapatunkRoute,
   GaleriaRoute: GaleriaRoute,
   KapcsolatRoute: KapcsolatRoute,
   RolunkRoute: RolunkRoute,

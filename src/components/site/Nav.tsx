@@ -6,7 +6,7 @@ import logoAsset from "@/assets/buvarkodas-erdely-logo.png.asset.json";
 const links = [
   { to: "/", label: "Főoldal" },
   { to: "/rolunk", label: "Rólunk" },
-  { to: "/csapatunk", label: "Csapatunk" },
+  { to: "/csapatunk", label: "Ki vigyáz rám a víz alatt?" },
   { to: "/szolgaltatasok", label: "Szolgáltatások" },
   { to: "/galeria", label: "Galéria" },
   { to: "/biztonsag", label: "Biztonság" },

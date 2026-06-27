@@ -8,6 +8,7 @@ import practiceAsset from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.
 import introAsset from "@/assets/naui-oktato-tanitvanyok-medencei-eligazitas.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
 import { Bubbles } from "@/components/site/Bubbles";
+import { YouTubeFacade } from "@/components/site/YouTubeFacade";
 
 const course = courseAsset.url;
 const experience = experienceAsset.url;
@@ -137,8 +138,8 @@ function Home() {
               <p className="mt-4 text-base text-muted-foreground leading-relaxed">
                 A NAUI oktatási rendszer szigorú standardjait követve építjük fel minden tanítványunk tudását — lépésről lépésre, magabiztosan, élményekkel.
               </p>
-              <Link to="/rolunk" className="mt-8 inline-flex items-center gap-2 font-semibold text-primary hover:gap-3 transition-all">
-                Ismerd meg a csapatot <ArrowRight className="h-4 w-4" />
+              <Link to="/csapatunk" className="mt-8 inline-flex items-center gap-2 font-semibold text-primary hover:gap-3 transition-all">
+                Ki vigyáz rám a víz alatt? <ArrowRight className="h-4 w-4" />
               </Link>
             </Reveal>
 
@@ -157,6 +158,29 @@ function Home() {
               </div>
             </Reveal>
           </div>
+        </div>
+      </section>
+
+      {/* TEAM VIDEO */}
+      <section className="bg-muted py-20 lg:py-28">
+        <div className="mx-auto max-w-[1100px] px-5 lg:px-8">
+          <Reveal className="text-center mb-10">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-primary">Ismerd meg az oktatót</span>
+            <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold tracking-tight text-balance">
+              Ki vigyáz rám a víz alatt?
+            </h2>
+            <p className="mt-4 max-w-xl mx-auto text-muted-foreground leading-relaxed">
+              Nézd meg Szabó Kolos bemutatkozó videóját, és tudj meg többet arról, ki fogja vezetni a merüléseidet.
+            </p>
+          </Reveal>
+          <Reveal delay={120}>
+            <YouTubeFacade id="-UY_NnQgjYU" title="Szabó Kolos — Transilvanian Dive Center bemutatkozó videó" />
+          </Reveal>
+          <Reveal delay={200} className="text-center mt-10">
+            <Link to="/csapatunk" className="inline-flex items-center gap-2 rounded-full bg-gradient-ocean px-7 py-4 text-base font-semibold text-white shadow-glow hover:-translate-y-0.5 transition-transform">
+              Ki vigyáz rám a víz alatt? <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Reveal>
         </div>
       </section>
 

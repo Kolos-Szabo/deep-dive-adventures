@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
-import { Play, Award, Waves, Wrench, Mountain, GraduationCap, Leaf, Users, Heart, ArrowRight } from "lucide-react";
+import { Award, Waves, Wrench, Mountain, GraduationCap, Leaf, Users, Heart, ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
+import { YouTubeFacade } from "@/components/site/YouTubeFacade";
 import portraitAsset from "@/assets/buvar-portre-viz-alatt-kozelrol.jpg.asset.json";
 import briefingAsset from "@/assets/naui-oktato-briefing-medenceben.jpg.asset.json";
 
@@ -9,7 +9,6 @@ const portrait = portraitAsset.url;
 const briefing = briefingAsset.url;
 
 const YT_ID = "-UY_NnQgjYU";
-const YT_THUMB = `https://i.ytimg.com/vi/${YT_ID}/maxresdefault.jpg`;
 
 export const Route = createFileRoute("/csapatunk")({
   head: () => ({

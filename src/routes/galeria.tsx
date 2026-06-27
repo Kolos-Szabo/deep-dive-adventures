@@ -17,6 +17,16 @@ import nSign from "@/assets/buvar-viz-alatti-tabla-sas-jelzes.jpg.asset.json";
 import nNight from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.json";
 import nBriefing from "@/assets/naui-oktato-briefing-medenceben.jpg.asset.json";
 import nPointing from "@/assets/naui-oktato-tanitvanyok-medencei-eligazitas.jpg.asset.json";
+import nNewMask from "@/assets/naui-medencei-kepzes-maszk-gyakorlat.jpg.asset.json";
+import nNewUW from "@/assets/buvartanfolyam-medence-viz-alatti-kepzes.jpg.asset.json";
+import nNewConfined from "@/assets/naui-buvarfelszereles-medence-konfined.jpg.asset.json";
+import nNewSidemount from "@/assets/technikai-buvar-sidemount-melyben-napsugarak.jpg.asset.json";
+import nNewTechPortrait from "@/assets/technikai-buvar-portre-szabalyozo-maszk.jpg.asset.json";
+import nNewAdvanced from "@/assets/advanced-merulok-ereszkedes-paros-melyviz.jpg.asset.json";
+import nNewDock from "@/assets/naui-buvarok-stegen-erdelyi-tonal.jpg.asset.json";
+import nNewTechTeam from "@/assets/technikai-merules-tankok-csapat-melyben.jpg.asset.json";
+import nNewGear from "@/assets/buvar-szabalyozok-felszereles-asztalon.jpg.asset.json";
+import nNewSea from "@/assets/buvarcsoport-dahab-tengeri-merules.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/galeria")({

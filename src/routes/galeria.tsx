@@ -63,6 +63,16 @@ const images = [
   { src: g2, alt: "Búvárfelszerelés-ellenőrzés a stégen, briefing közben" },
   { src: nNight.url, alt: "Éjszakai merülés — búvár felszerelést igazít a medence sötét vizében", span: "md:col-span-2", title: "Éjszakai merülés gyakorlat" },
   { src: gear, alt: "Búvárfelszerelés sorba rendezve a medence szélén", span: "md:col-span-2" },
+  { src: nNewDock.url, alt: "NAUI búvárok teljes felszerelésben a stégen, erdélyi tó és hegyek háttérrel", title: "Készen állunk a merülésre — erdélyi tó", span: "md:col-span-2" },
+  { src: nNewMask.url, alt: "NAUI oktató kezdő tanítvánnyal medencei maszkgyakorlat közben", title: "Maszk-skill a medencében" },
+  { src: nNewUW.url, alt: "Búvártanfolyam víz alatti pillanata — oktató és tanítvány a medencében", title: "Víz alatti képzés a medencében" },
+  { src: nNewConfined.url, alt: "Zárt vízi NAUI képzés — BCD-k és palackok sorban a medence szélén", title: "Zárt vízi felkészülés", span: "md:col-span-2" },
+  { src: nNewAdvanced.url, alt: "Két Advanced Open Water búvár együtt ereszkedik a mélybe", title: "Advanced Open Water — közös ereszkedés" },
+  { src: nNewSidemount.url, alt: "Technikai búvár sidemount felszerelésben napsugarak között a nyílt tengerben", title: "Technikai merülés — sidemount" },
+  { src: nNewTechPortrait.url, alt: "Tapasztalt technikai búvár közeli portréja maszkban és szabályozóval", title: "Technikai búvár portré" },
+  { src: nNewTechTeam.url, alt: "Twinset palackos technikai búvárok csoportja a nyílt tengerben homokfenék felett", title: "Technikai csapatmerülés", span: "md:col-span-2" },
+  { src: nNewGear.url, alt: "NAUI búvárszabályozók és felszerelés a Transilvanian Dive Center asztalán", title: "Minőségi szabályozók" },
+  { src: nNewSea.url, alt: "NAUI búvárcsoport tengeri merülés előtt — Dahab, profi képzés", title: "Tengeri profi merülés — Dahab", span: "md:col-span-2" },
 ];
 
 function Gallery() {

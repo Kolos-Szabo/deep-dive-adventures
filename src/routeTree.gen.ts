@@ -17,6 +17,7 @@ import { Route as CsapatunkRouteImport } from './routes/csapatunk'
 import { Route as BiztonsagRouteImport } from './routes/biztonsag'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SzolgaltatasokIndexRouteImport } from './routes/szolgaltatasok.index'
+import { Route as SzolgaltatasokNauiTanfolyamRouteImport } from './routes/szolgaltatasok.naui-tanfolyam'
 import { Route as SzolgaltatasokSlugRouteImport } from './routes/szolgaltatasok.$slug'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -59,6 +60,12 @@ const SzolgaltatasokIndexRoute = SzolgaltatasokIndexRouteImport.update({
   path: '/szolgaltatasok/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SzolgaltatasokNauiTanfolyamRoute =
+  SzolgaltatasokNauiTanfolyamRouteImport.update({
+    id: '/szolgaltatasok/naui-tanfolyam',
+    path: '/szolgaltatasok/naui-tanfolyam',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SzolgaltatasokSlugRoute = SzolgaltatasokSlugRouteImport.update({
   id: '/szolgaltatasok/$slug',
   path: '/szolgaltatasok/$slug',
@@ -74,6 +81,7 @@ export interface FileRoutesByFullPath {
   '/rolunk': typeof RolunkRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
+  '/szolgaltatasok/naui-tanfolyam': typeof SzolgaltatasokNauiTanfolyamRoute
   '/szolgaltatasok/': typeof SzolgaltatasokIndexRoute
 }
 export interface FileRoutesByTo {
@@ -85,6 +93,7 @@ export interface FileRoutesByTo {
   '/rolunk': typeof RolunkRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
+  '/szolgaltatasok/naui-tanfolyam': typeof SzolgaltatasokNauiTanfolyamRoute
   '/szolgaltatasok': typeof SzolgaltatasokIndexRoute
 }
 export interface FileRoutesById {
@@ -97,6 +106,7 @@ export interface FileRoutesById {
   '/rolunk': typeof RolunkRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
+  '/szolgaltatasok/naui-tanfolyam': typeof SzolgaltatasokNauiTanfolyamRoute
   '/szolgaltatasok/': typeof SzolgaltatasokIndexRoute
 }
 export interface FileRouteTypes {
@@ -110,6 +120,7 @@ export interface FileRouteTypes {
     | '/rolunk'
     | '/sitemap.xml'
     | '/szolgaltatasok/$slug'
+    | '/szolgaltatasok/naui-tanfolyam'
     | '/szolgaltatasok/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -121,6 +132,7 @@ export interface FileRouteTypes {
     | '/rolunk'
     | '/sitemap.xml'
     | '/szolgaltatasok/$slug'
+    | '/szolgaltatasok/naui-tanfolyam'
     | '/szolgaltatasok'
   id:
     | '__root__'
@@ -132,6 +144,7 @@ export interface FileRouteTypes {
     | '/rolunk'
     | '/sitemap.xml'
     | '/szolgaltatasok/$slug'
+    | '/szolgaltatasok/naui-tanfolyam'
     | '/szolgaltatasok/'
   fileRoutesById: FileRoutesById
 }
@@ -144,6 +157,7 @@ export interface RootRouteChildren {
   RolunkRoute: typeof RolunkRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SzolgaltatasokSlugRoute: typeof SzolgaltatasokSlugRoute
+  SzolgaltatasokNauiTanfolyamRoute: typeof SzolgaltatasokNauiTanfolyamRoute
   SzolgaltatasokIndexRoute: typeof SzolgaltatasokIndexRoute
 }
 
@@ -205,6 +219,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SzolgaltatasokIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/szolgaltatasok/naui-tanfolyam': {
+      id: '/szolgaltatasok/naui-tanfolyam'
+      path: '/szolgaltatasok/naui-tanfolyam'
+      fullPath: '/szolgaltatasok/naui-tanfolyam'
+      preLoaderRoute: typeof SzolgaltatasokNauiTanfolyamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/szolgaltatasok/$slug': {
       id: '/szolgaltatasok/$slug'
       path: '/szolgaltatasok/$slug'
@@ -224,6 +245,7 @@ const rootRouteChildren: RootRouteChildren = {
   RolunkRoute: RolunkRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SzolgaltatasokSlugRoute: SzolgaltatasokSlugRoute,
+  SzolgaltatasokNauiTanfolyamRoute: SzolgaltatasokNauiTanfolyamRoute,
   SzolgaltatasokIndexRoute: SzolgaltatasokIndexRoute,
 }
 export const routeTree = rootRouteImport

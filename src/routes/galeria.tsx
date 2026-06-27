@@ -17,6 +17,16 @@ import nSign from "@/assets/buvar-viz-alatti-tabla-sas-jelzes.jpg.asset.json";
 import nNight from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.json";
 import nBriefing from "@/assets/naui-oktato-briefing-medenceben.jpg.asset.json";
 import nPointing from "@/assets/naui-oktato-tanitvanyok-medencei-eligazitas.jpg.asset.json";
+import nNewMask from "@/assets/naui-medencei-kepzes-maszk-gyakorlat.jpg.asset.json";
+import nNewUW from "@/assets/buvartanfolyam-medence-viz-alatti-kepzes.jpg.asset.json";
+import nNewConfined from "@/assets/naui-buvarfelszereles-medence-konfined.jpg.asset.json";
+import nNewSidemount from "@/assets/technikai-buvar-sidemount-melyben-napsugarak.jpg.asset.json";
+import nNewTechPortrait from "@/assets/technikai-buvar-portre-szabalyozo-maszk.jpg.asset.json";
+import nNewAdvanced from "@/assets/advanced-merulok-ereszkedes-paros-melyviz.jpg.asset.json";
+import nNewDock from "@/assets/naui-buvarok-stegen-erdelyi-tonal.jpg.asset.json";
+import nNewTechTeam from "@/assets/technikai-merules-tankok-csapat-melyben.jpg.asset.json";
+import nNewGear from "@/assets/buvar-szabalyozok-felszereles-asztalon.jpg.asset.json";
+import nNewSea from "@/assets/buvarcsoport-dahab-tengeri-merules.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/galeria")({
@@ -53,6 +63,16 @@ const images = [
   { src: g2, alt: "Búvárfelszerelés-ellenőrzés a stégen, briefing közben" },
   { src: nNight.url, alt: "Éjszakai merülés — búvár felszerelést igazít a medence sötét vizében", span: "md:col-span-2", title: "Éjszakai merülés gyakorlat" },
   { src: gear, alt: "Búvárfelszerelés sorba rendezve a medence szélén", span: "md:col-span-2" },
+  { src: nNewDock.url, alt: "NAUI búvárok teljes felszerelésben a stégen, erdélyi tó és hegyek háttérrel", title: "Készen állunk a merülésre — erdélyi tó", span: "md:col-span-2" },
+  { src: nNewMask.url, alt: "NAUI oktató kezdő tanítvánnyal medencei maszkgyakorlat közben", title: "Maszk-skill a medencében" },
+  { src: nNewUW.url, alt: "Búvártanfolyam víz alatti pillanata — oktató és tanítvány a medencében", title: "Víz alatti képzés a medencében" },
+  { src: nNewConfined.url, alt: "Zárt vízi NAUI képzés — BCD-k és palackok sorban a medence szélén", title: "Zárt vízi felkészülés", span: "md:col-span-2" },
+  { src: nNewAdvanced.url, alt: "Két Advanced Open Water búvár együtt ereszkedik a mélybe", title: "Advanced Open Water — közös ereszkedés" },
+  { src: nNewSidemount.url, alt: "Technikai búvár sidemount felszerelésben napsugarak között a nyílt tengerben", title: "Technikai merülés — sidemount" },
+  { src: nNewTechPortrait.url, alt: "Tapasztalt technikai búvár közeli portréja maszkban és szabályozóval", title: "Technikai búvár portré" },
+  { src: nNewTechTeam.url, alt: "Twinset palackos technikai búvárok csoportja a nyílt tengerben homokfenék felett", title: "Technikai csapatmerülés", span: "md:col-span-2" },
+  { src: nNewGear.url, alt: "NAUI búvárszabályozók és felszerelés a Transilvanian Dive Center asztalán", title: "Minőségi szabályozók" },
+  { src: nNewSea.url, alt: "NAUI búvárcsoport tengeri merülés előtt — Dahab, profi képzés", title: "Tengeri profi merülés — Dahab", span: "md:col-span-2" },
 ];
 
 function Gallery() {

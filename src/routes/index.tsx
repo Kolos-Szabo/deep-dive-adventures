@@ -8,6 +8,7 @@ import practiceAsset from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.
 import introAsset from "@/assets/naui-oktato-tanitvanyok-medencei-eligazitas.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
 import { Bubbles } from "@/components/site/Bubbles";
+import { YouTubeFacade } from "@/components/site/YouTubeFacade";
 
 const course = courseAsset.url;
 const experience = experienceAsset.url;
@@ -137,8 +138,8 @@ function Home() {
               <p className="mt-4 text-base text-muted-foreground leading-relaxed">
                 A NAUI oktatási rendszer szigorú standardjait követve építjük fel minden tanítványunk tudását — lépésről lépésre, magabiztosan, élményekkel.
               </p>
-              <Link to="/rolunk" className="mt-8 inline-flex items-center gap-2 font-semibold text-primary hover:gap-3 transition-all">
-                Ismerd meg a csapatot <ArrowRight className="h-4 w-4" />
+              <Link to="/csapatunk" className="mt-8 inline-flex items-center gap-2 font-semibold text-primary hover:gap-3 transition-all">
+                Ki vigyáz rám a víz alatt? <ArrowRight className="h-4 w-4" />
               </Link>
             </Reveal>
 

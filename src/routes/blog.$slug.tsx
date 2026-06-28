@@ -2,10 +2,10 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Calendar, Clock, Phone } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { Bubbles } from "@/components/site/Bubbles";
-import { blogPosts, formatDate, getPostBySlug } from "@/lib/blog-posts";
+import { blogPosts, formatDate, getPostBySlug, type BlogPost } from "@/lib/blog-posts";
 
 export const Route = createFileRoute("/blog/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { post: BlogPost } => {
     const post = getPostBySlug(params.slug);
     if (!post) throw notFound();
     return { post };

@@ -3,7 +3,7 @@ import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { blogPosts, formatDate } from "@/lib/blog-posts";
 
-export const Route = createFileRoute("/blog")({
+export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
       { title: "Blog — Búvárkodás Erdély | Búvár tippek, NAUI tanfolyam, élmények" },

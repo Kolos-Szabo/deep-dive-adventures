@@ -9,6 +9,7 @@ const links = [
   { to: "/csapatunk", label: "Ki vigyáz rám a víz alatt?" },
   { to: "/szolgaltatasok", label: "Szolgáltatások" },
   { to: "/galeria", label: "Galéria" },
+  { to: "/blog", label: "Blog" },
   { to: "/biztonsag", label: "Biztonság" },
   { to: "/kapcsolat", label: "Kapcsolat" },
 ] as const;

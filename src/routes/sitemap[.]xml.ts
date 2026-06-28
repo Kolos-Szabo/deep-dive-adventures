@@ -24,6 +24,9 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/galeria", changefreq: "monthly", priority: "0.6" },
           { path: "/biztonsag", changefreq: "monthly", priority: "0.7" },
           { path: "/kapcsolat", changefreq: "monthly", priority: "0.9" },
+          { path: "/blog", changefreq: "weekly", priority: "0.8" },
+          { path: "/blog/elso-buvarkodas-romaniaban", changefreq: "monthly", priority: "0.7" },
+          { path: "/blog/professzionalis-buvar-tanfolyam", changefreq: "monthly", priority: "0.7" },
         ];
 
         const urls = entries.map((e) =>

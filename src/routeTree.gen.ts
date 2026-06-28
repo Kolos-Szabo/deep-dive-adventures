@@ -17,8 +17,10 @@ import { Route as CsapatunkRouteImport } from './routes/csapatunk'
 import { Route as BiztonsagRouteImport } from './routes/biztonsag'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SzolgaltatasokIndexRouteImport } from './routes/szolgaltatasok.index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as SzolgaltatasokNauiTanfolyamRouteImport } from './routes/szolgaltatasok.naui-tanfolyam'
 import { Route as SzolgaltatasokSlugRouteImport } from './routes/szolgaltatasok.$slug'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -60,6 +62,11 @@ const SzolgaltatasokIndexRoute = SzolgaltatasokIndexRouteImport.update({
   path: '/szolgaltatasok/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SzolgaltatasokNauiTanfolyamRoute =
   SzolgaltatasokNauiTanfolyamRouteImport.update({
     id: '/szolgaltatasok/naui-tanfolyam',
@@ -71,6 +78,11 @@ const SzolgaltatasokSlugRoute = SzolgaltatasokSlugRouteImport.update({
   path: '/szolgaltatasok/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -80,8 +92,10 @@ export interface FileRoutesByFullPath {
   '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
   '/szolgaltatasok/naui-tanfolyam': typeof SzolgaltatasokNauiTanfolyamRoute
+  '/blog/': typeof BlogIndexRoute
   '/szolgaltatasok/': typeof SzolgaltatasokIndexRoute
 }
 export interface FileRoutesByTo {
@@ -92,8 +106,10 @@ export interface FileRoutesByTo {
   '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
   '/szolgaltatasok/naui-tanfolyam': typeof SzolgaltatasokNauiTanfolyamRoute
+  '/blog': typeof BlogIndexRoute
   '/szolgaltatasok': typeof SzolgaltatasokIndexRoute
 }
 export interface FileRoutesById {
@@ -105,8 +121,10 @@ export interface FileRoutesById {
   '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
   '/szolgaltatasok/naui-tanfolyam': typeof SzolgaltatasokNauiTanfolyamRoute
+  '/blog/': typeof BlogIndexRoute
   '/szolgaltatasok/': typeof SzolgaltatasokIndexRoute
 }
 export interface FileRouteTypes {
@@ -119,8 +137,10 @@ export interface FileRouteTypes {
     | '/kapcsolat'
     | '/rolunk'
     | '/sitemap.xml'
+    | '/blog/$slug'
     | '/szolgaltatasok/$slug'
     | '/szolgaltatasok/naui-tanfolyam'
+    | '/blog/'
     | '/szolgaltatasok/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -131,8 +151,10 @@ export interface FileRouteTypes {
     | '/kapcsolat'
     | '/rolunk'
     | '/sitemap.xml'
+    | '/blog/$slug'
     | '/szolgaltatasok/$slug'
     | '/szolgaltatasok/naui-tanfolyam'
+    | '/blog'
     | '/szolgaltatasok'
   id:
     | '__root__'
@@ -143,8 +165,10 @@ export interface FileRouteTypes {
     | '/kapcsolat'
     | '/rolunk'
     | '/sitemap.xml'
+    | '/blog/$slug'
     | '/szolgaltatasok/$slug'
     | '/szolgaltatasok/naui-tanfolyam'
+    | '/blog/'
     | '/szolgaltatasok/'
   fileRoutesById: FileRoutesById
 }
@@ -156,8 +180,10 @@ export interface RootRouteChildren {
   KapcsolatRoute: typeof KapcsolatRoute
   RolunkRoute: typeof RolunkRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  BlogSlugRoute: typeof BlogSlugRoute
   SzolgaltatasokSlugRoute: typeof SzolgaltatasokSlugRoute
   SzolgaltatasokNauiTanfolyamRoute: typeof SzolgaltatasokNauiTanfolyamRoute
+  BlogIndexRoute: typeof BlogIndexRoute
   SzolgaltatasokIndexRoute: typeof SzolgaltatasokIndexRoute
 }
 
@@ -219,6 +245,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SzolgaltatasokIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/szolgaltatasok/naui-tanfolyam': {
       id: '/szolgaltatasok/naui-tanfolyam'
       path: '/szolgaltatasok/naui-tanfolyam'
@@ -233,6 +266,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SzolgaltatasokSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -244,8 +284,10 @@ const rootRouteChildren: RootRouteChildren = {
   KapcsolatRoute: KapcsolatRoute,
   RolunkRoute: RolunkRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  BlogSlugRoute: BlogSlugRoute,
   SzolgaltatasokSlugRoute: SzolgaltatasokSlugRoute,
   SzolgaltatasokNauiTanfolyamRoute: SzolgaltatasokNauiTanfolyamRoute,
+  BlogIndexRoute: BlogIndexRoute,
   SzolgaltatasokIndexRoute: SzolgaltatasokIndexRoute,
 }
 export const routeTree = rootRouteImport

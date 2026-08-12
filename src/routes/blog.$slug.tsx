@@ -165,7 +165,30 @@ function BlogDetail() {
                   </figure>
                 );
               }
+              if (s.type === "links") {
+                return (
+                  <aside key={i} className="my-10 rounded-2xl border border-border bg-muted/60 p-6">
+                    {s.title && (
+                      <h3 className="font-display text-lg font-semibold tracking-tight">{s.title}</h3>
+                    )}
+                    <ul className="mt-4 space-y-2">
+                      {s.items.map((l, j) => (
+                        <li key={j} className="leading-relaxed text-foreground/85">
+                          <Link
+                            to={l.to}
+                            className="font-semibold text-primary underline decoration-secondary underline-offset-4 hover:text-secondary"
+                          >
+                            {l.label}
+                          </Link>
+                          {l.note && <span className="text-muted-foreground"> — {l.note}</span>}
+                        </li>
+                      ))}
+                    </ul>
+                  </aside>
+                );
+              }
               return null;
+
             })}
           </div>
 

@@ -46,7 +46,8 @@ export const Route = createFileRoute("/blog/")({
 });
 
 function BlogIndex() {
-  const [featured, ...rest] = blogPosts;
+  const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const [featured, ...rest] = sortedPosts;
   return (
     <>
       <section className="relative bg-surface text-surface-foreground pt-32 pb-20 lg:pt-44 lg:pb-24 overflow-hidden">

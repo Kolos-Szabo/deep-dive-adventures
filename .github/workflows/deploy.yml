@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: github-pages
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -27,119 +27,32 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build application
         run: npm run build
 
-      - name: Inspect build output
+      - name: Verify build output
         run: |
-          echo "======================================"
-          echo "PROJECT ROOT"
-          echo "======================================"
-          ls -la
+          echo "=== DIST DIRECTORY ==="
+          ls -la dist
 
           echo ""
-          echo "======================================"
-          echo "OUTPUT DIRECTORIES"
-          echo "======================================"
-
-          if [ -d ".output" ]; then
-            find .output -maxdepth 4 -type f | head -200
-          else
-            echo "No .output directory found"
-          fi
+          echo "=== INDEX FILES ==="
+          find dist -name "index.html" -type f
 
           echo ""
-          echo "======================================"
-          echo "ALL INDEX.HTML FILES"
-          echo "======================================"
-
-          find . \
-            -name "index.html" \
-            -not -path "./node_modules/*" \
-            -not -path "./.git/*" \
-            -print
-
-      - name: Prepare static website
-        shell: bash
-        run: |
-          set -e
-
-          echo "Looking for a static index.html..."
-
-          rm -rf dist
-          mkdir -p dist
-
-          # Preferred locations for static/framework output
-          for DIR in \
-            ".output/public" \
-            ".output/client" \
-            ".output/static" \
-            "dist"
-          do
-            if [ -f "$DIR/index.html" ]; then
-              echo "Found static website in: $DIR"
-
-              if [ "$DIR" != "dist" ]; then
-                cp -R "$DIR"/. dist/
-              fi
-
-              break
-            fi
-          done
-
-          # If the expected locations did not contain index.html,
-          # search for an index.html and use its parent directory.
-          if [ ! -f "dist/index.html" ]; then
-            INDEX=$(find .output -type f -name "index.html" | head -1 || true)
-
-            if [ -n "$INDEX" ]; then
-              SOURCE_DIR=$(dirname "$INDEX")
-
-              echo "Found index.html at:"
-              echo "$INDEX"
-
-              echo "Copying from:"
-              echo "$SOURCE_DIR"
-
-              cp -R "$SOURCE_DIR"/. dist/
-            fi
-          fi
-
-          echo ""
-          echo "======================================"
-          echo "FINAL DIST CONTENTS"
-          echo "======================================"
-
-          find dist -maxdepth 3 -type f | head -200
-
-          echo ""
-          echo "======================================"
-          echo "VERIFYING DIST"
-          echo "======================================"
-
-          if [ ! -f "dist/index.html" ]; then
-            echo "ERROR: No dist/index.html was produced."
-            echo ""
-            echo "Available index.html files:"
-            find . \
-              -name "index.html" \
-              -not -path "./node_modules/*" \
-              -not -path "./.git/*" \
-              -print
-            exit 1
-          fi
-
-          echo "SUCCESS: dist/index.html exists."
+          echo "=== ROOT INDEX ==="
+          test -f dist/index.html
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload static website
-        uses: actions/upload-pages-artifact@v4
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 

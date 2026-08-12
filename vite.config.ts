@@ -7,9 +7,21 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  // GitHub Pages hosts plain static files: skip the serverless (nitro) bundle entirely.
+  nitro: false,
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    // Static export for GitHub Pages: every route is prerendered to HTML at build time.
+    prerender: {
+      enabled: true,
+      crawlLinks: true,
+      retryCount: 1,
+      pages: [{ path: "/sitemap.xml" }],
+    },
+  },
+  vite: {
+    base: "/",
   },
 });

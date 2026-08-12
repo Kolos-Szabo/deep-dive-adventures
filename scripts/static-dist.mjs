@@ -1,33 +1,45 @@
-// Copies the prerendered static output into ./dist for GitHub Pages deployment.
-import { cp, rm, stat, readFile, writeFile, access } from "node:fs/promises";
+// Flattens the prerendered client output into ./dist for GitHub Pages deployment.
+// Vite/TanStack Start writes static files to dist/client and a (build-time only)
+// prerender server to dist/server — GitHub Pages needs the static files at dist root.
+import { cp, rm, stat, readFile, writeFile, rename } from "node:fs/promises";
 import path from "node:path";
 
 const root = process.cwd();
-const source = path.join(root, ".output", "public");
 const dist = path.join(root, "dist");
+const client = path.join(dist, "client");
+const staging = path.join(root, ".dist-static");
 
 try {
-  const s = await stat(source);
-  if (!s.isDirectory()) throw new Error("not a directory");
+  if (!(await stat(client)).isDirectory()) throw new Error("not a directory");
 } catch {
-  console.error(`[static-dist] Missing build output: ${source}`);
+  console.error(`[static-dist] Missing build output: ${client}`);
   process.exit(1);
 }
 
+await rm(staging, { recursive: true, force: true });
+await cp(client, staging, { recursive: true });
 await rm(dist, { recursive: true, force: true });
-await cp(source, dist, { recursive: true });
+await rename(staging, dist);
 
-// SPA fallback for deep links on GitHub Pages (404.html is served for unknown paths).
+const indexHtml = path.join(dist, "index.html");
 try {
-  await access(path.join(dist, "index.html"));
-  const shell = await readFile(path.join(dist, "index.html"), "utf8");
-  await writeFile(path.join(dist, "404.html"), shell);
+  await stat(indexHtml);
 } catch {
   console.error("[static-dist] dist/index.html was not generated");
   process.exit(1);
 }
 
-// Prevent GitHub Pages from running Jekyll over the assets (files starting with _).
+// SPA fallback: GitHub Pages serves 404.html for unknown paths.
+const shell = path.join(dist, "_shell.html");
+let fallback;
+try {
+  fallback = await readFile(shell, "utf8");
+} catch {
+  fallback = await readFile(indexHtml, "utf8");
+}
+await writeFile(path.join(dist, "404.html"), fallback);
+
+// Keep GitHub Pages from running Jekyll (it would drop files starting with _).
 await writeFile(path.join(dist, ".nojekyll"), "");
 
 console.log("[static-dist] dist/ ready");

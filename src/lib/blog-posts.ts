@@ -279,7 +279,172 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "fulkiegyenlites-buvarkodas",
+    title: "Fülkiegyenlítés búvárkodás közben – így ereszkedj le fülfájás nélkül",
+    excerpt:
+      "A fülfájás a kezdő búvárok első számú akadálya. Így működik a fülkiegyenlítés, ezek a legjobb technikák, és ezt tedd, ha nem sikerül kiegyenlíteni.",
+    description:
+      "Fülkiegyenlítés búvárkodás közben: hogyan működik a fül a víz alatt, Valsalva és Frenzel technika, gyakori hibák és megoldások, ha fáj a füled merülés közben.",
+    keywords:
+      "fülkiegyenlítés, búvárkodás fülfájás, merülés fül, Valsalva technika, Frenzel technika, búvárkodás kezdőknek, búvárkodás tippek, búvárbiztonság",
+    date: "2026-08-12",
+    readingMinutes: 9,
+    category: "Technika",
+    tags: ["fülkiegyenlítés", "technika", "kezdő"],
+    cover: advanced.url,
+    coverAlt:
+      "Búvárok kontrollált ereszkedése a mélybe — fülkiegyenlítés merülés közben",
+    sections: [
+      {
+        type: "p",
+        text: "Ha megkérdezzük a tanítványainkat, mi volt az első merülésük legnehezebb része, a legtöbben nem a hideg vizet és nem is a felszerelést említik, hanem a fülüket. A fülkiegyenlítés az a készség, amit szinte mindenki alábecsül, mégis ez dönti el, hogy egy merülés élmény lesz-e vagy kellemetlen küzdelem. A jó hír: nem tehetség kérdése, hanem tanulható technika — és néhány egyszerű szabály betartásával a legtöbb probléma megelőzhető.",
+      },
+      { type: "h2", text: "Miért fáj a füled merülés közben?" },
+      {
+        type: "p",
+        text: "A középfül egy zárt, levegővel telt tér, amely az Eustach-kürtön keresztül kapcsolódik az orrgarathoz. Ahogy ereszkedsz, a víz nyomása kívülről a dobhártyára nehezedik, a középfülben lévő levegő nyomása viszont nem változik magától. Ez a nyomáskülönbség először teltségérzést, majd nyomást, végül fájdalmat okoz. A kiegyenlítés lényege, hogy tudatosan levegőt juttatsz a középfülbe, hogy belülről is ugyanannyi nyomás legyen, mint kívül.",
+      },
+      {
+        type: "p",
+        text: "Fontos megérteni, hogy a nyomás nem egyenletesen oszlik el: a legnagyobb relatív változás az első méterekben történik. Ezért érzik a kezdők, hogy „pont a felszín közelében" a legrosszabb — nem véletlen, itt duplázódik meg a leggyorsabban a nyomás.",
+      },
+      {
+        type: "img",
+        src: teamBriefing.url,
+        alt: "NAUI oktató eligazítást tart tanítványoknak a medence szélén a fülkiegyenlítés technikájáról",
+        caption: "A kiegyenlítést a vízbe lépés előtt, a felszínen tanuljuk meg.",
+      },
+      { type: "h2", text: "A leggyakoribb kiegyenlítési technikák" },
+      { type: "h3", text: "Valsalva – amit szinte mindenki elsőként tanul" },
+      {
+        type: "p",
+        text: "Befogod az orrodat, és finoman „belefújsz". Ez a legismertebb módszer, és a legtöbb búvárnál működik. Két fontos szabály: legyen finom, és legyen időben. Az erős, késői befújás nem segít — sőt, ilyenkor a felduzzadt nyálkahártya miatt az Eustach-kürt még inkább bezárul.",
+      },
+      { type: "h3", text: "Frenzel – a finomabb, ismételhető megoldás" },
+      {
+        type: "p",
+        text: "Itt nem a tüdőddel, hanem a nyelved hátsó részével és a torkod izmaival tolod a levegőt a kürtök felé, befogott orral. Kicsit több gyakorlást igényel, de kíméletesebb, gyorsabban ismételhető és fejjel lefelé is jól működik. Ha sokat merülsz, érdemes megtanulnod.",
+      },
+      { type: "h3", text: "Segítő mozdulatok" },
+      {
+        type: "ul",
+        items: [
+          "Nyelés: gyakran önmagában is megnyitja az Eustach-kürtöt.",
+          "Állkapocs előretolása, ásításszerű mozdulat.",
+          "Fej lassú oldalra fordítása, kissé felfelé nézve — sokaknál ez szabadítja fel a nehezebb fület.",
+          "Kombináció: nyelés + finom befújás egyszerre.",
+        ],
+      },
+      { type: "h2", text: "Az arany szabály: korán, gyakran, finoman" },
+      {
+        type: "p",
+        text: "A kiegyenlítést nem akkor kezdjük, amikor már érezzük a nyomást, hanem előtte. A gyakorlatban ez azt jelenti: még a felszínen egyszer kiegyenlítesz, majd ereszkedés közben minden fél-egy méterenként ismételsz, mielőtt bármilyen kellemetlen érzés jelentkezne. Ha fájdalmat érzel, már késő — ilyenkor emelkedj fel néhány centit vagy fél métert, ahol a nyomás kisebb, egyenlítsd ki, és csak utána folytasd.",
+      },
+      {
+        type: "quote",
+        text: "Ha fáj, nem erősebben kell fújni, hanem feljebb kell menni egy kicsit.",
+      },
+      { type: "h2", text: "Gyakori hibák, amiket a medencében is ki tudunk szűrni" },
+      {
+        type: "ul",
+        items: [
+          "Túl gyors ereszkedés: a súlyozás vagy a rossz lebegéskontroll miatt a búvár egyszerűen „elszalad" a kiegyenlítés elől.",
+          "Fejjel lefelé zuhanás: ebben a testhelyzetben a kiegyenlítés fizikailag nehezebb — érdemes inkább függőlegesen, lábbal lefelé, kötél vagy lejtő mentén ereszkedni.",
+          "Túl erős Valsalva: fájdalmat, szédülést és később gyulladást is okozhat.",
+          "Késői kezdés: az első 2–3 méter kihagyása a legtipikusabb kezdői hiba.",
+          "Merülés megfázással: eltömődött orral a kürtök nem nyílnak megfelelően.",
+          "Feszes neoprén kapucni: a fülre szoruló kapucni is okozhat kellemetlen nyomásérzetet.",
+        ],
+      },
+      {
+        type: "img",
+        src: practice,
+        alt: "Búvárpalack és BCD a medence szélén — a kontrollált ereszkedés gyakorlása előtt",
+        caption: "A kontrollált ereszkedés és a kiegyenlítés együtt tanulható a medencében.",
+      },
+      { type: "h2", text: "Mit tegyél, ha az egyik füled nem akar kiegyenlíteni?" },
+      {
+        type: "p",
+        text: "Az esetek nagy részében nem betegségről van szó, hanem arról, hogy az egyik oldal érzékenyebb vagy szűkebb. Ilyenkor a következő sorrend segít: állj meg, emelkedj kissé, fordítsd a fejedet úgy, hogy a rosszabb fül kerüljön felül, nyelj, majd próbáld újra finoman. Ha három-négy próbálkozás után sem sikerül, zárd le a merülést — a fül nem az a szerv, amivel érdemes vitatkozni. Egy elhalasztott merülés mindig jobb, mint egy hetekig gyógyuló baro-trauma.",
+      },
+      { type: "h3", text: "És a felszínre jövetkor?" },
+      {
+        type: "p",
+        text: "Emelkedés közben a középfül levegője kitágul, és általában magától távozik. Ha mégis nyomást érzel felfelé menet („reverse block"), lassíts vagy állj meg, esetleg ereszkedj vissza néhány centit, és adj időt a nyomásnak, hogy kiegyenlítődjön. Soha ne rohanj felfelé emiatt.",
+      },
+      { type: "h2", text: "Így készülj a merülés napjára" },
+      {
+        type: "ul",
+        items: [
+          "Ne merülj náthával, arcüreggyulladással vagy erős allergiás tünetekkel.",
+          "Merülés előtt ne használj érzéstelenítő hatású megoldásokat: a fájdalom hasznos figyelmeztetés.",
+          "Hidratáld magad — a sűrű nyálka nehezíti a kürtök nyílását.",
+          "Gyakorold szárazon: napközben néhányszor nyeld, ásíts, próbáld a Frenzelt tükör előtt.",
+          "Beszélj az oktatóddal, ha korábban voltak fülproblémáid — a merülési tervet ehhez igazítjuk.",
+        ],
+      },
+      {
+        type: "img",
+        src: dockCheck,
+        alt: "Búvárok felszerelés-ellenőrzése a stégen egy erdélyi tónál a merülés előtt",
+        caption: "A jó merülés a parton kezdődik: terv, felszerelés, testérzet.",
+      },
+      { type: "h2", text: "Hol gyakorold ezt biztonságos környezetben?" },
+      {
+        type: "p",
+        text: "A kiegyenlítés nem elméleti tananyag: érezni kell. Ezért nálunk az első méterek mindig kontrollált körülmények között, oktatóval, lassú ereszkedéssel történnek — ahol bármikor meg lehet állni és újra lehet próbálni. Ha csak most ismerkedsz a víz alatti világgal, ha a NAUI képzés felé indulnál, vagy ha egy hosszabb szünet után szeretnéd visszahozni a magabiztosságodat, mindegyik útnak van helye.",
+      },
+      {
+        type: "links",
+        title: "Ez is érdekelhet a Búvárkodás Erdély oldalán",
+        items: [
+          {
+            to: "/szolgaltatasok/naui-tanfolyam",
+            label: "NAUI búvártanfolyamok kezdőtől haladó szintig",
+            note: "itt épül fel a kiegyenlítés és a lebegéskontroll lépésről lépésre",
+          },
+          {
+            to: "/szolgaltatasok/elmenymerules",
+            label: "Élménybúvárkodás oktatóval",
+            note: "első merülés minősítés nélkül, végig kísérve",
+          },
+          {
+            to: "/szolgaltatasok/gyakorlo-merules",
+            label: "Gyakorló merülések",
+            note: "ideális a technika finomítására hosszabb kihagyás után",
+          },
+          {
+            to: "/biztonsag",
+            label: "Biztonság és oktatási szemlélet",
+            note: "a merülés előtti ellenőrzések és protokollok",
+          },
+          {
+            to: "/csapatunk",
+            label: "Ki vigyáz rám a víz alatt?",
+            note: "ismerd meg az oktatót, akivel merülni fogsz",
+          },
+        ],
+      },
+      { type: "h2", text: "A legfontosabb gondolat" },
+      {
+        type: "p",
+        text: "A fülkiegyenlítés nem erő, hanem ritmus és figyelem kérdése. Aki megtanulja korán, finoman és gyakran kiegyenlíteni, annak az ereszkedés nyugodt, szinte észrevétlen része lesz a merülésnek — és onnantól tényleg arra tud koncentrálni, amiért a víz alá megy: a csendre, a fényre és a víz alatti világra.",
+      },
+      {
+        type: "img",
+        src: dahab.url,
+        alt: "Búvárcsoport nyugodt ereszkedése tengeri merülésen — magabiztos fülkiegyenlítés után",
+        caption: "Ha a kiegyenlítés magától megy, a merülés élménnyé válik.",
+      },
+      {
+        type: "p",
+        text: "Kérdésed van a saját füleddel vagy egy tervezett merüléssel kapcsolatban? Írj vagy hívj minket — átbeszéljük, mi a legjobb következő lépés számodra.",
+      },
+    ],
+  },
 ];
+
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);

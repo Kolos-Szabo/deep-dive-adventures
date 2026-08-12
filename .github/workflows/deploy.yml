@@ -36,11 +36,11 @@ jobs:
 
       - name: Verify build output
         run: |
-          echo "Checking build output..."
-          ls -la
           echo "Checking dist..."
           ls -la dist/
           test -f dist/index.html
+          test -f dist/404.html
+          test -d dist/assets
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5

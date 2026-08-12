@@ -20,6 +20,7 @@ export default defineConfig({
       enabled: true,
       crawlLinks: true,
       retryCount: 1,
+      pages: [{ path: "/sitemap.xml" }],
     },
   },
   vite: {

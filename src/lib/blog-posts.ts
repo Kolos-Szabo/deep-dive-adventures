@@ -11,6 +11,8 @@ import maskSkill from "@/assets/naui-medencei-kepzes-maszk-gyakorlat.jpg.asset.j
 import uwTraining from "@/assets/buvartanfolyam-medence-viz-alatti-kepzes.jpg.asset.json";
 import advanced from "@/assets/advanced-merulok-ereszkedes-paros-melyviz.jpg.asset.json";
 import portrait from "@/assets/buvar-portre-viz-alatt-kozelrol.jpg.asset.json";
+import teamBriefing from "@/assets/naui-oktato-tanitvanyok-medencei-eligazitas.jpg.asset.json";
+import dahab from "@/assets/buvarcsoport-dahab-tengeri-merules.jpg.asset.json";
 
 export type BlogPost = {
   slug: string;
@@ -307,7 +309,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Fontos megérteni, hogy a nyomás nem egyenletesen oszlik el: a legnagyobb relatív változás az első méterekben történik. Ezért érzik a kezdők, hogy „pont a felszín közelében” a legrosszabb — nem véletlen, itt duplázódik meg a leggyorsabban a nyomás.”,
+        text: "Fontos megérteni, hogy a nyomás nem egyenletesen oszlik el: a legnagyobb relatív változás az első méterekben történik. Ezért érzik a kezdők, hogy „pont a felszín közelében” a legrosszabb — nem véletlen, itt duplázódik meg a leggyorsabban a nyomás.",
       },
       {
         type: "img",
@@ -319,7 +321,7 @@ export const blogPosts: BlogPost[] = [
       { type: "h3", text: "Valsalva – amit szinte mindenki elsőként tanul" },
       {
         type: "p",
-        text: "Befogod az orrodat, és finoman „belefújsz”. Ez a legismertebb módszer, és a legtöbb búvárnál működik. Két fontos szabály: legyen finom, és legyen időben. Az erős, késői befújás nem segít — sőt, ilyenkor a felduzzadt nyálkahártya miatt az Eustach-kürt még inkább bezárul.”,
+        text: "Befogod az orrodat, és finoman „belefújsz”. Ez a legismertebb módszer, és a legtöbb búvárnál működik. Két fontos szabály: legyen finom, és legyen időben. Az erős, késői befújás nem segít — sőt, ilyenkor a felduzzadt nyálkahártya miatt az Eustach-kürt még inkább bezárul.",
       },
       { type: "h3", text: "Frenzel – a finomabb, ismételhető megoldás" },
       {
@@ -349,7 +351,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "ul",
         items: [
-          "Túl gyors ereszkedés: a súlyozás vagy a rossz lebegéskontroll miatt a búvár egyszerűen „elszalad” a kiegyenlítés elől.”,
+          "Túl gyors ereszkedés: a súlyozás vagy a rossz lebegéskontroll miatt a búvár egyszerűen „elszalad” a kiegyenlítés elől.",
           "Fejjel lefelé zuhanás: ebben a testhelyzetben a kiegyenlítés fizikailag nehezebb — érdemes inkább függőlegesen, lábbal lefelé, kötél vagy lejtő mentén ereszkedni.",
           "Túl erős Valsalva: fájdalmat, szédülést és később gyulladást is okozhat.",
           "Késői kezdés: az első 2–3 méter kihagyása a legtipikusabb kezdői hiba.",
@@ -371,7 +373,7 @@ export const blogPosts: BlogPost[] = [
       { type: "h3", text: "És a felszínre jövetkor?" },
       {
         type: "p",
-        text: "Emelkedés közben a középfül levegője kitágul, és általában magától távozik. Ha mégis nyomást érzel felfelé menet („reverse block”), lassíts vagy állj meg, esetleg ereszkedj vissza néhány centit, és adj időt a nyomásnak, hogy kiegyenlítődjön. Soha ne rohanj felfelé emiatt.”,
+        text: "Emelkedés közben a középfül levegője kitágul, és általában magától távozik. Ha mégis nyomást érzel felfelé menet („reverse block”), lassíts vagy állj meg, esetleg ereszkedj vissza néhány centit, és adj időt a nyomásnak, hogy kiegyenlítődjön. Soha ne rohanj felfelé emiatt.",
       },
       { type: "h2", text: "Így készülj a merülés napjára" },
       {

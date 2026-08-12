@@ -47,8 +47,14 @@ export function Nav() {
             <Link
               key={l.to}
               to={l.to}
-              className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors rounded-md"
-              activeProps={{ className: "text-primary" }}
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                scrolled
+                  ? "text-foreground/80 hover:text-primary"
+                  : "text-white/90 hover:text-white"
+              }`}
+              activeProps={{
+                className: scrolled ? "text-primary" : "text-white",
+              }}
               activeOptions={{ exact: l.to === "/" }}
             >
               {l.label}
@@ -56,14 +62,20 @@ export function Nav() {
           ))}
           <Link
             to="/kapcsolat"
-            className="ml-4 inline-flex items-center justify-center rounded-full bg-gradient-ocean px-5 py-2.5 text-sm font-semibold text-white shadow-glow hover:shadow-deep hover:-translate-y-0.5 transition-all"
+            className={`ml-4 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold shadow-glow transition-all ${
+              scrolled
+                ? "bg-gradient-ocean text-white hover:shadow-deep hover:-translate-y-0.5"
+                : "bg-white text-primary hover:shadow-lg hover:-translate-y-0.5"
+            }`}
           >
             Foglalj merülést
           </Link>
         </nav>
 
         <button
-          className="lg:hidden p-2 text-foreground"
+          className={`lg:hidden p-2 transition-colors ${
+            scrolled ? "text-foreground" : "text-white"
+          }`}
           onClick={() => setOpen(!open)}
           aria-label="Menü"
         >

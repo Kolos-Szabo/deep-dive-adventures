@@ -42,4 +42,28 @@ await writeFile(path.join(dist, "404.html"), fallback);
 // Keep GitHub Pages from running Jekyll (it would drop files starting with _).
 await writeFile(path.join(dist, ".nojekyll"), "");
 
+// Static sitemap.xml built from the prerendered routes (the SSR route handler
+// can't run on GitHub Pages).
+const { readdir } = await import("node:fs/promises");
+async function collectRoutes(dir, prefix = "") {
+  const out = [];
+  for (const entry of await readdir(dir, { withFileTypes: true })) {
+    if (entry.isDirectory()) {
+      if (entry.name === "assets") continue;
+      out.push(...(await collectRoutes(path.join(dir, entry.name), `${prefix}/${entry.name}`)));
+    } else if (entry.name === "index.html") {
+      out.push(prefix === "" ? "/" : prefix);
+    }
+  }
+  return out;
+}
+const routes = (await collectRoutes(dist)).sort((a, b) => a.localeCompare(b));
+const sitemap = [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  ...routes.map((r) => `  <url>\n    <loc>${r}</loc>\n  </url>`),
+  "</urlset>",
+].join("\n");
+await writeFile(path.join(dist, "sitemap.xml"), sitemap);
+
 console.log("[static-dist] dist/ ready");

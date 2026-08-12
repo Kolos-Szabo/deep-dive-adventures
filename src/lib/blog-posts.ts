@@ -31,8 +31,10 @@ export type BlogPost = {
     | { type: "ul"; items: string[] }
     | { type: "quote"; text: string }
     | { type: "img"; src: string; alt: string; caption?: string }
+    | { type: "links"; title?: string; items: Array<{ to: string; label: string; note?: string }> }
   >;
 };
+
 
 export const blogPosts: BlogPost[] = [
   {

@@ -541,7 +541,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "img",
-        src: regulators,
+        src: regulators.url,
         alt: "Búvár szabályozók és felszerelés az asztalon — áramvonalas felszerelés-összeállítás",
         caption: "Rendezett, rögzített felszerelés = kisebb ellenállás és stabilabb testhelyzet.",
       },

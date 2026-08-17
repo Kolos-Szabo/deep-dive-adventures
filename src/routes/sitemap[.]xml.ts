@@ -28,6 +28,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/blog/elso-buvarkodas-romaniaban", changefreq: "monthly", priority: "0.7" },
           { path: "/blog/professzionalis-buvar-tanfolyam", changefreq: "monthly", priority: "0.7" },
           { path: "/blog/fulkiegyenlites-buvarkodas", changefreq: "monthly", priority: "0.7" },
+          { path: "/blog/lebegeskontroll-buvarkodas", changefreq: "monthly", priority: "0.7" },
         ];
 
         const urls = entries.map((e) =>

@@ -13,6 +13,9 @@ import advanced from "@/assets/advanced-merulok-ereszkedes-paros-melyviz.jpg.ass
 import portrait from "@/assets/buvar-portre-viz-alatt-kozelrol.jpg.asset.json";
 import teamBriefing from "@/assets/naui-oktato-tanitvanyok-medencei-eligazitas.jpg.asset.json";
 import dahab from "@/assets/buvarcsoport-dahab-tengeri-merules.jpg.asset.json";
+import sidemount from "@/assets/technikai-buvar-sidemount-melyben-napsugarak.jpg.asset.json";
+import regulators from "@/assets/buvar-szabalyozok-felszereles-asztalon.jpg.asset.json";
+import confined from "@/assets/naui-buvarfelszereles-medence-konfined.jpg.asset.json";
 
 export type BlogPost = {
   slug: string;

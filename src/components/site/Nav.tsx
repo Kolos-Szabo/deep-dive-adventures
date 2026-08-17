@@ -68,7 +68,7 @@ export function Nav() {
                   activeProps={{
                     className: scrolled ? "text-primary" : "text-white",
                   }}
-                  activeOptions={{ exact: l.to === "/" }}
+                  activeOptions={{ exact: false }}
                 >
                   {l.label}
                   <ChevronDown className="h-3.5 w-3.5 opacity-70 transition-transform duration-200 group-hover:rotate-180" />

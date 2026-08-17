@@ -13,6 +13,9 @@ import advanced from "@/assets/advanced-merulok-ereszkedes-paros-melyviz.jpg.ass
 import portrait from "@/assets/buvar-portre-viz-alatt-kozelrol.jpg.asset.json";
 import teamBriefing from "@/assets/naui-oktato-tanitvanyok-medencei-eligazitas.jpg.asset.json";
 import dahab from "@/assets/buvarcsoport-dahab-tengeri-merules.jpg.asset.json";
+import sidemount from "@/assets/technikai-buvar-sidemount-melyben-napsugarak.jpg.asset.json";
+import regulators from "@/assets/buvar-szabalyozok-felszereles-asztalon.jpg.asset.json";
+import confined from "@/assets/naui-buvarfelszereles-medence-konfined.jpg.asset.json";
 
 export type BlogPost = {
   slug: string;
@@ -445,7 +448,198 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "lebegeskontroll-buvarkodas",
+    title: "Lebegéskontroll búvárkodás közben – így merülj kevesebb levegővel és nyugodtabban",
+    excerpt:
+      "A semleges lebegés az, ami különválasztja a kapkodó kezdőt a nyugodt búvártól. Így állítsd be a súlyozásodat, a légzésedet és a testhelyzetedet lépésről lépésre.",
+    description:
+      "Lebegéskontroll búvárkodás közben: súlyozás beállítása, légzéstechnika, trimm és gyakorlatok, amelyekkel kevesebb levegőt fogyasztasz és magabiztosabban merülsz.",
+    keywords:
+      "lebegéskontroll, semleges lebegés, súlyozás búvárkodás, trimm, levegőfogyasztás merülés, búvárkodás tippek, búvárkodás kezdőknek, merülés technika",
+    date: "2026-08-17",
+    readingMinutes: 10,
+    category: "Technika",
+    tags: ["lebegéskontroll", "technika", "haladó"],
+    cover: sidemount.url,
+    coverAlt:
+      "Búvár vízszintes testhelyzetben lebeg a mélyben napsugarak között — lebegéskontroll merülés közben",
+    sections: [
+      {
+        type: "p",
+        text: "Van egy pont minden búvár fejlődésében, amikor a merülés hirtelen könnyebb lesz. Nem azért, mert erősebb lettél, hanem mert megtanultál lebegni. A lebegéskontroll — vagyis a semleges lebegés és a stabil testhelyzet fenntartása — az a képesség, amitől kevesebb levegőt fogyasztasz, nem kavarod fel az aljzatot, nem ütöd meg magad a merülés végén, és nem a felszereléssel harcolsz, hanem nézed a víz alatti világot.",
+      },
+      {
+        type: "p",
+        text: "Ez a cikk arról szól, hogyan lehet ezt tudatosan fejleszteni: mit jelent a súlyozás, hogyan használható a légzés finomhangolásra, mi az a trimm, és milyen egyszerű gyakorlatokkal lehet mindezt biztonságos körülmények között beépíteni. Egyformán hasznos, ha még csak most tervezed az első merülésedet, és ha már van minősítésed, de érzed, hogy a mozgásod kicsit fárasztóbb, mint kellene.",
+      },
+      { type: "h2", text: "Mit jelent pontosan a semleges lebegés?" },
+      {
+        type: "p",
+        text: "Semleges lebegésben vagy, ha egy adott mélységben se nem süllyedsz, se nem emelkedsz: egyszerűen ott maradsz, ahol vagy. A víz alatt három dolog dolgozik egymás ellen — a súlyaid lehúznak, a búvárruhád és a tüdődben lévő levegő felnyom, a BCD-ben lévő levegő pedig az, amivel ezt egyensúlyba hozod. A cél nem az, hogy folyamatosan igazgasd, hanem hogy annyira jól legyen beállítva az alap, hogy a maradékot a légzésed elvégezze.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Túl sok súly: állandóan levegőt kell tartanod a BCD-ben, nagyobb ellenállással haladsz, gyorsabban fogy a levegőd.",
+          "Túl kevés súly: a merülés végén, a kiürült palackkal nem tudsz megállni a biztonsági megállónál.",
+          "Jó súlyozás: alig kell beavatkozni, a mélységet nagyrészt a légzésed szabályozza.",
+        ],
+      },
+      { type: "h2", text: "1. A súlyozás: az alap, amit nem lehet átugrani" },
+      {
+        type: "p",
+        text: "A legtöbb kezdő túl sok súllyal merül, mert így könnyebb lemenni. Csak közben minden más nehezebb lesz. A súlyozás nem egy örökre beállított szám: változik a búvárruhával, a palackkal, az édesvíz és a sósvíz között, és ahogy nyugodtabbá válik a légzésed, jellemzően csökken.",
+      },
+      { type: "h3", text: "Hogyan ellenőrizd a felszínen?" },
+      {
+        type: "ul",
+        items: [
+          "Vedd fel a teljes felszerelést, és ürítsd ki teljesen a BCD-t.",
+          "Vegyél egy normál levegőt, és tartsd meg — a víz szintje a maszk közepe és a szemöldök között legyen.",
+          "Kifújásra lassan kezdj süllyedni. Ha zuhansz, sok a súly; ha nem indulsz el, kevés.",
+          "A tesztet lehetőleg majdnem üres palackkal ismételd meg, mert a merülés vége a kritikus pont.",
+        ],
+      },
+      {
+        type: "img",
+        src: gear,
+        alt: "Búvárfelszerelés a medence szélén — súlyozás és BCD beállítása merülés előtt",
+        caption: "A lebegéskontroll a parton kezdődik: súlyok, BCD, ruha összhangja.",
+      },
+      { type: "h2", text: "2. A légzés: a legfinomabb kormány, ami nálad van" },
+      {
+        type: "p",
+        text: "Ha a súlyozás rendben van, a mélységed nagy részét a tüdőd szabályozza. Egy mélyebb belégzés néhány tíz centit emel, egy hosszabb kilégzés ugyanannyit süllyeszt. Ez azért fontos, mert így nem kell a BCD-hez nyúlnod minden apró korrekcióért — és minden ilyen elmaradt beavatkozás kevesebb mozgást, kevesebb kapkodást és kevesebb elfogyasztott levegőt jelent.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Lassú, folyamatos ritmus: hosszabb kilégzés, mint belégzés.",
+          "Ne tartsd vissza a levegőt — a szabályozott, folyamatos légzés biztonsági alapelv is.",
+          "Ha egy sziklaperem fölött szeretnél elhaladni, előbb próbáld légzéssel, csak utána a BCD-vel.",
+          "Ha zihálva lihegsz, állj meg, fogd meg valamit stabilan vagy egyszerűen lebegj, és rendezd a légzésed.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "A jó búvár nem az, aki gyorsan reagál. Az, akinek nem kell reagálnia.",
+      },
+      { type: "h2", text: "3. Trimm: nem elég lebegni, vízszintesen kell lebegni" },
+      {
+        type: "p",
+        text: "A trimm a testhelyzetedről szól. Ha a lábad lejjebb van, mint a fejed, akkor minden lábtempó egy kicsit felfelé is hajt, ezért folyamatosan korrigálnod kell — és eközben az uszonyod felkavarja az aljzatot. Vízszintes testhelyzetben ugyanaz a tempó előre visz, kisebb az ellenállás, jobb a látótér, és sokkal kevesebbet mozogsz.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Vidd feljebb vagy lejjebb a súlyok egy részét, amíg a test vízszintbe áll.",
+          "A karokat ne lógasd: könyök behúzva, kéz elöl, a test egy vonalban.",
+          "A térd hajlítva, uszony hátra — nem lefelé.",
+          "Rögzíts mindent, ami lóg: a lengő eszközök beakadnak és rontják az áramvonalasságot.",
+        ],
+      },
+      {
+        type: "img",
+        src: regulators.url,
+        alt: "Búvár szabályozók és felszerelés az asztalon — áramvonalas felszerelés-összeállítás",
+        caption: "Rendezett, rögzített felszerelés = kisebb ellenállás és stabilabb testhelyzet.",
+      },
+      { type: "h2", text: "4. Négy gyakorlat, ami tényleg fejleszti" },
+      {
+        type: "p",
+        text: "A lebegéskontrollt nem elolvasni kell, hanem érezni. Az alábbi gyakorlatok kis mélységben, kontrollált körülmények között is elvégezhetők, és néhány merülés alatt látható változást hoznak.",
+      },
+      { type: "h3", text: "Lebegés egy helyben" },
+      {
+        type: "p",
+        text: "Állj be egy adott mélységre, és próbálj két-három percig ott maradni mozgás nélkül, csak a légzésedet használva. Figyelj arra, mennyit emel egy belégzés — ez lesz a saját referenciád.",
+      },
+      { type: "h3", text: "Hover fejjel lefelé nélkül, csak lassú fordulás" },
+      {
+        type: "p",
+        text: "Lebegő helyzetben fordulj meg lassan a saját tengelyed körül, uszonyozás nélkül, kizárólag apró testhelyzet-korrekciókkal. Nagyon jól megmutatja, mennyire stabil a trimm.",
+      },
+      { type: "h3", text: "Áthaladás egy elképzelt kapun" },
+      {
+        type: "p",
+        text: "Válassz két pontot, és haladj át közöttük úgy, hogy a mélységed ne változzon. Ha közben fel-le hullámzol, még a BCD-t használod ott, ahol a légzés lenne elég.",
+      },
+      { type: "h3", text: "Megállás emelkedés közben" },
+      {
+        type: "p",
+        text: "Lassú emelkedés közben állj meg egy előre kiválasztott mélységen, és maradj ott egy percig. Ez pontosan az a készség, amire a biztonsági megállónál szükség van.",
+      },
+      {
+        type: "img",
+        src: confined.url,
+        alt: "NAUI búvárfelszereléses gyakorlás védett vízben — lebegéskontroll fejlesztése",
+        caption: "Védett vízben minden gyakorlat megismételhető nyugodtan, oktatói felügyelettel.",
+      },
+      { type: "h2", text: "Miért lesz ettől hosszabb a merülésed?" },
+      {
+        type: "p",
+        text: "A levegőfogyasztás nem elsősorban a tüdőkapacitásról szól, hanem arról, mennyi felesleges munkát végzel a víz alatt. Ha kevesebb súlyt viszel, vízszintesen haladsz, nem uszonyozol folyamatosan a mélység tartásáért, és nyugodtan lélegzel, ugyanabból a palackból érezhetően hosszabb merülés lesz — miközben a merülés élménye is teljesen más: csendesebb, tisztább, kevésbé fárasztó.",
+      },
+      { type: "h2", text: "Mikor érdemes oktatóval csiszolni?" },
+      {
+        type: "p",
+        text: "A lebegéskontroll az a terület, ahol egy külső szem néhány perc alatt többet lát, mint amit magadról érzékelsz. A súlyok pár centis áthelyezése, egy karpozíció vagy egy légzésritmus javítása gyakran azonnal érezhető változást hoz. Ezért érdemes ezt kontrollált merülésen, oktatói visszajelzéssel átvenni — akkor is, ha már van minősítésed, és akkor is, ha most kezdesz.",
+      },
+      {
+        type: "links",
+        title: "Kapcsolódó tartalom a Búvárkodás Erdély oldalán",
+        items: [
+          {
+            to: "/szolgaltatasok/naui-tanfolyam",
+            label: "NAUI búvártanfolyamok kezdő és haladó szinten",
+            note: "a lebegéskontroll és a súlyozás a képzés része",
+          },
+          {
+            to: "/szolgaltatasok/gyakorlo-merules",
+            label: "Gyakorló merülések oktatóval",
+            note: "ideális a trimm és a légzéstechnika finomhangolására",
+          },
+          {
+            to: "/szolgaltatasok/elmenymerules",
+            label: "Élménymerülés minősítés nélkül",
+            note: "ha még csak most ismerkednél a víz alatti mozgással",
+          },
+          {
+            to: "/biztonsag",
+            label: "Biztonsági szemlélet és protokollok",
+            note: "miért fontos a kontrollált emelkedés és a megálló",
+          },
+          {
+            to: "/blog/fulkiegyenlites-buvarkodas",
+            label: "Fülkiegyenlítés merülés közben",
+            note: "a nyugodt ereszkedés másik kulcskészsége",
+          },
+          {
+            to: "/csapatunk",
+            label: "Ki vigyáz rám a víz alatt?",
+            note: "ismerd meg az oktatót, akivel merülni fogsz",
+          },
+        ],
+      },
+      { type: "h2", text: "Összefoglalva" },
+      {
+        type: "ul",
+        items: [
+          "Először a súlyozás — a legkevesebb súly, amivel a merülés végén is kontrollálható vagy.",
+          "Utána a légzés — a finom mélységtartás eszköze, nem a BCD.",
+          "Végül a trimm — vízszintes testhelyzet, rögzített felszerelés, kevés mozgás.",
+          "És ismétlés: néhány célzott gyakorlat többet hoz, mint tíz véletlenszerű merülés.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Ha szeretnéd, hogy a következő merülésed nyugodtabb legyen, írj vagy hívj minket, és átbeszéljük, melyik program illik hozzád a leginkább — akár az első merülésről, akár a technikád csiszolásáról van szó.",
+      },
+    ],
+  },
 ];
+
 
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

@@ -640,6 +640,215 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "edesvizi-merules-erdelyi-tavak",
+    title: "Édesvízi merülés erdélyi tavakban – így készülj fel a hideg vízre és a szűk látótávolságra",
+    excerpt:
+      "Az édesvízi merülés más világ, mint a tenger: hidegebb, sötétebb, és sokkal jobban jutalmazza a felkészülést. Így tervezd meg a tavi merülésedet évszaktól függően.",
+    description:
+      "Édesvízi merülés erdélyi tavakban: hőmérséklet-rétegek, látótávolság, öltözék, súlyozás és merüléstervezés. Praktikus felkészülés kezdő és tapasztalt búvároknak.",
+    keywords:
+      "édesvízi merülés, tavi búvárkodás, hideg vízi merülés, merüléstervezés, búvárfelszerelés, búvárkodás Romániában, búvárbiztonság, búvárkodás tippek",
+    date: "2026-08-26",
+    readingMinutes: 10,
+    category: "Merüléstervezés",
+    tags: ["édesvízi", "merüléstervezés", "hideg víz"],
+    cover: lakeDock.url,
+    coverAlt:
+      "NAUI búvárok felszerelésben egy erdélyi tó stégjén, édesvízi merülés előtt",
+    sections: [
+      {
+        type: "p",
+        text: "Aki a búvárkodást meleg tengeri videókból ismeri, az első édesvízi merülésnél gyakran meglepődik. Nincs harminc méteres átlátszóság, nincs huszonhat fokos víz, és a mélységgel nem melegszik, hanem hűl minden. Ehelyett van valami más: csend, közelség, és egy víz alatti világ, amit néhány kilométerre a saját otthonodtól is felfedezhetsz.",
+      },
+      {
+        type: "p",
+        text: "Ez a cikk arról szól, mi különbözik konkrétan egy tavi merülésen, és hogyan tervezz úgy, hogy ne a körülményekkel küzdj, hanem élvezd őket. Ha még csak most tanulsz merülni, ebből érted meg, miért pont így épül fel a képzés; ha már van minősítésed tengeri merülésekről, ez segít átállni az édesvízi környezetre.",
+      },
+      { type: "h2", text: "Mi más az édesvízben, mint a tengerben?" },
+      {
+        type: "ul",
+        items: [
+          "Kisebb sűrűség: az édesvíz kevésbé emel, ezért ugyanazzal a felszereléssel jellemzően kevesebb súly kell, mint sós vízben.",
+          "Hőmérséklet-rétegek: a felszín kellemes lehet, néhány méterrel lejjebb viszont hirtelen érezhetően hidegebb víz vár.",
+          "Látótávolság: a tavakban lebegő szerves anyag és a felkavart aljzat határozza meg, mennyit látsz — ez akár merülés közben is változhat.",
+          "Nincs áramlás, de van rétegzettség: a tervezés inkább a mélységről, a hőmérsékletről és az irányvesztés elkerüléséről szól.",
+          "Más élővilág: nem színes korallzátonyt, hanem vízinövényeket, halakat és sokszor víz alatti tárgyakat, szerkezeteket látsz.",
+        ],
+      },
+      {
+        type: "img",
+        src: lakeDock.url,
+        alt: "Búvárok édesvízi merülés előtt egy erdélyi tó stégjén, teljes felszerelésben",
+        caption: "Egy tavi merülés a stégen kezdődik: itt dől el, mennyire lesz nyugodt a víz alatt.",
+      },
+      { type: "h2", text: "A hőmérséklet-réteg, amire mindenki rákészül – aztán mégis meglepi" },
+      {
+        type: "p",
+        text: "Nyáron a tavak felső métereiben a nap felmelegíti a vizet, alatta viszont egy jól érezhető átmenet után jelentősen hidegebb réteg következik. Ezt a váltást a bőrödön kívül a szervezeted is megérzi: hirtelen sűrűbb lesz a légzésed, feszesebb a mozgásod, és rövidebb ideig érzed jól magad.",
+      },
+      {
+        type: "h3",
+        text: "Mit tegyél ellene?",
+      },
+      {
+        type: "ul",
+        items: [
+          "A tervezett legnagyobb mélységhez válaszd az öltözéket, ne a felszíni hőmérséklethez.",
+          "Számolj azzal, hogy hidegben gyorsabban fogy a levegő és hamarabb csökken a koncentrációd.",
+          "A merülés hosszát a hidegtűrésed, ne csak a palack tartalma határozza meg — a fázó búvár figyelmetlen búvár.",
+          "Ha fázni kezdesz, ne várd meg a didergést: jelezd a párodnak, és kezdjétek el a kontrollált emelkedést.",
+        ],
+      },
+      { type: "h2", text: "Látótávolság: a legfontosabb, amit te magad rontasz el" },
+      {
+        type: "p",
+        text: "Az édesvízi merülés látótávolságát részben a tó adja, részben ti alakítjátok. Egyetlen rossz uszonycsapás az aljzat közelében percekre elveheti a látást az utánad érkező búvártól. Ezért a tavi merülésen a lebegéskontroll nem stílus kérdése, hanem gyakorlati szükség.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Tartsd magad az aljzat felett, vízszintes testhelyzetben, és kerüld a lefelé irányuló uszonyozást.",
+          "Szűk látótávolságnál csökkentsd a távolságot a párodtól — legyetek karnyújtásnyira.",
+          "Használj fényt akkor is, ha nem sötét: a lámpa a jelzéshez és a színek visszaadásához is kell.",
+          "Iránytartáshoz jegyezz meg támpontokat, és tudd, melyik irányba van a kiszállási pont.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Édesvízben nem a mélység a nehéz, hanem a türelem: aki lassan mozog, többet is lát.",
+      },
+      { type: "h2", text: "Súlyozás édesvízben" },
+      {
+        type: "p",
+        text: "Mivel az édesvíz kevésbé emel, a sós vízhez beállított súlyoddal jellemzően túlsúlyos leszel. Viszont az öltözéked is vastagabb lehet, ami visszafelé hat — ezért a súlyozást minden környezetváltásnál újra ellenőrizni kell, nem fejből átvenni.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Végezz felszíni súlyellenőrzést a merülés előtt, teljes felszerelésben.",
+          "A merülés végét vedd alapul: majdnem üres palackkal is kontrollálhatónak kell lennie a biztonsági megállónak.",
+          "Ha új ruhában merülsz először, számíts arra, hogy néhány merülés kell a végleges beállításhoz.",
+        ],
+      },
+      {
+        type: "img",
+        src: dockCheck,
+        alt: "Búvárfelszerelés ellenőrzése a stégen édesvízi merülés előtt",
+        caption: "A felszerelés-ellenőrzés a partról indul: itt még minden javítható.",
+      },
+      { type: "h2", text: "Évszakok: mikor milyen egy tavi merülés?" },
+      { type: "h3", text: "Tavasz" },
+      {
+        type: "p",
+        text: "Hideg víz, de gyakran a legjobb látótávolság, mert a szerves anyag még nem indult be. Rövidebb merülésekre készülj, és fordíts több időt a bemelegítésre és az öltözésre.",
+      },
+      { type: "h3", text: "Nyár" },
+      {
+        type: "p",
+        text: "A legkellemesebb felszíni körülmények, viszont ilyenkor a legerősebb a hőmérséklet-rétegzettség, és a látótávolság is romolhat. Ideális időszak az első merülésekhez és a készségek gyakorlásához.",
+      },
+      { type: "h3", text: "Ősz" },
+      {
+        type: "p",
+        text: "A víz még tartja a nyári hőt, a látótávolság gyakran javul, a partok pedig üresek. Sokan ezt tartják a legszebb tavi merülési évszaknak.",
+      },
+      { type: "h3", text: "Tél" },
+      {
+        type: "p",
+        text: "Külön felkészülést, felszerelést és tapasztalatot kíván. Nem kezdő terep: ide csak megfelelő képzés, gyakorlat és oktatói kíséret mellett érdemes belevágni.",
+      },
+      {
+        type: "img",
+        src: winterDock.url,
+        alt: "Búvárcsapat a stégen téli merülés előtt hideg vízben",
+        caption: "A téli merülés nem lehetetlen — csak jóval több felkészülést kíván.",
+      },
+      { type: "h2", text: "Merüléstervezés lépésről lépésre" },
+      {
+        type: "ul",
+        items: [
+          "Cél: mit szeretnél a merülésen — gyakorlás, felfedezés, fotózás? A cél határozza meg a mélységet és az időt.",
+          "Mélység és idő: a tervezett maximális mélységet és a fordulási időt előre beszéld meg a párodkal.",
+          "Kiszállás: hol jössz ki, és mi a terv, ha nem oda értek vissza.",
+          "Jelzések: nézzétek át a kézjeleket, különösen a „valami nem stimmel”, a „fázom” és a „forduljunk” jelzést.",
+          "Ha elszakadtok: mennyi ideig kerestek egymást a víz alatt, mielőtt a felszínen találkoznátok.",
+          "Felszerelés-ellenőrzés: párban, felszállás előtt, sietség nélkül.",
+        ],
+      },
+      {
+        type: "img",
+        src: okSign,
+        alt: "Búvár OK jelzést ad a felszínen édesvízi merülés után",
+        caption: "A merülés a felszíni jelzéssel zárul, nem a víz alatt.",
+      },
+      { type: "h2", text: "Merülés után: amiről a legkevesebbet beszélünk" },
+      {
+        type: "ul",
+        items: [
+          "Melegedj át rendesen, és pótold a folyadékot — a hideg víz jobban kiszárít, mint gondolnád.",
+          "Öblítsd le édesvízzel és szárítsd meg a felszerelést, mielőtt eltennéd.",
+          "Beszéljétek át a merülést: mi működött, mi volt kellemetlen, min javítanál.",
+          "Repülés előtt tartsd be a szükséges várakozási időt, és tervezz nagyobb ráhagyást a mélyebb vagy ismételt merülések után.",
+        ],
+      },
+      {
+        type: "links",
+        title: "Kapcsolódó tartalom a Búvárkodás Erdély oldalán",
+        items: [
+          {
+            to: "/szolgaltatasok/naui-tanfolyam",
+            label: "NAUI búvártanfolyamok kezdő és haladó szinten",
+            note: "a merüléstervezés és a felszerelés használata a képzés része",
+          },
+          {
+            to: "/szolgaltatasok/elmenymerules",
+            label: "Élménymerülés minősítés nélkül",
+            note: "ha először szeretnél tavi merülést kipróbálni",
+          },
+          {
+            to: "/szolgaltatasok/gyakorlo-merules",
+            label: "Gyakorló merülések oktatóval",
+            note: "súlyozás és látótávolság-kezelés gyakorlására",
+          },
+          {
+            to: "/biztonsag",
+            label: "Biztonsági szemlélet és protokollok",
+            note: "a párban merülés és a kontrollált emelkedés alapjai",
+          },
+          {
+            to: "/blog/lebegeskontroll-buvarkodas",
+            label: "Lebegéskontroll merülés közben",
+            note: "a szűk látótávolság kulcsa a felkavarás elkerülése",
+          },
+          {
+            to: "/blog/fulkiegyenlites-buvarkodas",
+            label: "Fülkiegyenlítés merülés közben",
+            note: "hideg vízben még fontosabb a nyugodt ereszkedés",
+          },
+          {
+            to: "/galeria",
+            label: "Galéria a merüléseinkről",
+            note: "nézd meg, hogyan látszik egy édesvízi merülés",
+          },
+        ],
+      },
+      { type: "h2", text: "Összefoglalva" },
+      {
+        type: "ul",
+        items: [
+          "Az öltözéket a legnagyobb tervezett mélység hőmérsékletéhez válaszd.",
+          "A súlyozást minden környezet- és ruhaváltásnál ellenőrizd újra.",
+          "A látótávolságot leginkább a saját mozgásod befolyásolja.",
+          "A tervet a víz mellett beszéld meg, ne a víz alatt improvizálj.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Ha szeretnél édesvízi merülést kipróbálni vagy felkészülni a következő tavi merülésedre, írj vagy hívj minket — átbeszéljük, melyik program illik hozzád, és mire érdemes felkészülnöd.",
+      },
+    ],
+  },
 ];
 
 

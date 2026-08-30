@@ -849,6 +849,217 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "buddy-rendszer-viz-alatti-jelzesek",
+    title: "Buddy rendszer és víz alatti jelzések – így értitek meg egymást szó nélkül",
+    excerpt:
+      "Miért nem merülünk egyedül, hogyan zajlik egy rendes buddy check, és melyek azok a víz alatti jelzések, amelyeket minden szabadidős búvárnak ismernie kell?",
+    description:
+      "Buddy rendszer és víz alatti jelzések a gyakorlatban: buddy check lépésről lépésre, alapjelzések, párban maradás és megbeszélt vészhelyzeti terv — Búvárkodás Erdély.",
+    keywords:
+      "buddy rendszer, víz alatti jelzések, búvár jelzések, búvárbiztonság, párban merülés, búvárkodás kezdőknek, merülés",
+    date: "2026-08-30",
+    readingMinutes: 9,
+    category: "Biztonság",
+    tags: ["buddy", "kommunikáció", "biztonság"],
+    cover: teamBriefing.url,
+    coverAlt:
+      "Búvárpár a merülés előtti eligazításon átbeszéli a víz alatti jelzéseket",
+    sections: [
+      {
+        type: "p",
+        text: "A víz alatt nem tudsz beszélni, nem tudsz telefonálni, és nem tudod félúton elmagyarázni, hogy „várj egy kicsit, nem érzem jól magam\". Ezért a szabadidős búvárkodás egyik legfontosabb eszköze nem a palack és nem a számítógép, hanem a buddy rendszer: az a megállapodás, hogy párban merülsz, és a párod tudja, mit terveztél, mit látsz és hogyan vagy. Ez a cikk arról szól, hogyan működik ez a gyakorlatban — a parton kezdve, nem a víz alatt.",
+      },
+      { type: "h2", text: "Mi az a buddy rendszer, és miért működik?" },
+      {
+        type: "p",
+        text: "A buddy rendszer lényege egyszerű: két búvár közösen tervez, közösen ellenőrzi a felszerelést, együtt merül, és folyamatosan szemmel tartja egymást. Nem arról szól, hogy valaki „vigyáz\" a másikra, hanem arról, hogy a merülés minden szakaszában van egy második pár szem, egy második légzőforrás és egy második döntéshozó.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Váratlan helyzetben azonnal van kihez fordulnod — nem kell felszínre menekülni minden apróságért.",
+          "Két búvár többet észlel: elszabadult ütő, nyitva maradt zseb, csökkenő levegő, sodródás.",
+          "A közös tervezés miatt nem lesz vita a víz alatt arról, merre és milyen mélyre mentek.",
+          "Az élmény is nagyobb: van kivel megosztani, amit láttál.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Ez a szemlélet a NAUI oktatás gerince is: a képzés első merüléseitől kezdve párban, egyeztetett terv szerint dolgozol, nem magadra hagyva.",
+      },
+      { type: "h2", text: "Buddy check: az öt dolog, amit vízbe lépés előtt átnézetek" },
+      {
+        type: "p",
+        text: "A buddy check az a két-három perc, amely a legtöbb kellemetlenséget megelőzi. Nem elég magadon végigmenni: a párod felszerelését is ismerned kell, mert vészhelyzetben rajta kell tájékozódnod.",
+      },
+      { type: "h3", text: "1. Hevederek és mellény" },
+      {
+        type: "p",
+        text: "Minden csat zárva és beállítva, a palack nem csúszik, a mellény felfújható és leengedhető. Nyomd meg a felfújó és a leeresztő gombot is — ne csak nézd meg.",
+      },
+      { type: "h3", text: "2. Súlyozás" },
+      {
+        type: "p",
+        text: "Nézd meg, hol vannak a párod súlyai, és hogyan lehet őket szükség esetén leadni. Ha integrált súlyzsebe van, mutasson rá és próbálja el a kihúzást.",
+      },
+      { type: "h3", text: "3. Levegő és légzőautomata" },
+      {
+        type: "p",
+        text: "Szelep teljesen nyitva, nyomás leolvasva mindkét oldalon, majd néhány mély levegővétel a főautomatából, miközben a nyomásmérőt figyelitek. Az alternatív légzőforrást is vegyétek szájba egyszer, és tudjátok, hol van rögzítve.",
+      },
+      { type: "h3", text: "4. Végigsimítás fejtől lábig" },
+      {
+        type: "p",
+        text: "Maszk, pipa, számítógép, lámpa, kés vagy vágóeszköz, uszony — semmi ne lógjon szabadon. A lengő tömlő és a szabadon csüngő eszköz a leggyakoribb oka annak, hogy valaki beakad vagy felkavarja az aljzatot.",
+      },
+      { type: "h3", text: "5. A terv utolsó megerősítése" },
+      {
+        type: "p",
+        text: "Irány, maximális mélység, fordulási nyomás, emelkedési sorrend, és hogy mi történik, ha elszakadtok. Ha ezt kimondjátok, nem kell a víz alatt találgatni.",
+      },
+      {
+        type: "img",
+        src: dockCheck,
+        alt: "Búvárok a stégen ellenőrzik egymás felszerelését merülés előtt",
+        caption: "A buddy check a parton dől el — nem a víz alatt.",
+      },
+      { type: "h2", text: "Alapvető víz alatti jelzések" },
+      {
+        type: "p",
+        text: "A jelzések célja nem a mutogatás, hanem az egyértelműség. Kevés jelzést használj, de azt tisztán, a párod látóterében, és mindig várd meg a visszajelzést. Egy jelzés csak akkor „megérkezett\", ha a másik visszajelezte.",
+      },
+      {
+        type: "ul",
+        items: [
+          "OK (hüvelyk és mutatóujj körben): kérdés és válasz is. Ha kérdezik, válaszolj — a néma búvár aggodalmat szül.",
+          "Felfelé mutató hüvelykujj: emelkedjünk, befejezzük a merülést. Nem azt jelenti, hogy „szuper\".",
+          "Lefelé mutató hüvelykujj: ereszkedjünk.",
+          "Lapos tenyér vízszintesen billegtetve: valami nem stimmel, gond van.",
+          "Tenyér nyitva, „állj\": maradj, ne mozdulj tovább.",
+          "Ökölbe zárt kéz a mellkason: kifogyok / kevés a levegőm — párosítva a nyomás kimutatásával.",
+          "Kéz a torok előtt: nincs levegő, azonnal kell az alternatív légzőforrás.",
+          "Kettőt mutató ujj a párod felé, majd magadra: maradjunk együtt, gyere közelebb.",
+        ],
+      },
+      { type: "h3", text: "Hogyan mondjatok többet néhány jelzéssel?" },
+      {
+        type: "p",
+        text: "A gyakorlatban a legjobb párok nem több jelzést használnak, hanem pontosabban. Két apró szokás sokat segít: a nyomást szám helyett mutasd meg a nyomásmérőn, a szándékodat pedig előre jelezd — például fordulás előtt bökj a kívánt irányba, és várd meg az OK-t.",
+      },
+      {
+        type: "p",
+        text: "Ha valamit tényleg el kell magyarázni, arra van a merülés utáni beszélgetés. A víz alatt a rövid, egyértelmű üzenet mindig jobb, mint a hosszú pantomim.",
+      },
+      {
+        type: "img",
+        src: advanced.url,
+        alt: "Búvárpár egymás közelében ereszkedik le, folyamatos szemkontaktussal",
+        caption: "Egymás mellett, egy szintben — így marad a párod egy karnyújtásra.",
+      },
+      { type: "h2", text: "Hogyan maradjatok együtt a merülés alatt?" },
+      {
+        type: "p",
+        text: "A legtöbb „elvesztettem a párom\" helyzet nem drámai pillanatban történik, hanem akkor, amikor valaki lefotózna valamit, vagy megáll a maszkját tisztítani. Néhány szabály ezt gyakorlatilag kizárja.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Merüljetek egymás mellett, közel egy szintben, ne libasorban — így nem kell hátrafordulni.",
+          "Nézz a párodra kb. fél percenként; ha nem látod, azonnal állj meg.",
+          "Beszéljétek meg, ki vezet — a vezető lassabban megy, mint szeretne.",
+          "Ha valaki megáll, a másik is megáll: ez a szabály fontosabb, mint bármilyen jelzés.",
+          "Rossz látótávolságban csökkentsd a távolságot, és tartsd a lámpa fényét a párod látóterében.",
+        ],
+      },
+      { type: "h3", text: "Ha mégis elszakadtok" },
+      {
+        type: "p",
+        text: "Erre előre megbeszélt terv kell, nem improvizáció. A szabadidős búvárkodásban a bevett szemlélet: rövid ideig, egy helyben körülnézel, majd kontrollált tempóban a felszínre emelkedsz, és ott találkozol a párodddal. Ez azért működik, mert mindketten ugyanazt teszik — ezért érdemes a vízbe lépés előtt kimondani.",
+      },
+      {
+        type: "quote",
+        text: "A jó buddy nem az, aki mindent tud, hanem az, akiről tudod, mit fog tenni.",
+      },
+      { type: "h2", text: "Gyakori hibák, amiket érdemes elkerülni" },
+      {
+        type: "ul",
+        items: [
+          "A buddy check „gyors átfutása\", mert ismeritek egymást — épp a rutin miatt marad nyitva egy csat.",
+          "Jelzés visszaigazolás nélkül: ha nincs OK, nem történt kommunikáció.",
+          "A hüvelykujj összekeverése az OK-val — ezért nem használunk „szuper\" jelzést a víz alatt.",
+          "Idegen párral merülés a jelzések és a terv egyeztetése nélkül.",
+          "A fordulási nyomás elhagyása: nem az a kérdés, mennyi levegő van, hanem mennyi kell a visszaútra.",
+        ],
+      },
+      {
+        type: "img",
+        src: okSign,
+        alt: "Búvár OK jelzést ad a felszínen a merülés végén",
+        caption: "A felszínen adott OK zárja a merülést — ez is a kommunikáció része.",
+      },
+      { type: "h2", text: "Így gyakorolhatod" },
+      {
+        type: "p",
+        text: "A jelzések és a buddy check nem elméleti tudás: annyira működnek, amennyire begyakoroltad őket. Medencés és sekély vízi környezetben pár merülés alatt automatikussá válnak, utána már nem gondolkodsz rajtuk — csak használod őket.",
+      },
+      {
+        type: "links",
+        title: "Kapcsolódó tartalom a Búvárkodás Erdély oldalán",
+        items: [
+          {
+            to: "/szolgaltatasok/naui-tanfolyam",
+            label: "NAUI búvártanfolyamok kezdő és haladó szinten",
+            note: "a buddy rendszer és a jelzések a képzés alapjai",
+          },
+          {
+            to: "/biztonsag",
+            label: "Biztonsági szemlélet és protokollok",
+            note: "párban merülés, tervezés, kontrollált emelkedés",
+          },
+          {
+            to: "/szolgaltatasok/gyakorlo-merules",
+            label: "Gyakorló merülések oktatóval",
+            note: "jelzések és buddy check begyakorlására",
+          },
+          {
+            to: "/szolgaltatasok/elmenymerules",
+            label: "Élménymerülés minősítés nélkül",
+            note: "ha először szeretnéd kipróbálni a merülést",
+          },
+          {
+            to: "/blog/edesvizi-merules-erdelyi-tavak",
+            label: "Édesvízi merülés erdélyi tavakban",
+            note: "szűk látótávolságban a párban maradás még fontosabb",
+          },
+          {
+            to: "/blog/lebegeskontroll-buvarkodas",
+            label: "Lebegéskontroll merülés közben",
+            note: "stabil helyzetből könnyebb jelezni és figyelni",
+          },
+          {
+            to: "/csapatunk",
+            label: "Ki vigyáz rám a víz alatt?",
+            note: "ismerd meg az oktatót, akivel merülni fogsz",
+          },
+        ],
+      },
+      { type: "h2", text: "Összefoglalva" },
+      {
+        type: "ul",
+        items: [
+          "A buddy rendszer a parton kezdődik: közös terv és teljes buddy check.",
+          "Kevés jelzést használj, de mindig várd meg a visszaigazolást.",
+          "Egymás mellett merüljetek, és fél percenként nézz a párodra.",
+          "Az elszakadás esetére előre megbeszélt tervet kell követni.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Ha szeretnéd nyugodt, begyakorolt rutinná tenni a buddy checket és a víz alatti jelzéseket, írj vagy hívj minket — átbeszéljük, melyik tanfolyam vagy gyakorló merülés illik a szintedhez.",
+      },
+    ],
+  },
 ];
 
 

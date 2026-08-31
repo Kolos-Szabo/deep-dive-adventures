@@ -994,7 +994,7 @@ export const blogPosts: BlogPost[] = [
       { type: "h3", text: "Hogyan mondjatok többet néhány jelzéssel?" },
       {
         type: "p",
-        text: "A gyakorlatban a legjobb párok nem több jelzést használnak, hanem pontosabban. Két apró szokás sokat segít: a nyomást szám helyett mutasd meg a nyomásmérőn, a szándékodat pedig előre jelezd — például fordulás előtt bökj a kívánt irányba, és várd meg az OK-t.",
+        text: "A gyakorlatban a legjobb párok nem több jelzést használnak, hanem pontosabban és egyértelműbben kommunikálnak. Két apró szokás sokat segíthet: a palackban lévő nyomás kommunikálását egyeztessétek a felszínen, hogy biztosan ugyanazt a jelrendszert használjátok, a szándékotokat pedig jelezzétek előre — például fordulás előtt mutassatok a kívánt irányba, majd várjátok meg az OK jelzést.",
       },
       {
         type: "p",

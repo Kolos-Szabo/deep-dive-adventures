@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, GraduationCap, Compass, Waves, Award, Check } from "lucide-react";
+import { ArrowRight, GraduationCap, Compass, Waves, Award, Check, Tag, Mail } from "lucide-react";
 import courseAsset from "@/assets/naui-oktato-briefing-medenceben.jpg.asset.json";
 import experienceAsset from "@/assets/viz-alatti-csiki-sor-elmenymerules.jpg.asset.json";
 import practiceAsset from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.json";

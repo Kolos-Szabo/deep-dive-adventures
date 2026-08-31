@@ -221,6 +221,45 @@ function Home() {
         </div>
       </section>
 
+      {/* PRICES */}
+      <section className="bg-background py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <Reveal className="max-w-2xl">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-primary">Árak</span>
+            <h2 className="mt-4 font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl text-balance">
+              Fedezze fel búvárprogramjaink, tanfolyamaink és szolgáltatásaink árait.
+            </h2>
+          </Reveal>
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { t: "Try Scuba", p: "84 €" },
+              { t: "Minősített búvár merülése", p: "60 €" },
+              { t: "Snorkeling", p: "25 €" },
+              { t: "NAUI Scuba Diver", p: "563 €" },
+            ].map((x, i) => (
+              <Reveal key={x.t} delay={i * 100}>
+                <div className="h-full rounded-2xl border border-border/60 bg-card p-6 shadow-sm">
+                  <h3 className="font-display text-lg font-semibold text-foreground leading-snug">{x.t}</h3>
+                  <div className="mt-4 font-display text-3xl font-bold text-primary">{x.p}</div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal delay={200} className="mt-10">
+            <Link
+              to="/arak"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-ocean px-7 py-4 text-base font-semibold text-white shadow-glow hover:-translate-y-0.5 transition-transform"
+            >
+              Összes ár megtekintése <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
+
+
       {/* SAFETY BAND */}
       <section className="relative overflow-hidden bg-surface text-surface-foreground py-24 lg:py-32">
         <div className="absolute inset-0 bg-gradient-deep" />

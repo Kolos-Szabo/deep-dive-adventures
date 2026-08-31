@@ -15,6 +15,7 @@ import { Route as KapcsolatRouteImport } from './routes/kapcsolat'
 import { Route as GaleriaRouteImport } from './routes/galeria'
 import { Route as CsapatunkRouteImport } from './routes/csapatunk'
 import { Route as BiztonsagRouteImport } from './routes/biztonsag'
+import { Route as ArakRouteImport } from './routes/arak'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SzolgaltatasokIndexRouteImport } from './routes/szolgaltatasok.index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
@@ -52,6 +53,11 @@ const BiztonsagRoute = BiztonsagRouteImport.update({
   path: '/biztonsag',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ArakRoute = ArakRouteImport.update({
+  id: '/arak',
+  path: '/arak',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -86,6 +92,7 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/arak': typeof ArakRoute
   '/biztonsag': typeof BiztonsagRoute
   '/csapatunk': typeof CsapatunkRoute
   '/galeria': typeof GaleriaRoute
@@ -100,6 +107,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/arak': typeof ArakRoute
   '/biztonsag': typeof BiztonsagRoute
   '/csapatunk': typeof CsapatunkRoute
   '/galeria': typeof GaleriaRoute
@@ -115,6 +123,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/arak': typeof ArakRoute
   '/biztonsag': typeof BiztonsagRoute
   '/csapatunk': typeof CsapatunkRoute
   '/galeria': typeof GaleriaRoute
@@ -131,6 +140,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/arak'
     | '/biztonsag'
     | '/csapatunk'
     | '/galeria'
@@ -145,6 +155,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/arak'
     | '/biztonsag'
     | '/csapatunk'
     | '/galeria'
@@ -159,6 +170,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/arak'
     | '/biztonsag'
     | '/csapatunk'
     | '/galeria'
@@ -174,6 +186,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ArakRoute: typeof ArakRoute
   BiztonsagRoute: typeof BiztonsagRoute
   CsapatunkRoute: typeof CsapatunkRoute
   GaleriaRoute: typeof GaleriaRoute
@@ -231,6 +244,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BiztonsagRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/arak': {
+      id: '/arak'
+      path: '/arak'
+      fullPath: '/arak'
+      preLoaderRoute: typeof ArakRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -278,6 +298,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ArakRoute: ArakRoute,
   BiztonsagRoute: BiztonsagRoute,
   CsapatunkRoute: CsapatunkRoute,
   GaleriaRoute: GaleriaRoute,

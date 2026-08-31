@@ -149,6 +149,24 @@ function ServicesIndex() {
           ))}
         </div>
       </section>
+
+      <section className="bg-muted/60 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-5 lg:px-8">
+          <Reveal>
+            <div className="rounded-2xl bg-gradient-deep p-8 lg:p-12 text-surface-foreground shadow-deep text-center">
+              <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-balance">
+                Mennyibe kerül egy merülés vagy egy tanfolyam?
+              </h2>
+              <p className="mt-4 text-surface-foreground/85 leading-relaxed max-w-2xl mx-auto">
+                Fedezd fel aktuális árainkat a búvártanfolyamoktól és élménymerülésektől a specializált képzéseken át a felszerelés-bérlésig.
+              </p>
+              <Link to="/arak" className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-secondary px-7 py-3.5 text-sm font-semibold text-surface-foreground hover:opacity-90 transition-opacity">
+                Összes ár megtekintése <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
     </>
   );
 }

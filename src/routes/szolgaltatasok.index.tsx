@@ -130,9 +130,19 @@ function ServicesIndex() {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/szolgaltatasok/$slug" params={{ slug: s.slug }} className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors">
-                    Tovább a részletekhez <ArrowRight className="h-4 w-4" />
-                  </Link>
+                  <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-3">
+                    <Link to="/szolgaltatasok/$slug" params={{ slug: s.slug }} className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors">
+                      Tovább a részletekhez <ArrowRight className="h-4 w-4" />
+                    </Link>
+                    <Link to="/arak" className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/25 px-6 py-3 text-sm font-semibold text-primary hover:bg-muted transition-colors">
+                      <Tag className="h-4 w-4" aria-hidden="true" /> {s.priceCta}
+                    </Link>
+                    {"quoteCta" in s && s.quoteCta && (
+                      <a href="mailto:info@mylake.ro" className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-primary underline underline-offset-4 hover:text-secondary transition-colors">
+                        <Mail className="h-4 w-4" aria-hidden="true" /> Kérj egyedi ajánlatot
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </Reveal>

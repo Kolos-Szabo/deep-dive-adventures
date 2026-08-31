@@ -46,6 +46,7 @@ export const services = [
   },
   {
     slug: "gyakorlo-merules",
+    priceCta: "Árak megtekintése",
     title: "Gyakorló merülések",
     short: "Frissítsd készségeidet ellenőrzött, biztonságos körülmények között.",
     img: practice,

@@ -31,6 +31,7 @@ export const services = [
   },
   {
     slug: "elmenymerules",
+    priceCta: "Élménymerülések árai",
     title: "Élménybúvárkodás",
     short: "Vezetett merülések a régió legszebb víz alatti helyszínein.",
     img: experience,

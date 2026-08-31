@@ -61,6 +61,8 @@ export const services = [
   },
   {
     slug: "csoportos-program",
+    priceCta: "Csoportos programok árai",
+    quoteCta: true,
     title: "Csoportos kalandprogramok",
     short: "Csapatépítők, baráti társaságok, születésnapi élmények.",
     img: group,

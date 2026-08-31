@@ -91,6 +91,9 @@ function ServiceDetail() {
               <Link to="/kapcsolat" className="mt-3 inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold w-full justify-center hover:bg-white/5 transition-colors">
                 Írj nekünk <ArrowRight className="h-4 w-4" />
               </Link>
+              <Link to="/arak" className="mt-4 inline-flex w-full justify-center text-sm font-semibold text-secondary underline underline-offset-4 hover:text-white transition-colors">
+                Árak megtekintése
+              </Link>
             </div>
           </Reveal>
         </div>

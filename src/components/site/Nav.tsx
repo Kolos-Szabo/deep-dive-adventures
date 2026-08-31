@@ -9,6 +9,7 @@ const links = [
   { to: "/rolunk", label: "Rólunk", hasDropdown: false },
   { to: "/csapatunk", label: "Ki vigyáz rám a víz alatt?", hasDropdown: false },
   { to: "/szolgaltatasok", label: "Szolgáltatások", hasDropdown: false },
+  { to: "/arak", label: "Árak", hasDropdown: false },
   { to: "/galeria", label: "Galéria", hasDropdown: false },
   { to: "/blog", label: "Blog", hasDropdown: true },
   { to: "/biztonsag", label: "Biztonság", hasDropdown: false },

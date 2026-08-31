@@ -23,6 +23,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/szolgaltatasok/elmenymerules", changefreq: "monthly", priority: "0.8" },
           { path: "/szolgaltatasok/gyakorlo-merules", changefreq: "monthly", priority: "0.8" },
           { path: "/szolgaltatasok/csoportos-program", changefreq: "monthly", priority: "0.8" },
+          { path: "/arak", changefreq: "monthly", priority: "0.9" },
           { path: "/galeria", changefreq: "monthly", priority: "0.6" },
           { path: "/biztonsag", changefreq: "monthly", priority: "0.7" },
           { path: "/kapcsolat", changefreq: "monthly", priority: "0.9" },

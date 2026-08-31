@@ -141,6 +141,33 @@ function BlogDetail() {
                   </ul>
                 );
               }
+              if (s.type === "signals") {
+                return (
+                  <div key={i} className="my-10 grid gap-4 sm:grid-cols-2">
+                    {s.items.map((sig, j) => (
+                      <div
+                        key={j}
+                        className="flex items-center gap-4 rounded-2xl border border-border bg-card p-4 shadow-sm"
+                      >
+                        <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-xl bg-deep/5 p-2">
+                          <img
+                            src={sig.icon}
+                            alt={sig.iconAlt}
+                            loading="lazy"
+                            width={512}
+                            height={512}
+                            className="h-full w-full object-contain"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="font-display text-lg font-semibold tracking-tight">{sig.title}</h3>
+                          <p className="mt-1 text-sm leading-relaxed text-foreground/85">{sig.text}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                );
+              }
               if (s.type === "quote") {
                 return (
                   <blockquote key={i} className="border-l-4 border-secondary pl-6 my-8 italic text-xl text-foreground/90">

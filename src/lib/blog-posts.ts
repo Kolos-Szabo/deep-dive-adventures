@@ -18,6 +18,14 @@ import regulators from "@/assets/buvar-szabalyozok-felszereles-asztalon.jpg.asse
 import confined from "@/assets/naui-buvarfelszereles-medence-konfined.jpg.asset.json";
 import winterDock from "@/assets/buvarcsapat-stegen-teli-merules.jpg.asset.json";
 import lakeDock from "@/assets/naui-buvarok-stegen-erdelyi-tonal.jpg.asset.json";
+import signOk from "@/assets/jelzes-ok.png";
+import signUp from "@/assets/jelzes-emelkedes.png";
+import signDown from "@/assets/jelzes-ereszkedes.png";
+import signProblem from "@/assets/jelzes-problema.png";
+import signStop from "@/assets/jelzes-allj.png";
+import signLowAir from "@/assets/jelzes-keves-levego.png";
+import signOutOfAir from "@/assets/jelzes-nincs-levego.png";
+import signTogether from "@/assets/jelzes-egyutt-maradunk.png";
 
 export type BlogPost = {
   slug: string;
@@ -39,6 +47,7 @@ export type BlogPost = {
     | { type: "quote"; text: string }
     | { type: "img"; src: string; alt: string; caption?: string }
     | { type: "links"; title?: string; items: Array<{ to: string; label: string; note?: string }> }
+    | { type: "signals"; items: Array<{ title: string; text: string; icon: string; iconAlt: string }> }
   >;
 };
 
@@ -930,16 +939,56 @@ export const blogPosts: BlogPost[] = [
         text: "A jelzések célja nem a mutogatás, hanem az egyértelműség. Kevés jelzést használj, de azt tisztán, a párod látóterében, és mindig várd meg a visszajelzést. Egy jelzés csak akkor „megérkezett\", ha a másik visszajelezte.",
       },
       {
-        type: "ul",
+        type: "signals",
         items: [
-          "OK (hüvelyk és mutatóujj körben): kérdés és válasz is. Ha kérdezik, válaszolj — a néma búvár aggodalmat szül.",
-          "Felfelé mutató hüvelykujj: emelkedjünk, befejezzük a merülést. Nem azt jelenti, hogy „szuper\".",
-          "Lefelé mutató hüvelykujj: ereszkedjünk.",
-          "Lapos tenyér vízszintesen billegtetve: valami nem stimmel, gond van.",
-          "Tenyér nyitva, „állj\": maradj, ne mozdulj tovább.",
-          "Ökölbe zárt kéz a mellkason: kifogyok / kevés a levegőm — párosítva a nyomás kimutatásával.",
-          "Kéz a torok előtt: nincs levegő, azonnal kell az alternatív légzőforrás.",
-          "Kettőt mutató ujj a párod felé, majd magadra: maradjunk együtt, gyere közelebb.",
+          {
+            title: "OK",
+            text: "Hüvelyk- és mutatóujj körben. Kérdés és válasz is: ha kérdezik, válaszolj — a néma búvár aggodalmat szül.",
+            icon: signOk,
+            iconAlt: "OK búvár kézjelzés — hüvelykujj és mutatóujj kört formáz",
+          },
+          {
+            title: "Emelkedjünk",
+            text: "Felfelé mutató hüvelykujj: befejezzük a merülést, megyünk felfelé. Nem azt jelenti, hogy „szuper\".",
+            icon: signUp,
+            iconAlt: "Emelkedés búvár kézjelzés — felfelé mutató hüvelykujj",
+          },
+          {
+            title: "Ereszkedjünk",
+            text: "Lefelé mutató hüvelykujj: menjünk mélyebbre, folytatjuk lefelé.",
+            icon: signDown,
+            iconAlt: "Ereszkedés búvár kézjelzés — lefelé mutató hüvelykujj",
+          },
+          {
+            title: "Valami nem stimmel",
+            text: "Lapos tenyér vízszintesen billegtetve: gond van — ezután mutasd meg, hol a probléma.",
+            icon: signProblem,
+            iconAlt: "Probléma búvár kézjelzés — vízszintesen billegtetett lapos tenyér",
+          },
+          {
+            title: "Állj",
+            text: "Nyitott tenyér előre, „stop\" jelzés: maradj, ne mozdulj tovább.",
+            icon: signStop,
+            iconAlt: "Állj búvár kézjelzés — előre tartott nyitott tenyér",
+          },
+          {
+            title: "Kevés a levegőm",
+            text: "Ökölbe zárt kéz a mellkason: kifogyóban a levegő — párosítsd a nyomásmérő kimutatásával.",
+            icon: signLowAir,
+            iconAlt: "Kevés levegő búvár kézjelzés — ököl a mellkason",
+          },
+          {
+            title: "Nincs levegő",
+            text: "Kéz mozdulata a torok előtt: kifutottam a levegőből, azonnal kell az alternatív légzőforrás.",
+            icon: signOutOfAir,
+            iconAlt: "Nincs levegő búvár kézjelzés — kéz a torok előtt",
+          },
+          {
+            title: "Maradjunk együtt",
+            text: "Kettőt mutató ujj a párod felé, majd magadra: gyere közelebb, együtt megyünk tovább.",
+            icon: signTogether,
+            iconAlt: "Maradjunk együtt búvár kézjelzés — két mutatóujj a társ felé",
+          },
         ],
       },
       { type: "h3", text: "Hogyan mondjatok többet néhány jelzéssel?" },

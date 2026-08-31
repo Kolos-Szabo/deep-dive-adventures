@@ -14,6 +14,7 @@ const group = groupAsset.url;
 export const services = [
   {
     slug: "naui-tanfolyam",
+    priceCta: "Tanfolyamok és árak",
     title: "NAUI Búvártanfolyamok",
     short: "Try Scuba-tól Instructor-ig: NAUI búvárképzés Erdélyben kis csoportban, élethosszig érvényes nemzetközi minősítéssel.",
     img: course,

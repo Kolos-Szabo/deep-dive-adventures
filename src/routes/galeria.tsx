@@ -27,7 +27,19 @@ import nNewDock from "@/assets/naui-buvarok-stegen-erdelyi-tonal.jpg.asset.json"
 import nNewTechTeam from "@/assets/technikai-merules-tankok-csapat-melyben.jpg.asset.json";
 import nNewGear from "@/assets/buvar-szabalyozok-felszereles-asztalon.jpg.asset.json";
 import nNewSea from "@/assets/buvarcsoport-dahab-tengeri-merules.jpg.asset.json";
+import pSurface from "@/assets/buvar-felszinre-erkezes-maszkban-tonal.jpg.asset.json";
+import pWineCrate from "@/assets/viz-alatti-borpince-buvar-ladaval.jpg.asset.json";
+import pCommunity from "@/assets/merulohely-steg-kozosseg-nyari-nap.jpg.asset.json";
+import pInstructor from "@/assets/buvaroktato-viz-alatti-kutatokozpont-portre.jpg.asset.json";
+import pWineDeep from "@/assets/viz-alatti-borladak-buvar-melyben.jpg.asset.json";
+import pEntry from "@/assets/ket-buvar-belepes-a-vizbe-felulnezet.jpg.asset.json";
+import pTrio from "@/assets/harom-buvar-stegen-merules-utan.jpg.asset.json";
+import pPairDock from "@/assets/buvarpar-teljes-felszerelesben-stegen-napsutes.jpg.asset.json";
+import pBeer from "@/assets/buvar-viz-alatti-soros-koccintas-elmeny.jpg.asset.json";
+import pBuddy from "@/assets/buddy-paros-buvarok-felszinen-szelfi.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
+import { useCallback, useEffect, useState } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 export const Route = createFileRoute("/galeria")({
   head: () => ({
@@ -73,9 +85,44 @@ const images = [
   { src: nNewTechTeam.url, alt: "Twinset palackos technikai búvárok csoportja a nyílt tengerben homokfenék felett", title: "Technikai csapatmerülés", span: "md:col-span-2" },
   { src: nNewGear.url, alt: "NAUI búvárszabályozók és felszerelés a Transilvanian Dive Center asztalán", title: "Minőségi szabályozók" },
   { src: nNewSea.url, alt: "NAUI búvárcsoport tengeri merülés előtt — Dahab, profi képzés", title: "Tengeri profi merülés — Dahab", span: "md:col-span-2" },
+  { src: pPairDock.url, alt: "Két búvár teljes felszerelésben a stégen, napsütésben, erdélyi hegyek háttérrel", title: "Indulás előtt — napsütéses merülőnap", span: "md:col-span-2" },
+  { src: pSurface.url, alt: "Búvár sárga maszkban a felszínre érkezik, mögötte a búvárpárja a tó vizében", title: "Felszínre érkezés — a pár együtt jön fel" },
+  { src: pEntry.url, alt: "Két búvár felszereléssel a sekély vízbe lép, felülnézetből fotózva", title: "Belépés a vízbe — felkészült páros" },
+  { src: pWineCrate.url, alt: "Búvár víz alatti borpince rekeszét nyitja meg palackokkal a tófenéken", title: "Víz alatti borpince — palackok a mélyben", span: "md:col-span-2" },
+  { src: pWineDeep.url, alt: "Víz alatti borládák a tófenéken, búvár a háttérben rekeszt emel", title: "Berăria Subacvatică — a víz alatti raktár" },
+  { src: pBeer.url, alt: "Búvár sörösüveggel koccint a víz alatt, buborékokkal a maszk felett", title: "Koccintás a víz alatt" },
+  { src: pBuddy.url, alt: "Búvárpáros a felszínen szelfit készít merülés előtt, kék éggel a háttérben", title: "Buddy páros a felszínen" },
+  { src: pTrio.url, alt: "Három búvár teljes felszerelésben a stégen merülés után, erdélyi táj háttérrel", title: "Merülés után — jókedvű csapat", span: "md:col-span-2" },
+  { src: pCommunity.url, alt: "Merülőhely stégjei nyári napon, fürdőző és merülésre készülő közösséggel", title: "Nyári nap a merülőhelyen" },
+  { src: pInstructor.url, alt: "Búvároktató a víz alatti kutatóközpont mezében a merülés utáni eligazításnál", title: "A csapat mögötti szakértelem" },
 ];
 
 function Gallery() {
+  const [open, setOpen] = useState<number | null>(null);
+  const close = useCallback(() => setOpen(null), []);
+  const step = useCallback(
+    (d: number) => setOpen((c) => (c === null ? c : (c + d + images.length) % images.length)),
+    [],
+  );
+
+  useEffect(() => {
+    if (open === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") close();
+      if (e.key === "ArrowRight") step(1);
+      if (e.key === "ArrowLeft") step(-1);
+    };
+    window.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [open, close, step]);
+
+  const active = open === null ? null : images[open];
+
   return (
     <>
       <section className="relative bg-surface text-surface-foreground pt-32 pb-20 lg:pt-44 lg:pb-24 overflow-hidden">
@@ -98,18 +145,73 @@ function Gallery() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] sm:auto-rows-[240px]">
             {images.map((img, i) => (
               <Reveal key={i} delay={i * 40} className={`overflow-hidden rounded-2xl group ${img.span ?? ""}`}>
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  title={img.title ?? img.alt}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+                <button
+                  type="button"
+                  onClick={() => setOpen(i)}
+                  aria-label={`Nagyítás: ${img.title ?? img.alt}`}
+                  className="block h-full w-full cursor-zoom-in focus:outline-none focus-visible:ring-4 focus-visible:ring-secondary rounded-2xl"
+                >
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    title={img.title ?? img.alt}
+                    loading={i < 4 ? "eager" : "lazy"}
+                    decoding="async"
+                    width={1800}
+                    height={1200}
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </button>
               </Reveal>
             ))}
           </div>
         </div>
       </section>
+
+      {active && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={active.title ?? active.alt}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-surface/95 p-4"
+          onClick={close}
+        >
+          <button
+            type="button"
+            onClick={close}
+            aria-label="Galéria bezárása"
+            className="absolute right-4 top-4 rounded-full bg-background/15 p-3 text-surface-foreground hover:bg-background/25 focus:outline-none focus-visible:ring-4 focus-visible:ring-secondary"
+          >
+            <X className="h-6 w-6" aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); step(-1); }}
+            aria-label="Előző kép"
+            className="absolute left-2 sm:left-6 rounded-full bg-background/15 p-3 text-surface-foreground hover:bg-background/25 focus:outline-none focus-visible:ring-4 focus-visible:ring-secondary"
+          >
+            <ChevronLeft className="h-6 w-6" aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); step(1); }}
+            aria-label="Következő kép"
+            className="absolute right-2 sm:right-6 rounded-full bg-background/15 p-3 text-surface-foreground hover:bg-background/25 focus:outline-none focus-visible:ring-4 focus-visible:ring-secondary"
+          >
+            <ChevronRight className="h-6 w-6" aria-hidden="true" />
+          </button>
+          <figure className="max-h-full max-w-5xl" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={active.src}
+              alt={active.alt}
+              className="mx-auto max-h-[80vh] w-auto rounded-xl object-contain"
+            />
+            <figcaption className="mt-4 text-center text-sm text-surface-foreground/85">
+              {active.title ?? active.alt}
+            </figcaption>
+          </figure>
+        </div>
+      )}
     </>
   );
 }

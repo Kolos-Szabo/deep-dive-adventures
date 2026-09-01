@@ -2,8 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, GraduationCap, Compass, Waves, Award, Check, Tag, Mail } from "lucide-react";
 import courseAsset from "@/assets/naui-oktato-briefing-medenceben.jpg.asset.json";
 import experienceAsset from "@/assets/viz-alatti-csiki-sor-elmenymerules.jpg.asset.json";
-import practiceAsset from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.json";
-import groupAsset from "@/assets/buvarcsapat-stegen-teli-merules.jpg.asset.json";
+import practiceAsset from "@/assets/ket-buvar-belepes-a-vizbe-felulnezet.jpg.asset.json";
+import groupAsset from "@/assets/merulohely-steg-kozosseg-nyari-nap.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
 
 const course = courseAsset.url;
@@ -50,6 +50,7 @@ export const services = [
     title: "Gyakorló merülések",
     short: "Frissítsd készségeidet ellenőrzött, biztonságos körülmények között.",
     img: practice,
+    imgAlt: "Két búvár felszereléssel a sekély vízbe lép gyakorló merülés előtt",
     icon: Waves,
     benefits: [
       "Skill refresh oktatóval",
@@ -66,6 +67,7 @@ export const services = [
     title: "Csoportos kalandprogramok",
     short: "Csapatépítők, baráti társaságok, születésnapi élmények.",
     img: group,
+    imgAlt: "Csoport a merülőhely stégjein nyári napon, közös programra készülve",
     icon: Award,
     benefits: [
       "Teljes szervezés",
@@ -116,7 +118,7 @@ function ServicesIndex() {
               <div className={`grid gap-10 lg:grid-cols-2 lg:gap-16 items-center ${i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""}`}>
                 <div className="relative">
                   <div className="absolute -inset-4 bg-gradient-ocean rounded-3xl blur-3xl opacity-20" />
-                  <img src={s.img} alt={s.title} loading="lazy" className="relative rounded-2xl shadow-deep w-full aspect-[4/3] object-cover" />
+                  <img src={s.img} alt={"imgAlt" in s && s.imgAlt ? s.imgAlt : s.title} loading="lazy" decoding="async" width={1200} height={900} className="relative rounded-2xl shadow-deep w-full aspect-[4/3] object-cover" />
                 </div>
                 <div>
                   <s.icon className="h-9 w-9 text-primary" />

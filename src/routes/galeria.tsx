@@ -27,7 +27,19 @@ import nNewDock from "@/assets/naui-buvarok-stegen-erdelyi-tonal.jpg.asset.json"
 import nNewTechTeam from "@/assets/technikai-merules-tankok-csapat-melyben.jpg.asset.json";
 import nNewGear from "@/assets/buvar-szabalyozok-felszereles-asztalon.jpg.asset.json";
 import nNewSea from "@/assets/buvarcsoport-dahab-tengeri-merules.jpg.asset.json";
+import pSurface from "@/assets/buvar-felszinre-erkezes-maszkban-tonal.jpg.asset.json";
+import pWineCrate from "@/assets/viz-alatti-borpince-buvar-ladaval.jpg.asset.json";
+import pCommunity from "@/assets/merulohely-steg-kozosseg-nyari-nap.jpg.asset.json";
+import pInstructor from "@/assets/buvaroktato-viz-alatti-kutatokozpont-portre.jpg.asset.json";
+import pWineDeep from "@/assets/viz-alatti-borladak-buvar-melyben.jpg.asset.json";
+import pEntry from "@/assets/ket-buvar-belepes-a-vizbe-felulnezet.jpg.asset.json";
+import pTrio from "@/assets/harom-buvar-stegen-merules-utan.jpg.asset.json";
+import pPairDock from "@/assets/buvarpar-teljes-felszerelesben-stegen-napsutes.jpg.asset.json";
+import pBeer from "@/assets/buvar-viz-alatti-soros-koccintas-elmeny.jpg.asset.json";
+import pBuddy from "@/assets/buddy-paros-buvarok-felszinen-szelfi.jpg.asset.json";
 import { Reveal } from "@/components/site/Reveal";
+import { useCallback, useEffect, useState } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 export const Route = createFileRoute("/galeria")({
   head: () => ({

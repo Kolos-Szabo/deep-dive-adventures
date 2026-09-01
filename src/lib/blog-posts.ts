@@ -1245,7 +1245,7 @@ export const blogPosts: BlogPost[] = [
         type: "ul",
         items: [
           "Első 1–5 merülés: bérelt szett, saját maszk beszerzése.",
-          "5–20 merülés között: uszony és bútyi, ha tudod, milyen vízben merülsz többet.",
+          "5–20 merülés között: uszony és csizmácska, ha tudod, milyen vízben merülsz többet.",
           "20 merülés fölött, ha rendszeresen merülsz: búvárkomputer, majd később BCD és légzőautomata.",
           "Utazás előtt: maszk, uszony, komputer a kézipoggyászba — a nagy darabok általában a helyszínen bérelhetők.",
         ],

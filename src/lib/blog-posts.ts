@@ -1109,7 +1109,212 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "buvarfelszereles-kezdoknek-berles-vagy-vasarlas",
+    title: "Búvárfelszerelés kezdőknek: mit vegyél meg és mit érdemes bérelni?",
+    excerpt:
+      "Maszk, uszony, búvárruha, BCD, légzőautomata, komputer — mi az a felszerelés, amit érdemes elsőként megvásárolni, és mi az, amit sokáig nyugodtan bérelhetsz?",
+    description:
+      "Búvárfelszerelés kezdőknek: mit vegyél meg először és mit érdemes bérelni? Maszk, uszony, búvárruha, BCD, légzőautomata és búvárkomputer — gyakorlati sorrend, méretezési tippek és bérlési lehetőségek.",
+    keywords:
+      "búvárfelszerelés, búvárfelszerelés kezdőknek, búvármaszk választás, búvárkomputer, felszerelésbérlés, búvárkodás kezdőknek, merülés",
+    date: "2026-09-01",
+    readingMinutes: 9,
+    category: "Felszerelés",
+    tags: ["felszerelés", "kezdő", "vásárlás"],
+    cover: regulators.url,
+    coverAlt: "Búvár légzőautomaták és felszerelés kiterítve az asztalon merülés előtt",
+    sections: [
+      {
+        type: "p",
+        text: "A legtöbb kezdő búvár ugyanazzal a kérdéssel jön ki az első merüléséről: „és most mit vegyek meg?” A válasz szinte soha nem az, hogy mindent. A búvárfelszerelés drága, sokáig kitart, és a legtöbb darabot nyugodtan bérelheted, amíg ki nem alakul a saját merülési stílusod. Van azonban néhány elem, amit érdemes minél előbb sajátra váltani — mert közvetlenül a kényelmedet és a biztonságérzetedet befolyásolja.",
+      },
+      {
+        type: "p",
+        text: "Ebben a cikkben végigmegyünk a teljes szetten, darabonként: mit ad neked, ha sajátod van, mikor elég bérelni, és mire figyelj a választásnál. Nem márkákról lesz szó, hanem sorrendről és szempontokról.",
+      },
+      { type: "h2", text: "Miért nem kell azonnal mindent megvenni?" },
+      {
+        type: "p",
+        text: "Egy tanfolyam alatt és az azt követő első tucat merülésen még nagyon sokat változik, hogyan merülsz: mennyi ólmot használsz, milyen mélységeket keresel, édesvízben vagy tengeren merülsz többet. Ha az első héten megveszed a teljes szettet, jó eséllyel olyan felszerelést választasz, ami a saját fél évvel későbbi magadnak már nem ideális.",
+      },
+      {
+        type: "ul",
+        items: [
+          "A bérelt felszerelés lehetőséget ad arra, hogy több típust kipróbálj döntés előtt.",
+          "A karbantartás, szervizelés és szállítás terhe nem a tiéd.",
+          "Nálunk a merüléseknél és a tanfolyamoknál a felszerelés bérlése külön tételként is elérhető, így pontosan tudod, mibe kerül.",
+          "A megtakarított összeget érdemesebb merülésekre és képzésre fordítani — a rutin többet hoz, mint bármelyik új eszköz.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Egy kezdő búvár fejlődését sokkal jobban gyorsítja tíz merülés bérelt felszerelésben, mint egy vadonatúj szett és három merülés.",
+      },
+      { type: "h2", text: "Amit érdemes elsőként megvenni" },
+      { type: "h3", text: "1. Maszk — ez a legfontosabb saját darab" },
+      {
+        type: "p",
+        text: "A maszk arcra illeszkedő eszköz: két azonos méretű maszk közül az egyik tökéletesen tömíthet, a másik folyamatosan szivárog. Egy szivárgó maszk pedig nemcsak kellemetlen, hanem elveszi a figyelmedet a merülésről. Ezért ez az az elem, amit szinte minden búvár elsőként vesz meg.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Próbáld fel: helyezd az arcodra pánt nélkül, szívj be az orrodon — ha megtartja magát, jól tömít.",
+          "Alacsony belső térfogat: könnyebb kifújni belőle a vizet, és kevesebb levegőt igényel a kiegyenlítése.",
+          "Széles orrzseb, amit két ujjal könnyen elérsz — a fülkiegyenlítéshez ez elengedhetetlen.",
+          "Ha szemüveget hordasz, kérdezz rá a dioptriás lencsés megoldásokra.",
+        ],
+      },
+      {
+        type: "img",
+        src: maskSkill.url,
+        alt: "Búvártanuló maszkgyakorlatot végez a medencében az oktató mellett",
+        caption: "A maszkkal kapcsolatos készségeket medencében gyakoroljuk be — ott derül ki, mennyire illeszkedik.",
+      },
+      { type: "h3", text: "2. Uszony és — hidegebb vízben — bútyi" },
+      {
+        type: "p",
+        text: "Az uszony a második logikus vásárlás. Nem a leggyorsabb uszonyt kell keresni, hanem azt, amelyikkel hosszabb merülés végén sem görcsöl a lábad. Édesvízi tavi merülésnél és tanfolyamon a lassabb, kontrollált tempó számít, nem a sprint.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Zárt (full foot) uszony: egyszerűbb, melegebb vízhez, medencéhez jó.",
+          "Nyitott sarkú uszony bútyival: hidegebb vízhez, sziklás vagy stéges belépéshez kényelmesebb és melegebb.",
+          "Közepesen kemény lapát: a legtöbb szabadidős búvárnak ez a legjobb kompromisszum.",
+          "Mindig azzal a búvárruhával és bútyival próbáld fel, amiben merülni fogsz.",
+        ],
+      },
+      { type: "h3", text: "3. Búvárkomputer — amint rendszeresen merülsz" },
+      {
+        type: "p",
+        text: "A búvárkomputer nem luxus, hanem biztonsági eszköz: mélységet, időt, emelkedési sebességet és a hátralévő fenéktartózkodási időt is figyeli. A tanfolyamon és a bérszettben ez általában rendelkezésre áll, de amint elkezdesz önállóan, rendszeresen merülni, a saját komputer nagy ugrás — mert a saját merüléseid előzményeit is tárolja.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Jól olvasható kijelző: víz alatt, szűk látótávolságban ez fontosabb, mint bármelyik extra funkció.",
+          "Cserélhető szíj és egyszerű menü — ne kelljen kézikönyv a merülés előtt.",
+          "Nitrox-képesség: ha később Nitrox tanfolyamot tervezel, ez már most hasznos.",
+          "Naplózás: a saját merüléseid visszakövethetősége sokat segít a fejlődésben.",
+        ],
+      },
+      { type: "h2", text: "Amit sokáig nyugodtan bérelhetsz" },
+      {
+        type: "p",
+        text: "A nagy, drága és szervizigényes darabok azok, amelyeket a legtöbb szabadidős búvár csak jóval később vásárol meg — és sokan soha nem is, mert bérelve egyszerűbb.",
+      },
+      {
+        type: "ul",
+        items: [
+          "BCD (lebegtető mellény): nagy, méretérzékeny, és sokat változik, hogy milyen kialakítás lesz kényelmes neked.",
+          "Légzőautomata Octopusszal és konzollal: rendszeres szervizt igényel, és ez a szett a bérlésnél mindig ellenőrzött állapotban van.",
+          "Nedves búvárruha: méretezés és vízhőmérséklet szerint változik, hogy mi kell — bérelve többet is kipróbálhatsz.",
+          "Palack és ólom: nehéz, szállítani kényelmetlen, és a merülőhelyen amúgy is rendelkezésre áll.",
+        ],
+      },
+      {
+        type: "p",
+        text: "A pontos bérlési tételeket és összegeket megtalálod nálunk, így előre kiszámolható, mennyibe kerül egy merülés teljes felszereléssel — és mennyit spórolsz, amikor már saját maszkkal és uszonnyal érkezel.",
+      },
+      {
+        type: "img",
+        src: confined.url,
+        alt: "Teljes búvárfelszerelés a medence szélén NAUI tanfolyam előtt",
+        caption: "A tanfolyamon a teljes szettet biztosítjuk — így semmit nem kell előre megvásárolnod.",
+      },
+      { type: "h2", text: "Gyakori hibák a felszerelés választásánál" },
+      {
+        type: "ul",
+        items: [
+          "Használt szett megvétele szakértő szemle és szerviznapló nélkül — főleg légzőautomata esetén.",
+          "Túl kemény uszony megvásárolása, mert „profinak tűnik” — a lábgörcs a merülés végén nem élmény.",
+          "Túl nagy BCD választása, ami víz alatt felcsúszik és elrontja a testhelyzetet, így a lebegéskontrollt is.",
+          "Szűk vagy túl bő búvárruha: az előbbi szorít és nehezíti a légzést, az utóbbi átengedi a vizet és hűt.",
+          "Az első vásárlás pillanatában eldöntött ólommennyiség — az ólom mindig a ruhához, palackhoz és vízhez tartozik, nem hozzád.",
+        ],
+      },
+      { type: "h2", text: "Hogyan derül ki, mi jó neked?" },
+      {
+        type: "p",
+        text: "A legpraktikusabb út: az első merüléseidet bérelt felszereléssel teljesítsd, és minden alkalom után jegyezd fel, mi zavart. Szivárgott a maszk? Hideg volt a kézfejed a merülés végén? Nehezen találtad meg a BCD inflátorát? Ezek a jegyzetek pontosabban megmondják, mit vegyél meg, mint bármelyik teszt.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Első 1–5 merülés: bérelt szett, saját maszk beszerzése.",
+          "5–20 merülés között: uszony és bútyi, ha tudod, milyen vízben merülsz többet.",
+          "20 merülés fölött, ha rendszeresen merülsz: búvárkomputer, majd később BCD és légzőautomata.",
+          "Utazás előtt: maszk, uszony, komputer a kézipoggyászba — a nagy darabok általában a helyszínen bérelhetők.",
+        ],
+      },
+      {
+        type: "img",
+        src: gearDock.url,
+        alt: "Két búvár teljes felszerelésben a stégen napsütésben merülés előtt",
+        caption: "A jól összeválogatott szett első jele: kényelmesen, sietség nélkül készülsz a vízbe.",
+      },
+      {
+        type: "links",
+        title: "Kapcsolódó tartalom a Búvárkodás Erdély oldalán",
+        items: [
+          {
+            to: "/arak",
+            label: "Búvárfelszerelés bérlésének és merüléseknek az árai",
+            note: "maszk-, BCD-, légzőautomata- és komputerbérlés tételesen",
+          },
+          {
+            to: "/szolgaltatasok/naui-tanfolyam",
+            label: "NAUI búvártanfolyamok kezdő szinttől",
+            note: "a képzések ára felszereléssel együtt értendő",
+          },
+          {
+            to: "/szolgaltatasok/elmenymerules",
+            label: "Élménymerülés minősítés nélkül",
+            note: "az első próba teljes bérelt szettel",
+          },
+          {
+            to: "/szolgaltatasok/gyakorlo-merules",
+            label: "Gyakorló merülések oktatóval",
+            note: "jó alkalom kipróbálni, mi kényelmes neked",
+          },
+          {
+            to: "/blog/lebegeskontroll-buvarkodas",
+            label: "Lebegéskontroll merülés közben",
+            note: "a jól beállított felszerelés fele a testhelyzetnek",
+          },
+          {
+            to: "/blog/edesvizi-merules-erdelyi-tavak",
+            label: "Édesvízi merülés erdélyi tavakban",
+            note: "hidegebb víz, más ruha- és bútyiigény",
+          },
+          {
+            to: "/biztonsag",
+            label: "Biztonsági szemlélet és protokollok",
+            note: "a felszerelés ellenőrzése minden merülés része",
+          },
+        ],
+      },
+      { type: "h2", text: "Összefoglalva" },
+      {
+        type: "ul",
+        items: [
+          "Először maszkot vegyél: ez illeszkedik az arcodhoz, és ezt nem lehet „általánosan” jóra bérelni.",
+          "Utána uszony és bútyi jön, a vízhőmérséklet és a belépés jellege szerint.",
+          "Búvárkomputer akkor, amikor már rendszeresen, önállóan merülsz.",
+          "BCD, légzőautomata, ruha, palack és ólom sokáig nyugodtan bérelhető.",
+          "A merülésszám és a képzés többet ad a fejlődésednek, mint bármelyik új eszköz.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Nem tudod, mi illik a szintedhez és a tervezett merüléseidhez? Írj vagy hívj minket — átbeszéljük, mit érdemes megvenni, mit hozz magaddal, és mit biztosítunk mi a merülésen vagy a tanfolyamon.",
+      },
+    ],
+  },
 ];
+
 
 
 

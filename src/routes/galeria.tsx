@@ -145,18 +145,73 @@ function Gallery() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] sm:auto-rows-[240px]">
             {images.map((img, i) => (
               <Reveal key={i} delay={i * 40} className={`overflow-hidden rounded-2xl group ${img.span ?? ""}`}>
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  title={img.title ?? img.alt}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+                <button
+                  type="button"
+                  onClick={() => setOpen(i)}
+                  aria-label={`Nagyítás: ${img.title ?? img.alt}`}
+                  className="block h-full w-full cursor-zoom-in focus:outline-none focus-visible:ring-4 focus-visible:ring-secondary rounded-2xl"
+                >
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    title={img.title ?? img.alt}
+                    loading={i < 4 ? "eager" : "lazy"}
+                    decoding="async"
+                    width={1800}
+                    height={1200}
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </button>
               </Reveal>
             ))}
           </div>
         </div>
       </section>
+
+      {active && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={active.title ?? active.alt}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-surface/95 p-4"
+          onClick={close}
+        >
+          <button
+            type="button"
+            onClick={close}
+            aria-label="Galéria bezárása"
+            className="absolute right-4 top-4 rounded-full bg-background/15 p-3 text-surface-foreground hover:bg-background/25 focus:outline-none focus-visible:ring-4 focus-visible:ring-secondary"
+          >
+            <X className="h-6 w-6" aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); step(-1); }}
+            aria-label="Előző kép"
+            className="absolute left-2 sm:left-6 rounded-full bg-background/15 p-3 text-surface-foreground hover:bg-background/25 focus:outline-none focus-visible:ring-4 focus-visible:ring-secondary"
+          >
+            <ChevronLeft className="h-6 w-6" aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); step(1); }}
+            aria-label="Következő kép"
+            className="absolute right-2 sm:right-6 rounded-full bg-background/15 p-3 text-surface-foreground hover:bg-background/25 focus:outline-none focus-visible:ring-4 focus-visible:ring-secondary"
+          >
+            <ChevronRight className="h-6 w-6" aria-hidden="true" />
+          </button>
+          <figure className="max-h-full max-w-5xl" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={active.src}
+              alt={active.alt}
+              className="mx-auto max-h-[80vh] w-auto rounded-xl object-contain"
+            />
+            <figcaption className="mt-4 text-center text-sm text-surface-foreground/85">
+              {active.title ?? active.alt}
+            </figcaption>
+          </figure>
+        </div>
+      )}
     </>
   );
 }

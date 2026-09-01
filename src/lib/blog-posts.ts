@@ -1173,7 +1173,7 @@ export const blogPosts: BlogPost[] = [
         alt: "Búvártanuló maszkgyakorlatot végez a medencében az oktató mellett",
         caption: "A maszkkal kapcsolatos készségeket medencében gyakoroljuk be — ott derül ki, mennyire illeszkedik.",
       },
-      { type: "h3", text: "2. Uszony és — hidegebb vízben — bútyi" },
+      { type: "h3", text: "2. Uszony és — hidegebb vízben — csizmácska" },
       {
         type: "p",
         text: "Az uszony a második logikus vásárlás. Nem a leggyorsabb uszonyt kell keresni, hanem azt, amelyikkel hosszabb merülés végén sem görcsöl a lábad. Édesvízi tavi merülésnél és tanfolyamon a lassabb, kontrollált tempó számít, nem a sprint.",
@@ -1182,9 +1182,9 @@ export const blogPosts: BlogPost[] = [
         type: "ul",
         items: [
           "Zárt (full foot) uszony: egyszerűbb, melegebb vízhez, medencéhez jó.",
-          "Nyitott sarkú uszony bútyival: hidegebb vízhez, sziklás vagy stéges belépéshez kényelmesebb és melegebb.",
+          "Nyitott sarkú uszony csizmácskával: hidegebb vízhez, sziklás vagy stéges belépéshez kényelmesebb és melegebb.",
           "Közepesen kemény lapát: a legtöbb szabadidős búvárnak ez a legjobb kompromisszum.",
-          "Mindig azzal a búvárruhával és bútyival próbáld fel, amiben merülni fogsz.",
+          "Mindig azzal a búvárruhával és csizmácskával próbáld fel, amiben merülni fogsz.",
         ],
       },
       { type: "h3", text: "3. Búvárkomputer — amint rendszeresen merülsz" },
@@ -1245,7 +1245,7 @@ export const blogPosts: BlogPost[] = [
         type: "ul",
         items: [
           "Első 1–5 merülés: bérelt szett, saját maszk beszerzése.",
-          "5–20 merülés között: uszony és bútyi, ha tudod, milyen vízben merülsz többet.",
+          "5–20 merülés között: uszony és csizmácska, ha tudod, milyen vízben merülsz többet.",
           "20 merülés fölött, ha rendszeresen merülsz: búvárkomputer, majd később BCD és légzőautomata.",
           "Utazás előtt: maszk, uszony, komputer a kézipoggyászba — a nagy darabok általában a helyszínen bérelhetők.",
         ],
@@ -1288,7 +1288,7 @@ export const blogPosts: BlogPost[] = [
           {
             to: "/blog/edesvizi-merules-erdelyi-tavak",
             label: "Édesvízi merülés erdélyi tavakban",
-            note: "hidegebb víz, más ruha- és bútyiigény",
+            note: "hidegebb víz, más ruha- és csizmácska-igény",
           },
           {
             to: "/biztonsag",
@@ -1302,7 +1302,7 @@ export const blogPosts: BlogPost[] = [
         type: "ul",
         items: [
           "Először maszkot vegyél: ez illeszkedik az arcodhoz, és ezt nem lehet „általánosan” jóra bérelni.",
-          "Utána uszony és bútyi jön, a vízhőmérséklet és a belépés jellege szerint.",
+          "Utána uszony és csizmácska jön, a vízhőmérséklet és a belépés jellege szerint.",
           "Búvárkomputer akkor, amikor már rendszeresen, önállóan merülsz.",
           "BCD, légzőautomata, ruha, palack és ólom sokáig nyugodtan bérelhető.",
           "A merülésszám és a képzés többet ad a fejlődésednek, mint bármelyik új eszköz.",

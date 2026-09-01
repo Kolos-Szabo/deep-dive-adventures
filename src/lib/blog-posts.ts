@@ -17,6 +17,7 @@ import sidemount from "@/assets/technikai-buvar-sidemount-melyben-napsugarak.jpg
 import regulators from "@/assets/buvar-szabalyozok-felszereles-asztalon.jpg.asset.json";
 import confined from "@/assets/naui-buvarfelszereles-medence-konfined.jpg.asset.json";
 import winterDock from "@/assets/buvarcsapat-stegen-teli-merules.jpg.asset.json";
+import gearDock from "@/assets/buvarpar-teljes-felszerelesben-stegen-napsutes.jpg.asset.json";
 import lakeDock from "@/assets/naui-buvarok-stegen-erdelyi-tonal.jpg.asset.json";
 import signOk from "@/assets/jelzes-ok.png";
 import signUp from "@/assets/jelzes-emelkedes.png";

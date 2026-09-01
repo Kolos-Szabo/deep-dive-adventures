@@ -85,9 +85,44 @@ const images = [
   { src: nNewTechTeam.url, alt: "Twinset palackos technikai búvárok csoportja a nyílt tengerben homokfenék felett", title: "Technikai csapatmerülés", span: "md:col-span-2" },
   { src: nNewGear.url, alt: "NAUI búvárszabályozók és felszerelés a Transilvanian Dive Center asztalán", title: "Minőségi szabályozók" },
   { src: nNewSea.url, alt: "NAUI búvárcsoport tengeri merülés előtt — Dahab, profi képzés", title: "Tengeri profi merülés — Dahab", span: "md:col-span-2" },
+  { src: pPairDock.url, alt: "Két búvár teljes felszerelésben a stégen, napsütésben, erdélyi hegyek háttérrel", title: "Indulás előtt — napsütéses merülőnap", span: "md:col-span-2" },
+  { src: pSurface.url, alt: "Búvár sárga maszkban a felszínre érkezik, mögötte a búvárpárja a tó vizében", title: "Felszínre érkezés — a pár együtt jön fel" },
+  { src: pEntry.url, alt: "Két búvár felszereléssel a sekély vízbe lép, felülnézetből fotózva", title: "Belépés a vízbe — felkészült páros" },
+  { src: pWineCrate.url, alt: "Búvár víz alatti borpince rekeszét nyitja meg palackokkal a tófenéken", title: "Víz alatti borpince — palackok a mélyben", span: "md:col-span-2" },
+  { src: pWineDeep.url, alt: "Víz alatti borládák a tófenéken, búvár a háttérben rekeszt emel", title: "Berăria Subacvatică — a víz alatti raktár" },
+  { src: pBeer.url, alt: "Búvár sörösüveggel koccint a víz alatt, buborékokkal a maszk felett", title: "Koccintás a víz alatt" },
+  { src: pBuddy.url, alt: "Búvárpáros a felszínen szelfit készít merülés előtt, kék éggel a háttérben", title: "Buddy páros a felszínen" },
+  { src: pTrio.url, alt: "Három búvár teljes felszerelésben a stégen merülés után, erdélyi táj háttérrel", title: "Merülés után — jókedvű csapat", span: "md:col-span-2" },
+  { src: pCommunity.url, alt: "Merülőhely stégjei nyári napon, fürdőző és merülésre készülő közösséggel", title: "Nyári nap a merülőhelyen" },
+  { src: pInstructor.url, alt: "Búvároktató a víz alatti kutatóközpont mezében a merülés utáni eligazításnál", title: "A csapat mögötti szakértelem" },
 ];
 
 function Gallery() {
+  const [open, setOpen] = useState<number | null>(null);
+  const close = useCallback(() => setOpen(null), []);
+  const step = useCallback(
+    (d: number) => setOpen((c) => (c === null ? c : (c + d + images.length) % images.length)),
+    [],
+  );
+
+  useEffect(() => {
+    if (open === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") close();
+      if (e.key === "ArrowRight") step(1);
+      if (e.key === "ArrowLeft") step(-1);
+    };
+    window.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [open, close, step]);
+
+  const active = open === null ? null : images[open];
+
   return (
     <>
       <section className="relative bg-surface text-surface-foreground pt-32 pb-20 lg:pt-44 lg:pb-24 overflow-hidden">

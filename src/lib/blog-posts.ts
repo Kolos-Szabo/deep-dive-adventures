@@ -19,6 +19,14 @@ import confined from "@/assets/naui-buvarfelszereles-medence-konfined.jpg.asset.
 import winterDock from "@/assets/buvarcsapat-stegen-teli-merules.jpg.asset.json";
 import gearDock from "@/assets/buvarpar-teljes-felszerelesben-stegen-napsutes.jpg.asset.json";
 import lakeDock from "@/assets/naui-buvarok-stegen-erdelyi-tonal.jpg.asset.json";
+import wineCrate from "@/assets/viz-alatti-borpince-buvar-ladaval.jpg.asset.json";
+import wineDeep from "@/assets/viz-alatti-borladak-buvar-melyben.jpg.asset.json";
+import berariaBottle from "@/assets/viz-alatti-beraria-subacvatica-merules.jpg.asset.json";
+import beerToast from "@/assets/buvar-viz-alatti-soros-koccintas-elmeny.jpg.asset.json";
+import waterEntry from "@/assets/ket-buvar-belepes-a-vizbe-felulnezet.jpg.asset.json";
+import trioAfter from "@/assets/harom-buvar-stegen-merules-utan.jpg.asset.json";
+import uwSign from "@/assets/buvar-viz-alatti-tabla-sas-jelzes.jpg.asset.json";
+import surfaceArrival from "@/assets/buvar-felszinre-erkezes-maszkban-tonal.jpg.asset.json";
 import signOk from "@/assets/jelzes-ok.png";
 import signUp from "@/assets/jelzes-emelkedes.png";
 import signDown from "@/assets/jelzes-ereszkedes.png";

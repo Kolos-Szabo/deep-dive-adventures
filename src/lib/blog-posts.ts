@@ -19,6 +19,13 @@ import confined from "@/assets/naui-buvarfelszereles-medence-konfined.jpg.asset.
 import winterDock from "@/assets/buvarcsapat-stegen-teli-merules.jpg.asset.json";
 import gearDock from "@/assets/buvarpar-teljes-felszerelesben-stegen-napsutes.jpg.asset.json";
 import lakeDock from "@/assets/naui-buvarok-stegen-erdelyi-tonal.jpg.asset.json";
+import wineCrate from "@/assets/viz-alatti-borpince-buvar-ladaval.jpg.asset.json";
+import wineDeep from "@/assets/viz-alatti-borladak-buvar-melyben.jpg.asset.json";
+import berariaBottle from "@/assets/viz-alatti-beraria-subacvatica-merules.jpg.asset.json";
+import beerToast from "@/assets/buvar-viz-alatti-soros-koccintas-elmeny.jpg.asset.json";
+import waterEntry from "@/assets/ket-buvar-belepes-a-vizbe-felulnezet.jpg.asset.json";
+import trioAfter from "@/assets/harom-buvar-stegen-merules-utan.jpg.asset.json";
+import uwSign from "@/assets/buvar-viz-alatti-tabla-sas-jelzes.jpg.asset.json";
 import signOk from "@/assets/jelzes-ok.png";
 import signUp from "@/assets/jelzes-emelkedes.png";
 import signDown from "@/assets/jelzes-ereszkedes.png";
@@ -1311,6 +1318,175 @@ export const blogPosts: BlogPost[] = [
       {
         type: "p",
         text: "Nem tudod, mi illik a szintedhez és a tervezett merüléseidhez? Írj vagy hívj minket — átbeszéljük, mit érdemes megvenni, mit hozz magaddal, és mit biztosítunk mi a merülésen vagy a tanfolyamon.",
+      },
+    ],
+  },
+  {
+    slug: "viz-alatti-sorozo-borpince-elmenymerules-erdely",
+    title: "Víz alatti söröző és borpince Erdélyben – így néz ki egy élménymerülés a tófenéken",
+    excerpt:
+      "Van egy rekesz bor és néhány üveg sör a tó fenekén, és odáig el is lehet úszni. Elmesélem, hogyan zajlik egy élménymerülés a víz alatti sörözőhöz, mire számíts a stégtől a koccintásig — és mit érdemes tudnod, mielőtt jelentkezel.",
+    description:
+      "Víz alatti söröző és borpince Erdélyben: hogyan zajlik egy élménymerülés búvárminősítés nélkül, a stégen tartott eligazítástól a tófenéki koccintásig. Gyakorlati tippek első merüléshez.",
+    keywords:
+      "víz alatti söröző, víz alatti borpince, élménymerülés Erdély, búvárkodás kezdőknek, try scuba Románia, búvárkodás minősítés nélkül, Berăria Subacvatică, tavi merülés",
+    date: "2026-09-02",
+    readingMinutes: 8,
+    category: "Élmény",
+    tags: ["élménymerülés", "kezdő", "erdélyi tó"],
+    cover: wineCrate.url,
+    coverAlt: "Búvár a tófenéken nyitja a víz alatti borpince rekeszét, benne borospalackokkal",
+    sections: [
+      {
+        type: "p",
+        text: "Amikor először mondom el valakinek, hogy nálunk a tó fenekén áll egy rekesz bor és néhány karton sör, általában kétféle reakciót kapok. Az egyik: „ez most komoly?” A másik: „és mikor mehetek?” Ez a cikk mindkét kérdésre válasz. Nem reklámszöveg lesz, hanem az, amit a stégen is elmondanék neked, mielőtt először húzod fel a búvárruhát.",
+      },
+      {
+        type: "p",
+        text: "A víz alatti söröző — a palackokon Berăria Subacvatică néven — az egyik legnépszerűbb élménymerülésünk, és nem véletlenül. Olyanok is eljönnek rá, akik soha nem merültek, és semmilyen búvárminősítésük nincs. Mégis, amit odalent kapnak, az nem egy attrakció, hanem egy igazi merülés, oktatóval, felszereléssel, a tó saját fényével és hidegével együtt.",
+      },
+      { type: "h2", text: "Mi is ez pontosan? Söröző és borpince a tófenéken" },
+      {
+        type: "p",
+        text: "Az ötlet egyszerű, mégis működik: a tó fenekén, egy kijelölt, könnyen megtalálható ponton rekeszekben érlelődnek a borospalackok, mellettük pedig sörösüvegek várják a búvárokat. A víz hőmérséklete odalent egész évben viszonylag állandó, sötét van, és nincs rezgés — a borászok szerint nem is olyan rossz hely egy pincének. Nekünk pedig egy célpont, ahová érdemes leúszni.",
+      },
+      {
+        type: "p",
+        text: "Egy szót a realitásról: a víz alatt nem fogsz sört inni. A szabályozó a szádban marad, a koccintás pedig az üvegek összeérintéséből áll, meg abból a mosolyból, amit a maszkon keresztül is látni. A tényleges kóstoló a stégen történik, száraz törölközővel a nyakadban. Ettől függetlenül a legtöbb vendégünk pont ezt a víz alatti pillanatot említi hetekkel később is.",
+      },
+      {
+        type: "img",
+        src: wineDeep.url,
+        alt: "Víz alatti borládák a tófenéken, a háttérben búvár emeli az egyik rekeszt",
+        caption: "A borpince a tófenéken: a rekeszek rögzítve állnak, így a látótávolság romlása nélkül lehet közelről megnézni őket.",
+      },
+      { type: "h2", text: "Kell hozzá búvárminősítés?" },
+      {
+        type: "p",
+        text: "Nem. Ez a legfontosabb, amit tudnod kell. A víz alatti söröző és a víz alatti kiállítás meglátogatása nálunk kifejezetten úgy van felépítve, hogy minősítés nélkül is elvégezhető legyen: egy oktató végig veled van, a felszerelést mi adjuk, és a merülés mélysége, hossza a te tempódhoz igazodik. Tulajdonképpen egy célponttal megspékelt Try Scuba merülésről van szó.",
+      },
+      {
+        type: "p",
+        text: "Amire szükség van: alapszintű úszástudás, egészségügyi szempontból nincs kizáró ok (erről a jelentkezéskor kapsz egy rövid kérdőívet), és legalább annyi nyugalom, hogy egy medence sekély részében néhány percig nyitott szemmel, szabályozón keresztül lélegezz. Minden más a mi dolgunk.",
+      },
+      {
+        type: "quote",
+        text: "A legjobb vendégeink nem a bátrak, hanem a kíváncsiak. A bátorság a felszínen jól jön, odalent a figyelem sokkal többet ér.",
+      },
+      { type: "h2", text: "Így zajlik a nap: a stégtől a tófenékig" },
+      { type: "h3", text: "1. Eligazítás a parton" },
+      {
+        type: "p",
+        text: "Húsz-harminc percet beszélgetünk, mielőtt bárki vizet érne. Átvesszük, hogyan lélegezz a szabályozóból, mit csinálj, ha víz kerül a maszkba, hogyan egyenlítsd ki a füledet ereszkedés közben, és milyen kézjelekkel értjük meg egymást. Ha erről szeretnél előre olvasni, a fülkiegyenlítésről és a víz alatti jelzésekről külön cikkünk van — de a stégen úgyis elmondom újra.",
+      },
+      { type: "h3", text: "2. Felszerelés és az első légvételek sekély vízben" },
+      {
+        type: "p",
+        text: "Búvárruha, csizmácska, BCD, palack, ólom, maszk, uszony. Az öltözés a merülés része, nem előjáték: közben megismered, mi hol van rajtad, és mit kell majd megfognod. Utána derékig érő vízben állunk, és először csak fejet dugunk a víz alá. Itt dől el, hogy a légzés rendben van-e — és szinte mindig rendben van, csak idő kell hozzá. Nem sietünk.",
+      },
+      {
+        type: "img",
+        src: waterEntry.url,
+        alt: "Két búvár teljes felszerelésben lép a sekély vízbe, felülnézetből fotózva",
+        caption: "Belépés a vízbe: a sekély, biztonságos részen szokjuk meg a felszerelést, mielőtt elindulnánk a célpont felé.",
+      },
+      { type: "h3", text: "3. Ereszkedés a célpont felé" },
+      {
+        type: "p",
+        text: "Amikor mindketten érezzük, hogy mehet, lassan ereszkedünk. Erdélyi tóról beszélünk, tehát a víz zöldes, a látótávolság néhány méter, és a fény szépen fogy lefelé. Ez elsőre furcsa, de van benne valami nagyon megnyugtató: minden lelassul, csak a saját légzésedet hallod. A tófenéken kijelölt tájékozódási pontok segítenek, én pedig végig karnyújtásnyira vagyok.",
+      },
+      {
+        type: "img",
+        src: uwSign.url,
+        alt: "Búvár a víz alatti tájékozódási táblát vizsgálja a tófenéken",
+        caption: "Tájékozódás a tófenéken: a táblák mentén haladunk, így a kezdő is pontosan tudja, merre járunk.",
+      },
+      { type: "h3", text: "4. A söröző" },
+      {
+        type: "p",
+        text: "Aztán kirajzolódik a homályból a rekesz. Ez a pillanat mindig ugyanolyan jó: a vendég szeme kikerekedik a maszk mögött, megfogja az egyik üveget, én a másikat, és koccintunk. Csinálunk néhány képet, körbenézünk a borpincénél, aztán amikor a levegő és a kedv is engedi, lassan indulunk felfelé. Az egész merülés jellemzően 20–30 percig tart a víz alatt, attól függően, mennyire vagy komfortos.",
+      },
+      {
+        type: "img",
+        src: berariaBottle.url,
+        alt: "Búvár a víz alatt Berăria Subacvatică feliratú sörösüveget tart a kezében",
+        caption: "A Berăria Subacvatică címkés üveg a tófenéken — a koccintás víz alatt, a kóstoló a stégen történik.",
+      },
+      { type: "h2", text: "Mire számíts a víz alatt — őszintén" },
+      {
+        type: "ul",
+        items: [
+          "Hideg lesz a víz. Nyáron is jóval hűvösebb a tófenék, mint a felszín; a neoprén ruha és a csizmácska nem díszlet.",
+          "A látótávolság nem tengeri. Zöld, homályos, szemcsés — cserébe csendes és nagyon „erdélyi”.",
+          "A füledet ki kell egyenlíteni. Erre a stégen megtanítalak, de a lényeg: ha fáj, megállunk, nem erőltetjük.",
+          "Nem kell semmit teljesítened. Ha a sekély részen is jó neked, ott maradunk. A söröző nem szalad el.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Ha többet szeretnél tudni arról, milyen egy édesvízi tavi merülés, és miben más, mint amit a tengerparti nyaralásokon láttál, az erdélyi tavakról szóló cikkünkben részletesebben írtunk róla.",
+      },
+      {
+        type: "img",
+        src: beerToast.url,
+        alt: "Búvár sörösüveggel koccint a víz alatt, buborékokkal a maszk felett",
+        caption: "Koccintás a tófenéken — a szabályozó marad, a mosoly a maszkon keresztül is átjön.",
+      },
+      { type: "h2", text: "Mennyibe kerül, és mit tartalmaz az ár?" },
+      {
+        type: "p",
+        text: "A víz alatti söröző meglátogatása búvárminősítés nélkül egy merülés, felszereléssel együtt, oktatói kísérettel. Az árat nem itt írom le, mert az árlistánk az, ami naprakész — ott találod egymás mellett a Try Scuba merülést, a víz alatti kiállítás látogatását és a minősített búvároknak szóló merüléseket is. Csoportban érkeztek? Akkor a csoportos programjainknál érdemes körülnézni, vagy egyszerűen írj nekünk.",
+      },
+      {
+        type: "links",
+        title: "Kapcsolódó oldalak a Búvárkodás Erdély oldalán",
+        items: [
+          {
+            to: "/szolgaltatasok/elmenymerules",
+            label: "Élménymerülés minősítés nélkül",
+            note: "a víz alatti söröző és kiállítás is ide tartozik",
+          },
+          {
+            to: "/arak",
+            label: "Aktuális árlista",
+            note: "Try Scuba, élménymerülések, tanfolyamok, felszerelésbérlés",
+          },
+          {
+            to: "/szolgaltatasok/csoportos-program",
+            label: "Csoportos programok",
+            note: "baráti társaságnak, céges csapatnak",
+          },
+          {
+            to: "/blog/edesvizi-merules-erdelyi-tavak",
+            label: "Édesvízi merülés erdélyi tavakban",
+            note: "hideg víz, szűk látótávolság — mire készülj",
+          },
+          {
+            to: "/blog/fulkiegyenlites-buvarkodas",
+            label: "Fülkiegyenlítés ereszkedés közben",
+            note: "az első merülés legfontosabb készsége",
+          },
+          {
+            to: "/blog/buddy-rendszer-viz-alatti-jelzesek",
+            label: "Víz alatti kézjelek",
+            note: "így értjük meg egymást a tófenéken",
+          },
+        ],
+      },
+      { type: "h2", text: "És ha megtetszik?" },
+      {
+        type: "p",
+        text: "Ez a szokásos forgatókönyv. Valaki eljön a sörözőért, aztán a stégen, még vizes hajjal, megkérdezi, hogyan lehetne ezt rendesen megtanulni. A válasz a NAUI Scuba Diver tanfolyam: ugyanitt, ugyanezekkel az oktatókkal, csak ezúttal önálló búvárminősítéssel a végén. Az élménymerülésen szerzett rutin nem vész el — azt a komfortot, amit a tófenéken már megéreztél, a tanfolyamon csak tovább építjük.",
+      },
+      {
+        type: "img",
+        src: trioAfter.url,
+        alt: "Három búvár teljes felszerelésben a stégen merülés után, erdélyi táj háttérrel",
+        caption: "Merülés után a stégen — a kóstoló ideje. Innen indul a legtöbb tanfolyami jelentkezés.",
+      },
+      {
+        type: "p",
+        text: "Ha kedvet kaptál, nézd meg az élménymerülés oldalát, vagy hívj minket — pár mondatban kiderül, melyik nap, melyik helyszín és melyik program a legjobb neked. Az üvegek addig is hűlnek a tó fenekén.",
       },
     ],
   },

@@ -81,7 +81,7 @@ function BlogDetail() {
           <Link to="/blog" className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors">
             <ArrowLeft className="h-4 w-4" /> Blog
           </Link>
-          <div className="mt-6 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-secondary">
+          <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-semibold uppercase tracking-[0.2em] text-secondary">
             <span>{post.category}</span>
             {post.tags.map((t) => (
               <span key={t} className="text-white/60">#{t}</span>

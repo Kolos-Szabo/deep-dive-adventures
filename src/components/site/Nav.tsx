@@ -6,6 +6,7 @@ import { blogPosts, formatDate } from "@/lib/blog-posts";
 
 const links = [
   { to: "/", label: "Főoldal", hasDropdown: false },
+  { to: "/viz-alatti-sorozo", label: "Víz alatti söröző", hasDropdown: false },
   { to: "/rolunk", label: "Rólunk", hasDropdown: false },
   { to: "/csapatunk", label: "Ki vigyáz rám a víz alatt?", hasDropdown: false },
   { to: "/szolgaltatasok", label: "Szolgáltatások", hasDropdown: false },

@@ -142,7 +142,7 @@ function Home() {
             <Reveal delay={150} className="lg:col-span-5">
               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-secondary">Víz alatti élmény</span>
               <h2 id="sorozo-heading" className="mt-4 font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl text-balance">
-                Sörözés három méter mélyen.
+                Látogasd meg a víz alatti Csíki sörözőt!
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-white/80">
                 A dálnoki búvártó fenekén egy valódi bárpult áll sörcsappal, hűtővel és egy kilométerkővel, amely a

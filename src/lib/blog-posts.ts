@@ -26,6 +26,9 @@ import beerToast from "@/assets/buvar-viz-alatti-soros-koccintas-elmeny.jpg.asse
 import waterEntry from "@/assets/ket-buvar-belepes-a-vizbe-felulnezet.jpg.asset.json";
 import trioAfter from "@/assets/harom-buvar-stegen-merules-utan.jpg.asset.json";
 import uwSign from "@/assets/buvar-viz-alatti-tabla-sas-jelzes.jpg.asset.json";
+import techTeam from "@/assets/technikai-merules-tankok-csapat-melyben.jpg.asset.json";
+import techPortrait from "@/assets/technikai-buvar-portre-szabalyozo-maszk.jpg.asset.json";
+import nightDive from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.json";
 import signOk from "@/assets/jelzes-ok.png";
 import signUp from "@/assets/jelzes-emelkedes.png";
 import signDown from "@/assets/jelzes-ereszkedes.png";
@@ -1487,6 +1490,207 @@ export const blogPosts: BlogPost[] = [
       {
         type: "p",
         text: "Ha kedvet kaptál, nézd meg az élménymerülés oldalát, vagy hívj minket — pár mondatban kiderül, melyik nap, melyik helyszín és melyik program a legjobb neked. Az üvegek addig is hűlnek a tó fenekén.",
+      },
+    ],
+  },
+  {
+    slug: "mi-jon-az-open-water-utan-advanced-nitrox-technikai-buvarkodas",
+    title: "Mi jön az Open Water után? Advanced, Nitrox, éjszakai merülés – és mikor jön a technikai búvárkodás",
+    excerpt:
+      "Megvan az első kártya, volt tíz-húsz merülésed, és most ott állsz a stégen azzal a kérdéssel, hogy hogyan tovább. Leírom, milyen lépcsők vannak az Open Water után, melyik mire jó, és honnan tudod, hogy a technikai búvárkodás egyáltalán neked való-e.",
+    description:
+      "Mi jön az Open Water Diver után? Advanced, Nitrox, éjszakai és mélymerülés, Rescue – és mikor érdemes a technikai búvárkodás, sidemount vagy twinset felé nézni. Őszinte útmutató egy erdélyi NAUI oktatótól.",
+    keywords:
+      "Advanced Open Water, mi jön az Open Water után, Nitrox tanfolyam, technikai búvárkodás, sidemount, twinset, éjszakai merülés, Rescue Diver, NAUI tanfolyam Erdély, búvárkodás haladóknak",
+    date: "2026-09-06",
+    readingMinutes: 9,
+    category: "Tanfolyam",
+    tags: ["haladó", "technikai", "NAUI"],
+    cover: techTeam.url,
+    coverAlt: "Technikai búvárok kettős palackokkal ereszkednek csapatban a mélyben, felettük kéklő víz és napfény",
+    sections: [
+      {
+        type: "p",
+        text: "Van egy pillanat, ami majdnem minden búvárnál eljön. Megvan az Open Water kártya, mögötted tíz-húsz merülés, már nem gondolkodsz azon, hogy hová tegyed a kezed a BCD-n, és a tófenéken sem lepődsz meg semmin. Aztán egy stégen, még vizesen, felteszed magadnak a kérdést: jó, és most? Ez a cikk erre a kérdésre válaszol — nem tanfolyami katalógusként, hanem úgy, ahogy én is elmondanám neked egy kávé mellett.",
+      },
+      {
+        type: "p",
+        text: "Előre szólok: a válasz nem az, hogy „iratkozz be mindenre”. Van, akinek az Advanced után évekig pont elég, amit tud, és boldogan merül. És van, akit a sidemount konfigurációk meg a kettős palackok már az első naptól vonzanak. Mind a kettő rendben van. A lényeg, hogy tudd, mi mire való, és ne lépj át egy lépcsőt csak azért, mert jól mutat.",
+      },
+      { type: "h2", text: "Az Open Water nem a vége, hanem a jogosítvány" },
+      {
+        type: "p",
+        text: "Szoktam mondani a tanítványaimnak: az Open Water olyan, mint a friss jogosítvány. Tudsz vezetni, de a 18 méter és a nappali, jó látótávolságú merülés a te világod — és ez így is van jól. Az első húsz-harminc merülés arra való, hogy ezt a világot rutinná tedd. Ne akarj mélyebbre menni, amíg a lebegésed nem stabil, és a levegőfogyasztásod nem jött le arra a szintre, ahol már nem te érsz vissza elsőnek a stégre.",
+      },
+      {
+        type: "p",
+        text: "Ha a lebegés még nem megy magától, előbb azt gyakoroljuk. A lebegéskontrollról írtam egy külön cikket, mert enélkül a haladó szintek mind kínlódás lesznek: a mélyben minden hiba nagyobb, a Nitrox előnye elvész, az éjszakai merülésen pedig a felkavart iszapban a lámpád fénye egyszerűen elakad.",
+      },
+      {
+        type: "img",
+        src: advanced.url,
+        alt: "Két haladó búvár párban ereszkedik a mélykék vízben, kötél mentén, teljes felszerelésben",
+        caption: "Az Advanced tanfolyam mélymerülése: párban, kötél mentén, tervezett fenékidővel — itt tanulod meg, mit jelent a 30 méter.",
+      },
+      { type: "h2", text: "Advanced Open Water: a legtöbb búvárnak ez a valódi következő lépés" },
+      {
+        type: "p",
+        text: "Az Advanced tanfolyamot sokan félreértik. Nem attól leszel haladó, hogy elvégzed — attól leszel haladó, hogy közben oktatóval merülsz olyan helyzetekben, amiket egyedül nem próbálnál ki. Mélymerülés 30 méterig, navigáció iránytűvel és természetes tájékozódási pontokkal, éjszakai vagy korlátozott látótávolságú merülés, és általában még két választható téma.",
+      },
+      {
+        type: "p",
+        text: "Erdélyi tavakban ez különösen hasznos. Nálunk a látótávolság sokszor öt méter alatt van, a hőmérséklet a termoklin alatt egy számjegyű, és a fény 15 méter alatt már inkább zöld derengés. Aki itt tanul navigálni és mélyre menni, annak a tenger utána pihenés. Az édesvízi merülésről szóló cikkben leírtam, miért érdemes ezt a nehezebb környezetet a magad javára fordítani.",
+      },
+      { type: "h3", text: "Éjszakai merülés: ugyanaz a tó, teljesen más világ" },
+      {
+        type: "p",
+        text: "Az éjszakai merülés az Advanced része, de külön említem, mert ez az a merülés, ami után a legtöbben másképp néznek a búvárkodásra. A lámpád fénykúpjában a világ két méterre szűkül, a halak nem menekülnek, a saját buborékaid ezüstösen csillognak. És közben minden, amit a buddy rendszerről és a kézjelekről tanultál, hirtelen lámpafénnyel kommunikálódik. Ha valakinek megrendül az önbizalma egy nappali merülésen, az éjszakait még nem erőltetjük — ha viszont nyugodt vagy odalent, ez lesz a kedvenced.",
+      },
+      {
+        type: "img",
+        src: nightDive.url,
+        alt: "Búvár éjszakai merülésen, a lámpa fénykúpja világítja meg a sötét vizet és a buborékokat",
+        caption: "Éjszakai merülés: a lámpa fényén kívül semmi, a fényen belül minden. Az Advanced egyik legemlékezetesebb merülése.",
+      },
+      { type: "h2", text: "Nitrox: a legjobb ár-érték arányú tanfolyam, amit elvégezhetsz" },
+      {
+        type: "p",
+        text: "Ha egyetlen dolgot ajánlanék az Open Water után, az a Nitrox. Rövid, főleg elméleti tanfolyam, és a végén olyan levegőt lélegzel, amiben 32–36% az oxigén a szokásos 21% helyett. Kevesebb nitrogén szívódik fel, hosszabb ideig maradhatsz 18–25 méteren, és a legtöbben azt mondják, kevésbé fáradtak egy merülőnap végén. Ez utóbbit a tudomány óvatosan kezeli, de a saját tapasztalatom is az, hogy egy kétmerüléses hétvégén érezhető a különbség.",
+      },
+      {
+        type: "p",
+        text: "Amit cserébe meg kell tanulnod: a keverék oxigéntartalmának ellenőrzése merülés előtt, a maximális mélység kiszámítása, és az, hogy a Nitroxszal nem mélyebbre, hanem tovább mész. Aki ezt a fegyelmet megszokja, annak a technikai gázkezelés később nem lesz idegen.",
+      },
+      { type: "h2", text: "Rescue Diver: a tanfolyam, ami után jobb buddy leszel" },
+      {
+        type: "p",
+        text: "A Rescue az a szint, amit oktatóként mindenkinek a szívére kötök. Nem azért, mert gyakran kell menteni — hanem mert a Rescue után máshogy nézel a saját merülésedre és a párodéra. Észreveszed a stresszt, mielőtt pánik lesz belőle. Tudod, mit csinálj egy fáradt vagy eszméletlen búvárral a felszínen. És ami a legfontosabb: sokkal kevésbé kerülsz olyan helyzetbe, ahonnan menteni kell.",
+      },
+      {
+        type: "p",
+        text: "A Rescue egyben az előszobája mindennek, ami utána jön: a Divemaster és a technikai képzések is erre építenek. Fizikailag ez a legmegterhelőbb rekreációs tanfolyam, de a tanítványaim közül még senki nem mondta, hogy megbánta.",
+      },
+      {
+        type: "img",
+        src: techPortrait.url,
+        alt: "Tapasztalt búvár közeli portréja víz alatt, szabályozóval a szájában és maszkban, nyugodt tekintettel",
+        caption: "A Rescue szint után máshogy nézel a vízre: nyugodtabban, figyelmesebben — és a párod is biztonságosabban merül melletted.",
+      },
+      { type: "h2", text: "Technikai búvárkodás: mi ez, és kinek való?" },
+      {
+        type: "p",
+        text: "Itt jön az a rész, amiről a legtöbb kérdést kapom. A technikai búvárkodás röviden: olyan merülés, ahonnan nem tudsz bármikor egyenesen feljönni a felszínre. Vagy azért, mert kötelező dekompressziós megállóid vannak, vagy azért, mert fizikailag fedett a fejed feletti tér — barlang, roncs belseje. Ebből következik minden más: redundáns felszerelés, több palack, több gázkeverék, és egy tervezés, amiben a „majd meglátjuk” kifejezés nem szerepel.",
+      },
+      {
+        type: "p",
+        text: "A képeken, amiket a galériánkban is láthatsz, kettős palackos (twinset) és sidemount konfigurációban merülő csapatot látsz. A sidemount esetében a palackok a tested két oldalán lógnak, nem a hátadon — szűk helyeken jobban átférsz, és minden szelep szem előtt van. A twinset a klasszikus háti megoldás összekötött palackokkal. Hogy melyik való neked, az a merülési célodtól függ, nem a divattól. A tanfolyamon mindkettőt kipróbálod, mielőtt bármit megvennél.",
+      },
+      {
+        type: "img",
+        src: sidemount.url,
+        alt: "Technikai búvár sidemount konfigurációban, két oldalt rögzített palackokkal úszik a mélyben, felette napsugarak",
+        caption: "Sidemount konfiguráció: a palackok oldalt, minden szelep kézközelben. Szűk helyeken és hosszú merüléseken bizonyít.",
+      },
+      { type: "h3", text: "Honnan tudod, hogy készen állsz rá?" },
+      {
+        type: "p",
+        text: "Nem a merülésszámból. Láttam már 60 merüléses búvárt, aki nyugodtan, precízen, minden mozdulatot tudatosan végzett, és láttam 300 merüléses búvárt, aki a technikai bevezetőn az első feladatnál kapkodott. Amit oktatóként nézek, mielőtt valakit a technikai irányba engednék:",
+      },
+      {
+        type: "ul",
+        items: [
+          "A lebegése mozdulatlan. Nem „elég jó”, hanem tényleg egy helyben áll a vízben, kéz nélkül, bármilyen helyzetben.",
+          "A trimje vízszintes, és úgy is marad, amikor valami mást csinál — például szelepet kezel vagy tekercset old.",
+          "A stresszre lassítással reagál, nem gyorsítással. Ez tanulható, de kell hozzá idő.",
+          "Van mögötte Rescue, Nitrox, és értelmes mennyiségű hideg, rossz látótávolságú merülés. Az erdélyi tavak erre kiváló iskola.",
+          "Őszinte a saját határaival. A technikai búvárkodásban a „nem, ma ez nem megy” a legprofibb mondat.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Ha ezek közül kettő-három még hiányzik, az nem baj — ez egy térkép, nem egy vizsga. A technikai bevezető tanfolyam épp arra való, hogy ezeket rendszerben, oktatóval, sekély vízben fejleszd, mielőtt bármilyen dekompressziós merülésre sor kerülne.",
+      },
+      { type: "h3", text: "Mennyivel drágább, és megéri?" },
+      {
+        type: "p",
+        text: "Nem fogok mellébeszélni: a technikai búvárkodás drágább. Több palack, több szabályozó, drágább gázok, hosszabb tanfolyamok. A rekreációs tanfolyamok — Advanced, Nitrox, Rescue — árait az árlistánkon megtalálod, a technikai képzéseknél pedig érdemes előre beszélnünk, mert a konfiguráció és a cél szerint más és más a felépítés. Amit a saját felszerelésbe fektetsz, arról a kezdőknek szóló felszereléscikkben leírt logika itt is érvényes: előbb tanuld meg, mit szeretsz, aztán vásárolj.",
+      },
+      {
+        type: "img",
+        src: regulators.url,
+        alt: "Több búvárszabályozó és technikai felszerelés kiterítve egy asztalon merülés előtti ellenőrzéshez",
+        caption: "Technikai merülés előtt minden darab az asztalra kerül. A redundancia nem luxus, hanem a merülés része.",
+      },
+      { type: "h2", text: "Egy reális útvonal, ahogy én javasolnám" },
+      {
+        type: "p",
+        text: "Ha most kaptad meg az Open Water kártyát, és tudni akarod, mi a józan sorrend, ez az, amit a legtöbb tanítványomnak mondok. Nem kőbe vésett, de működik:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Open Water után 15–25 merülés, lehetőleg változatos helyeken: tó, medence, ha lehet, tenger is.",
+          "Nitrox — akár rögtön az elején, ártani nem árt, és rászoktat a gázfegyelemre.",
+          "Advanced Open Water, benne mély, navigáció és éjszakai merülés.",
+          "Újabb 20–30 merülés, immár 30 méterig, néhány hideg, rossz látótávolságú tavi merüléssel.",
+          "Rescue Diver. Innentől te vagy az a buddy, akivel mindenki szívesen merül.",
+          "Ha még mindig vonz a mélység vagy a fedett tér: technikai bevezető, sidemount vagy twinset, oktatóval.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Az egész útvonal egy-két évet vesz igénybe, ha rendszeresen merülsz — és ez így jó. A technikai búvárkodásban a sietség az egyetlen dolog, ami tényleg veszélyes.",
+      },
+      {
+        type: "links",
+        title: "Kapcsolódó oldalak a Búvárkodás Erdély oldalán",
+        items: [
+          {
+            to: "/szolgaltatasok/naui-tanfolyam",
+            label: "NAUI tanfolyamok: Advanced, Nitrox, Rescue, technikai szintek",
+            note: "minden szint egy helyen, kis csoportban",
+          },
+          {
+            to: "/arak",
+            label: "Aktuális árlista",
+            note: "Advanced és Nitrox tanfolyam felszereléssel",
+          },
+          {
+            to: "/blog/lebegeskontroll-buvarkodas",
+            label: "Lebegéskontroll búvárkodás közben",
+            note: "a haladó szintek alapja",
+          },
+          {
+            to: "/blog/edesvizi-merules-erdelyi-tavak",
+            label: "Édesvízi merülés erdélyi tavakban",
+            note: "miért jó iskola a hideg, homályos víz",
+          },
+          {
+            to: "/blog/buvarfelszereles-kezdoknek-berles-vagy-vasarlas",
+            label: "Búvárfelszerelés: bérlés vagy vásárlás",
+            note: "mielőtt technikai felszerelést vennél",
+          },
+          {
+            to: "/biztonsag",
+            label: "Biztonsági protokolljaink",
+            note: "így merülünk minden szinten",
+          },
+        ],
+      },
+      { type: "h2", text: "Beszéljük meg a stégen" },
+      {
+        type: "p",
+        text: "Ha nem vagy biztos benne, melyik lépcső jön nálad, gyere el egy sima merülésre. Egy merülés alatt többet látok a lebegésedből és a nyugalmadból, mint amennyit egy e-mailben le tudnál írni — és utána őszintén megmondom, mit javasolnék. Lehet, hogy az Advanced. Lehet, hogy még húsz merülés. És lehet, hogy tényleg itt az ideje a két palacknak.",
+      },
+      {
+        type: "img",
+        src: winterDock.url,
+        alt: "Búvárcsapat teljes felszerelésben áll a stégen egy téli merülés előtt, mögöttük az erdélyi tó",
+        caption: "Téli merülés a stégről. Aki ezt megszokja, annak a haladó szintek már csak a következő lépést jelentik.",
+      },
+      {
+        type: "p",
+        text: "Nézd meg a tanfolyamok oldalát, vagy hívj minket — a következő lépést közösen egyszerűbb kiválasztani, mint egyedül a képernyő előtt.",
       },
     ],
   },

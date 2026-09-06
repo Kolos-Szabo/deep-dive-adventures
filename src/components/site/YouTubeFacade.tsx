@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Play } from "lucide-react";
 
 export function YouTubeFacade({ id, title }: { id: string; title: string }) {
-  const YT_THUMB = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+  const [thumbQuality, setThumbQuality] = useState<"maxresdefault" | "hqdefault">("maxresdefault");
+  const YT_THUMB = `https://i.ytimg.com/vi/${id}/${thumbQuality}.jpg`;
   const [active, setActive] = useState(false);
   return (
     <div className="relative mx-auto aspect-video w-full overflow-hidden rounded-2xl shadow-deep bg-black">

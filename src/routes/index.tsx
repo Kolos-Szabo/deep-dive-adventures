@@ -129,24 +129,15 @@ function Home() {
         <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
             <Reveal className="lg:col-span-7">
-              <Link to="/viz-alatti-sorozo" className="group block overflow-hidden rounded-3xl shadow-deep" aria-label="Víz alatti Tiltott Csíki Söröző – a teljes történet">
-                <div className="relative aspect-[4/3] bg-muted/20">
-                  <img
-                    src={experience}
-                    alt="Búvár egy üveg Csíki Sört nyújt át a víz alatt a dálnoki búvártóban"
-                    width={1920}
-                    height={1440}
-                    loading="lazy"
-                    decoding="async"
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 motion-safe:group-hover:scale-[1.04]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-deep/70 via-transparent to-transparent" />
-                  <div className="absolute bottom-5 left-5 inline-flex items-baseline gap-2 rounded-2xl border border-white/20 bg-white/10 px-4 py-2.5 backdrop-blur-md sm:bottom-6 sm:left-6">
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/75">Víz alatti élmény</span>
-                    <span className="font-display text-2xl font-bold sm:text-3xl">84 EUR</span>
-                  </div>
+              <div className="flex h-full flex-col justify-center gap-5">
+                <div className="overflow-hidden rounded-3xl shadow-deep">
+                  <YouTubeFacade id="ETf370X4edI" title="Víz alatti Tiltott Csíki Söröző – merülés a dálnoki tóban" />
                 </div>
-              </Link>
+                <div className="inline-flex items-baseline gap-2 self-start rounded-2xl border border-white/20 bg-white/10 px-4 py-2.5 backdrop-blur-md">
+                  <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/75">Víz alatti élmény</span>
+                  <span className="font-display text-2xl font-bold sm:text-3xl">84 EUR</span>
+                </div>
+              </div>
             </Reveal>
             <Reveal delay={150} className="lg:col-span-5">
               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-secondary">Víz alatti élmény</span>

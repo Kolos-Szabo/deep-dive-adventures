@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VizAlattiSorozoRouteImport } from './routes/viz-alatti-sorozo'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RolunkRouteImport } from './routes/rolunk'
 import { Route as KapcsolatRouteImport } from './routes/kapcsolat'
@@ -23,6 +24,11 @@ import { Route as SzolgaltatasokNauiTanfolyamRouteImport } from './routes/szolga
 import { Route as SzolgaltatasokSlugRouteImport } from './routes/szolgaltatasok.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
+const VizAlattiSorozoRoute = VizAlattiSorozoRouteImport.update({
+  id: '/viz-alatti-sorozo',
+  path: '/viz-alatti-sorozo',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -99,6 +105,7 @@ export interface FileRoutesByFullPath {
   '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/viz-alatti-sorozo': typeof VizAlattiSorozoRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
   '/szolgaltatasok/naui-tanfolyam': typeof SzolgaltatasokNauiTanfolyamRoute
@@ -114,6 +121,7 @@ export interface FileRoutesByTo {
   '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/viz-alatti-sorozo': typeof VizAlattiSorozoRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
   '/szolgaltatasok/naui-tanfolyam': typeof SzolgaltatasokNauiTanfolyamRoute
@@ -130,6 +138,7 @@ export interface FileRoutesById {
   '/kapcsolat': typeof KapcsolatRoute
   '/rolunk': typeof RolunkRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/viz-alatti-sorozo': typeof VizAlattiSorozoRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/szolgaltatasok/$slug': typeof SzolgaltatasokSlugRoute
   '/szolgaltatasok/naui-tanfolyam': typeof SzolgaltatasokNauiTanfolyamRoute
@@ -147,6 +156,7 @@ export interface FileRouteTypes {
     | '/kapcsolat'
     | '/rolunk'
     | '/sitemap.xml'
+    | '/viz-alatti-sorozo'
     | '/blog/$slug'
     | '/szolgaltatasok/$slug'
     | '/szolgaltatasok/naui-tanfolyam'
@@ -162,6 +172,7 @@ export interface FileRouteTypes {
     | '/kapcsolat'
     | '/rolunk'
     | '/sitemap.xml'
+    | '/viz-alatti-sorozo'
     | '/blog/$slug'
     | '/szolgaltatasok/$slug'
     | '/szolgaltatasok/naui-tanfolyam'
@@ -177,6 +188,7 @@ export interface FileRouteTypes {
     | '/kapcsolat'
     | '/rolunk'
     | '/sitemap.xml'
+    | '/viz-alatti-sorozo'
     | '/blog/$slug'
     | '/szolgaltatasok/$slug'
     | '/szolgaltatasok/naui-tanfolyam'
@@ -193,6 +205,7 @@ export interface RootRouteChildren {
   KapcsolatRoute: typeof KapcsolatRoute
   RolunkRoute: typeof RolunkRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  VizAlattiSorozoRoute: typeof VizAlattiSorozoRoute
   BlogSlugRoute: typeof BlogSlugRoute
   SzolgaltatasokSlugRoute: typeof SzolgaltatasokSlugRoute
   SzolgaltatasokNauiTanfolyamRoute: typeof SzolgaltatasokNauiTanfolyamRoute
@@ -202,6 +215,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/viz-alatti-sorozo': {
+      id: '/viz-alatti-sorozo'
+      path: '/viz-alatti-sorozo'
+      fullPath: '/viz-alatti-sorozo'
+      preLoaderRoute: typeof VizAlattiSorozoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -305,6 +325,7 @@ const rootRouteChildren: RootRouteChildren = {
   KapcsolatRoute: KapcsolatRoute,
   RolunkRoute: RolunkRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  VizAlattiSorozoRoute: VizAlattiSorozoRoute,
   BlogSlugRoute: BlogSlugRoute,
   SzolgaltatasokSlugRoute: SzolgaltatasokSlugRoute,
   SzolgaltatasokNauiTanfolyamRoute: SzolgaltatasokNauiTanfolyamRoute,

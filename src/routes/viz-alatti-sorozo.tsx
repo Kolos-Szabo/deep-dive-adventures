@@ -16,7 +16,7 @@ const TITLE = "Víz alatti Tiltott Csíki Söröző – búvárélmény Dálnoko
 const DESCRIPTION =
   "Sörözés három méter mélyen: a dálnoki búvártóban berendezett víz alatti Tiltott Csíki Söröző története, az élmény menete és az ára – 84 EUR.";
 const PRICE = "84 EUR";
-const VIDEO_ID = "O_J4YwdSP2M";
+const VIDEO_ID = "ETf370X4edI";
 
 export const Route = createFileRoute("/viz-alatti-sorozo")({
   head: () => ({

@@ -56,13 +56,13 @@ export function Nav() {
           </div>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden xl:flex items-center gap-0.5">
           {links.map((l) =>
             l.hasDropdown ? (
               <div key={l.to} className="relative group">
                 <Link
                   to={l.to}
-                  className={`inline-flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                  className={`inline-flex items-center gap-1 whitespace-nowrap px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                     scrolled
                       ? "text-foreground/80 hover:text-primary"
                       : "text-white/90 hover:text-white"
@@ -105,7 +105,7 @@ export function Nav() {
               <Link
                 key={l.to}
                 to={l.to}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                className={`whitespace-nowrap px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                   scrolled
                     ? "text-foreground/80 hover:text-primary"
                     : "text-white/90 hover:text-white"
@@ -121,7 +121,7 @@ export function Nav() {
           )}
           <Link
             to="/kapcsolat"
-            className={`ml-4 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold shadow-glow transition-all ${
+            className={`ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-semibold shadow-glow transition-all ${
               scrolled
                 ? "bg-gradient-ocean text-white hover:shadow-deep hover:-translate-y-0.5"
                 : "bg-white text-primary hover:shadow-lg hover:-translate-y-0.5"
@@ -132,7 +132,7 @@ export function Nav() {
         </nav>
 
         <button
-          className={`lg:hidden p-2 transition-colors ${
+          className={`xl:hidden p-2 transition-colors ${
             scrolled ? "text-foreground" : "text-white"
           }`}
           onClick={() => setOpen(!open)}
@@ -143,7 +143,7 @@ export function Nav() {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-background/95 backdrop-blur-xl border-t border-border">
+        <div className="xl:hidden bg-background/95 backdrop-blur-xl border-t border-border">
           <nav className="flex flex-col px-5 py-4 gap-1">
             {links.map((l) => (
               <div key={l.to}>

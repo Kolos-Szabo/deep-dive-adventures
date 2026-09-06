@@ -118,3 +118,9 @@
   to { opacity: 1; transform: translateY(0); }
 }
 @utility animate-fade-up { animation: fade-up 0.8s ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-bubble, .animate-fade-up { animation: none !important; opacity: 1 !important; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}

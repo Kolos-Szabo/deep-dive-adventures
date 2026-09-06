@@ -48,7 +48,7 @@ export function Nav() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <Link to="/" className="flex items-center gap-3 group">
+        <Link to="/" className="flex shrink-0 items-center gap-3 group">
           <img src={logoAsset.url} alt="Búvárkodás Erdély logó" width={56} height={56} className="h-14 w-14 object-contain transition-transform group-hover:scale-110" />
           <div className="flex flex-col leading-none">
             <span className="font-display text-lg font-extrabold tracking-tight text-primary uppercase">Búvárkodás</span>
@@ -62,7 +62,7 @@ export function Nav() {
               <div key={l.to} className="relative group">
                 <Link
                   to={l.to}
-                  className={`inline-flex items-center gap-1 whitespace-nowrap px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                  className={`inline-flex items-center gap-1 whitespace-nowrap px-2.5 py-2 text-[13px] font-medium rounded-md transition-colors ${
                     scrolled
                       ? "text-foreground/80 hover:text-primary"
                       : "text-white/90 hover:text-white"
@@ -105,7 +105,7 @@ export function Nav() {
               <Link
                 key={l.to}
                 to={l.to}
-                className={`whitespace-nowrap px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                className={`whitespace-nowrap px-2.5 py-2 text-[13px] font-medium rounded-md transition-colors ${
                   scrolled
                     ? "text-foreground/80 hover:text-primary"
                     : "text-white/90 hover:text-white"

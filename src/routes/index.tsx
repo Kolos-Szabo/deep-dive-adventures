@@ -123,6 +123,65 @@ function Home() {
         </div>
       </section>
 
+      {/* VÍZ ALATTI SÖRÖZŐ – editorial teaser */}
+      <section className="relative overflow-hidden bg-deep py-20 text-white lg:py-28" aria-labelledby="sorozo-heading">
+        <Bubbles count={8} />
+        <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+            <Reveal className="lg:col-span-7">
+              <Link to="/viz-alatti-sorozo" className="group block overflow-hidden rounded-3xl shadow-deep" aria-label="Víz alatti Tiltott Csíki Söröző – a teljes történet">
+                <div className="relative aspect-[4/3] bg-muted/20">
+                  <img
+                    src={experience}
+                    alt="Búvár egy üveg Csíki Sört nyújt át a víz alatt a dálnoki búvártóban"
+                    width={1920}
+                    height={1440}
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 motion-safe:group-hover:scale-[1.04]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-deep/70 via-transparent to-transparent" />
+                  <div className="absolute bottom-5 left-5 inline-flex items-baseline gap-2 rounded-2xl border border-white/20 bg-white/10 px-4 py-2.5 backdrop-blur-md sm:bottom-6 sm:left-6">
+                    <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/75">Víz alatti élmény</span>
+                    <span className="font-display text-2xl font-bold sm:text-3xl">84 EUR</span>
+                  </div>
+                </div>
+              </Link>
+            </Reveal>
+            <Reveal delay={150} className="lg:col-span-5">
+              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-secondary">Víz alatti élmény</span>
+              <h2 id="sorozo-heading" className="mt-4 font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl text-balance">
+                Sörözés három méter mélyen.
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-white/80">
+                A dálnoki búvártó fenekén egy valódi bárpult áll sörcsappal, hűtővel és egy kilométerkővel, amely a
+                felszínig méri a távolságot. A Tiltott Csíki Sörrel közösen épített víz alatti söröző 2018 óta várja a
+                kalandvágyókat – kezdőket is, oktató kíséretével.
+              </p>
+              <dl className="mt-8 grid grid-cols-3 gap-4 border-y border-white/10 py-5">
+                {[
+                  { k: "Helyszín", v: "Dálnok" },
+                  { k: "Mélység", v: "3 méter" },
+                  { k: "Ár", v: "84 EUR" },
+                ].map((d) => (
+                  <div key={d.k}>
+                    <dt className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/55">{d.k}</dt>
+                    <dd className="mt-1 font-display text-lg font-bold sm:text-xl">{d.v}</dd>
+                  </div>
+                ))}
+              </dl>
+              <Link
+                to="/viz-alatti-sorozo"
+                className="group mt-8 inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-base font-semibold text-primary shadow-glow transition-all hover:-translate-y-1 hover:shadow-deep"
+              >
+                Fedezd fel a történetet
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+              </Link>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* INTRO */}
       <section className="relative bg-background py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">

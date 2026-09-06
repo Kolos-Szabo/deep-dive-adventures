@@ -26,6 +26,9 @@ import beerToast from "@/assets/buvar-viz-alatti-soros-koccintas-elmeny.jpg.asse
 import waterEntry from "@/assets/ket-buvar-belepes-a-vizbe-felulnezet.jpg.asset.json";
 import trioAfter from "@/assets/harom-buvar-stegen-merules-utan.jpg.asset.json";
 import uwSign from "@/assets/buvar-viz-alatti-tabla-sas-jelzes.jpg.asset.json";
+import techTeam from "@/assets/technikai-merules-tankok-csapat-melyben.jpg.asset.json";
+import techPortrait from "@/assets/technikai-buvar-portre-szabalyozo-maszk.jpg.asset.json";
+import nightDive from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.json";
 import signOk from "@/assets/jelzes-ok.png";
 import signUp from "@/assets/jelzes-emelkedes.png";
 import signDown from "@/assets/jelzes-ereszkedes.png";

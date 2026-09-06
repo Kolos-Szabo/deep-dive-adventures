@@ -121,7 +121,7 @@ export function Nav() {
           )}
           <Link
             to="/kapcsolat"
-            className={`ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-semibold shadow-glow transition-all ${
+            className={`ml-3 hidden 2xl:inline-flex items-center justify-center whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-semibold shadow-glow transition-all ${
               scrolled
                 ? "bg-gradient-ocean text-white hover:shadow-deep hover:-translate-y-0.5"
                 : "bg-white text-primary hover:shadow-lg hover:-translate-y-0.5"

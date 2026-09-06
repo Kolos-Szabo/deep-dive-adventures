@@ -32,6 +32,7 @@ export function YouTubeFacade({ id, title }: { id: string; title: string }) {
           className="group absolute inset-0 h-full w-full"
         >
           <img
+            ref={imgRef}
             src={YT_THUMB}
             alt={title}
             loading="lazy"

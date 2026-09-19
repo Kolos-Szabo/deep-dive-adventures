@@ -4,6 +4,8 @@ import { Reveal } from "@/components/site/Reveal";
 import { Bubbles } from "@/components/site/Bubbles";
 import { blogPosts, formatDate, getPostBySlug, type BlogPost } from "@/lib/blog-posts";
 
+const SITE_URL = "https://explore-depths-romania.lovable.app";
+
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }): { post: BlogPost } => {
     const post = getPostBySlug(params.slug);
@@ -19,15 +21,15 @@ export const Route = createFileRoute("/blog/$slug")({
           { property: "og:title", content: loaderData.post.title },
           { property: "og:description", content: loaderData.post.description },
           { property: "og:type", content: "article" },
-          { property: "og:image", content: loaderData.post.cover },
-          { property: "og:url", content: `/blog/${params.slug}` },
+          { property: "og:image", content: `${SITE_URL}${loaderData.post.cover}` },
+          { property: "og:url", content: `${SITE_URL}/blog/${params.slug}` },
           { property: "article:published_time", content: loaderData.post.date },
           { property: "article:section", content: loaderData.post.category },
           { name: "twitter:card", content: "summary_large_image" },
-          { name: "twitter:image", content: loaderData.post.cover },
+          { name: "twitter:image", content: `${SITE_URL}${loaderData.post.cover}` },
         ]
       : [],
-    links: loaderData ? [{ rel: "canonical", href: `/blog/${params.slug}` }] : [],
+    links: loaderData ? [{ rel: "canonical", href: `${SITE_URL}/blog/${params.slug}` }] : [],
     scripts: loaderData
       ? [
           {
@@ -37,14 +39,14 @@ export const Route = createFileRoute("/blog/$slug")({
               "@type": "BlogPosting",
               headline: loaderData.post.title,
               description: loaderData.post.description,
-              image: loaderData.post.cover,
+              image: `${SITE_URL}${loaderData.post.cover}`,
               datePublished: loaderData.post.date,
               dateModified: loaderData.post.date,
               keywords: loaderData.post.keywords,
               articleSection: loaderData.post.category,
               author: { "@type": "Organization", name: "Búvárkodás Erdély" },
               publisher: { "@type": "Organization", name: "Búvárkodás Erdély" },
-              mainEntityOfPage: { "@type": "WebPage", "@id": `/blog/${params.slug}` },
+              mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/blog/${params.slug}` },
             }),
           },
         ]

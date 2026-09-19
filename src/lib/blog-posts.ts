@@ -29,6 +29,8 @@ import uwSign from "@/assets/buvar-viz-alatti-tabla-sas-jelzes.jpg.asset.json";
 import techTeam from "@/assets/technikai-merules-tankok-csapat-melyben.jpg.asset.json";
 import techPortrait from "@/assets/technikai-buvar-portre-szabalyozo-maszk.jpg.asset.json";
 import nightDive from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.json";
+import surfaceReturn from "@/assets/buvar-felszinre-erkezes-maszkban-tonal.jpg.asset.json";
+import buddySelfie from "@/assets/buddy-paros-buvarok-felszinen-szelfi.jpg.asset.json";
 import signOk from "@/assets/jelzes-ok.png";
 import signUp from "@/assets/jelzes-emelkedes.png";
 import signDown from "@/assets/jelzes-ereszkedes.png";
@@ -1694,6 +1696,65 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "elso-tengeri-buvarutazas-felkeszules",
+    title: "Első tengeri búvárutazás: mire készülj az erdélyi tó után?",
+    excerpt: "A tavi merülések után a tenger tágasabbnak és könnyebbnek tűnik — de a sós víz, az ismeretlen felszerelés és az új helyszín tartogat meglepetéseket. Így készülünk fel rá még itthon.",
+    description: "Első tengeri búvárutazás előtt állsz? Gyakorlati útmutató súlyozásról, felszerelésről, buddy rendszerről és az erdélyi tavi felkészülésről.",
+    keywords: "első tengeri merülés, búvárutazás, búvárkodás Egyiptomban, Dahab búvárkodás, tengeri búvárkodás, búvárkodás Erdély",
+    date: "2026-09-19",
+    readingMinutes: 9,
+    category: "Búvárutazás",
+    tags: ["tenger", "felkészülés", "Dahab"],
+    cover: dahab.url,
+    coverAlt: "Búvárcsoport teljes felszereléssel indul tengeri merülésre Dahabban",
+    sections: [
+      { type: "p", text: "Az első tengeri búvárút előtt szinte mindenki ugyanazt kérdezi tőlem: ha eddig tóban tanultam, odakint újra kezdő leszek? Nem. Az első néhány perc biztosan szokatlan lesz, de a lényeg már veled utazik: tudsz nyugodtan lélegezni, jelezni a párodnak, kezelni a felszerelésedet és megállni, ha valami nincs rendben." },
+      { type: "p", text: "A galériánk egyik képén a csapat Dahabban, palackkal a hátán sétál a víz felé. Nekem erről nem a távoli úti cél jut eszembe először, hanem az a sok medencés és tavi óra, ami megelőzte. A tengeri merülés ugyanis nem a repülőtéren kezdődik. Sokkal korábban, egy erdélyi stégen, amikor először rakod össze önállóan a szettedet." },
+      { type: "h2", text: "A tavi rutin nem hátrány — ez lesz a biztos alapod" },
+      { type: "p", text: "Erdélyben gyakran hűvösebb, zöldebb és rövidebb látótávolságú vízben gyakorlunk. Megtanulsz közel maradni a társadhoz, figyelni az irányra, és nem elveszíteni a nyugalmadat attól, hogy nem látod egyszerre az egész tájat. A tengeren, amikor kitisztul körülötted a víz, ez a fegyelem nagyon sokat ér." },
+      { type: "img", src: lakeDock.url, alt: "Két NAUI búvár teljes felszerelésben áll egy erdélyi tó stégjén gyakorló merülés előtt", caption: "Az utazás előtti utolsó tavi merülésen a felszereléskezelést, a lebegést és a páros rutint tesszük rendbe." },
+      { type: "p", text: "Ha hónapok óta nem merültél, indulás előtt érdemes beiktatni egy gyakorló merülést. Harminc nyugodt perc oktatóval többet ér, mint amikor az első nyaralási napon, egy idegen hajón próbálod felidézni, melyik csat hová tartozik." },
+      { type: "h2", text: "Mi változik, amikor először sós vízbe lépsz?" },
+      { type: "h3", text: "A súlyozást újra be kell állítani" },
+      { type: "p", text: "A sós víz jobban fenntart, ezért ugyanazzal a ruhával általában más súlyozásra lesz szükséged, mint a tóban. Erre nincs mindenkire érvényes kilogrammszám. Függ a ruha vastagságától, a palacktól, a BCD-től és attól is, mennyi levegő marad a palackban a merülés végén. Az első merülés előtt súlyellenőrzést végzünk, és az eredményt beírjuk a naplóba." },
+      { type: "quote", text: "A jó súlyozás nem azt jelenti, hogy biztosan le tudsz menni. Azt jelenti, hogy a merülés végén, könnyebb palackkal is nyugodtan meg tudod tartani a biztonsági megállót." },
+      { type: "h3", text: "A nagy látótávolság is meg tud téveszteni" },
+      { type: "p", text: "Tiszta tengervízben a fenék közelebbinek látszhat, mint amilyen valójában, és könnyű észrevétlenül mélyebbre sodródni. Nem érzésből követjük a mélységet: ránézünk a komputerre, tartjuk a megbeszélt szintet, és nem úszunk a vezető alá csak azért, mert odalent érdekesebbnek tűnik a zátony." },
+      { type: "img", src: advanced.url, alt: "Két búvár párban ereszkedik kötél mellett a tiszta tengervízben", caption: "Kötél mellett, párban ereszkedve van idő a fülre, a mélységre és egymásra figyelni." },
+      { type: "h2", text: "Az idegen felszerelés legyen ismerős még a víz előtt" },
+      { type: "p", text: "Utazáskor sokan bérelt BCD-t, légzőautomatát és palackot használnak. Ezzel nincs gond, de a szettet nem a vízben ismerjük meg. Megnézzük, hol vannak a leeresztőszelepek, hogyan oldódnak a súlyzsebek, elérjük-e az octopust, és kényelmes-e a maszk. A palackszelepet megnyitjuk, mindkét második lépcsőből lélegzünk, közben figyeljük a nyomásmérőt." },
+      { type: "img", src: dockCheck, alt: "Búvárok és oktató ellenőrzik a búvárfelszerelést a stégen merülés előtt", caption: "A buddy check nem formaság. Idegen bérszettnél különösen fontos, hogy ismerjétek egymás felszerelését." },
+      { type: "p", text: "Amit érdemes sajátként vinni: jól illeszkedő maszkot, búvárkomputert, ha már használsz, és minden olyan apróságot, amitől kényelmes vagy. A nagy, szervizigényes darabokat nem muszáj megvenni egyetlen utazás kedvéért. A kezdő felszerelésről szóló cikkben részletesen leírtam, mit érdemes sajátként beszerezni, és mit lehet nyugodtan bérelni." },
+      { type: "h2", text: "A briefing alatt kérdezni kell, nem bólogatni" },
+      { type: "p", text: "A tengeri helyszín új szavakat hoz: áramlás, be- és kilépési pont, hajóforgalom, sodródásos merülés. A briefing végére pontosan értened kell a tervet. Hol találkozik a csapat? Mi a maximális mélység és idő? Mennyi levegőnél fordulunk? Mit teszünk, ha szem elől tévesztjük egymást?" },
+      { type: "img", src: teamBriefing.url, alt: "NAUI búvároktató indulás előtti eligazítást tart a felszerelt búvároknak", caption: "A jó briefing végén nemcsak az útvonalat ismered, hanem azt is, mikor és hogyan kell szólnod." },
+      { type: "p", text: "Ha a helyi vezető nyelvén bizonytalan vagy, még a parton tisztázzátok az alapjelzéseket. Az OK, a probléma, a kevés levegő, az emelkedés és a megállás minden merülésen előkerülhet. A buddy rendszerről és a víz alatti kézjelekről készült útmutatónkat utazás előtt érdemes együtt átnézni." },
+      { type: "h2", text: "Az első tengeri merülésen ne akarj mindent egyszerre" },
+      { type: "p", text: "Az első percekben lesz elég dolgod. Szokatlan a sós víz íze, másként áll rajtad a bérelt felszerelés, körülötted halak mozognak, és talán hajóról lépsz be. Ilyenkor nem kell rögtön fényképezni. Előbb legyen rendben a légzésed, a súlyozásod és a párod helyzete. A kamera ráér a következő merülésen." },
+      { type: "img", src: dahab.url, alt: "Öt búvár felszereléssel együtt indul a Vörös-tenger felé Dahabban", caption: "Dahab, indulás a vízhez. A könnyedség mögött ugyanaz a rutin van, amit itthon gyakoroltunk." },
+      { type: "p", text: "Ha nem jó a súly, jelezd. Ha nyom a füled, állj meg. Ha gyors a csapat tempója, szólj. Ezek nem kellemetlenkedések, hanem egy képzett búvár döntései. A jó vezető inkább vár fél percet, mint hogy valaki csendben küzdjön mögötte." },
+      { type: "h2", text: "A párod nem útitárs, hanem a merülési rendszer része" },
+      { type: "p", text: "Utazáskor könnyű szétszóródni: egyikőtök a palackot intézi, a másik kamerát szerel, közben indul a hajó. Mégis együtt kell ellenőriznetek a felszerelést és megbeszélnetek a fordulónyomást. Víz alatt ne csak a vezető uszonyát nézd; rendszeresen keresd a párod szemét, mutass levegőt, és várd meg a választ." },
+      { type: "img", src: buddySelfie.url, alt: "Két búvár együtt lebeg a felszínen maszkban egy közös merülés előtt", caption: "A merülés jó emléke közös. A terv, az ellenőrzés és a felszínre érkezés is az." },
+      { type: "h2", text: "Mit csomagolj az első búvárutazásra?" },
+      { type: "ul", items: ["Minősítő kártya, merülési napló és a szolgáltató által kért egészségügyi dokumentumok.", "Saját maszk tartalék pánttal; ha komputerrel merülsz, annak töltője vagy friss eleme.", "Fürdőruha, UV-védő felső, vízálló papucs és a helyi vízhőmérséklethez illő ruha.", "Jelölés a saját felszerelésen, valamint egy kis mentőkészlet pánttal és O-gyűrűvel, ha tudod használni.", "Utas- és búvárbiztosítás, amely a tervezett merülési tevékenységet és mélységet is lefedi."] },
+      { type: "p", text: "A csomaglista önmagában nem tesz felkészültté. A legfontosabb az, hogy legyen friss merülési rutinod, tudd őszintén megmondani a tapasztalati szintedet, és ne vállalj olyan merülést, amelyhez még nincs meg a képzettséged vagy a komfortod." },
+      { type: "img", src: surfaceReturn.url, alt: "Búvár sárga maszkban érkezik a felszínre, mögötte a búvárpárja", caption: "A jó merülés attól jó, hogy a pároddal együtt, tartalékkal és nyugodtan értek vissza a felszínre." },
+      { type: "links", title: "Készülj fel a következő merülésedre", items: [
+        { to: "/szolgaltatasok/gyakorlo-merules", label: "Gyakorló merülés oktatóval", note: "frissítsd fel a készségeidet az utazás előtt" },
+        { to: "/szolgaltatasok/naui-tanfolyam", label: "NAUI búvártanfolyamok", note: "kezdő és haladó képzések" },
+        { to: "/arak", label: "Merülések és tanfolyamok árai", note: "átlátható díjak és felszerelésbérlés" },
+        { to: "/blog/buvarfelszereles-kezdoknek-berles-vagy-vasarlas", label: "Mit vegyél meg, és mit bérelj?", note: "praktikus felszerelési sorrend" },
+        { to: "/blog/buddy-rendszer-viz-alatti-jelzesek", label: "Buddy rendszer és víz alatti jelzések", note: "utazás előtt ismételd át" },
+        { to: "/blog/edesvizi-merules-erdelyi-tavak", label: "Édesvízi merülés erdélyi tavakban", note: "a biztos tengeri alap" },
+        { to: "/kapcsolat", label: "Kérdezz az utazás előtti felkészülésről", note: "segítünk felmérni, kell-e frissítő merülés" },
+      ] },
+      { type: "h2", text: "Indulás előtt merüljünk egyet itthon" },
+      { type: "p", text: "Ha közeleg az első tengeri utad, és régen volt rajtad palack, gyere el egy gyakorló merülésre. Összerakjuk a szettet, beállítjuk a súlyt, végigvesszük a jelzéseket, és megnézzük, mi az, ami már reflexből megy. Így a tengerparton nem emlékezni próbálsz majd — hanem merülni." },
+    ],
+  },
+
 ];
 
 

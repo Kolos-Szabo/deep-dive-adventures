@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, type ErrorComponentProps } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Calendar, Clock, Phone } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { Bubbles } from "@/components/site/Bubbles";
@@ -60,10 +60,10 @@ export const Route = createFileRoute("/blog/$slug")({
       </Link>
     </div>
   ),
-  errorComponent: ({ error }) => (
+  errorComponent: ({ error }: ErrorComponentProps) => (
     <div className="pt-40 pb-32 text-center px-5">
       <h1 className="font-display text-3xl font-bold">Hiba</h1>
-      <p className="mt-4 text-muted-foreground">{error.message}</p>
+      <p className="mt-4 text-muted-foreground">{error instanceof Error ? error.message : String(error)}</p>
     </div>
   ),
   component: BlogDetail,

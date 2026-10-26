@@ -34,10 +34,10 @@ export const Route = createFileRoute("/szolgaltatasok/$slug")({
       </Link>
     </div>
   ),
-  errorComponent: ({ error }) => (
+  errorComponent: ({ error }: ErrorComponentProps) => (
     <div className="pt-40 pb-32 text-center px-5">
       <h1 className="font-display text-3xl font-bold">Hiba</h1>
-      <p className="mt-4 text-muted-foreground">{error.message}</p>
+      <p className="mt-4 text-muted-foreground">{error instanceof Error ? error.message : String(error)}</p>
     </div>
   ),
   component: ServiceDetail,

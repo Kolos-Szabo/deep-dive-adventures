@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, type ErrorComponentProps } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Check, Phone } from "lucide-react";
 import { services } from "./szolgaltatasok.index";
 import { Reveal } from "@/components/site/Reveal";

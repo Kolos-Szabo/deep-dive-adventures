@@ -31,6 +31,8 @@ import techPortrait from "@/assets/technikai-buvar-portre-szabalyozo-maszk.jpg.a
 import nightDive from "@/assets/ejszakai-merules-buvar-medenceben.jpg.asset.json";
 import surfaceReturn from "@/assets/buvar-felszinre-erkezes-maszkban-tonal.jpg.asset.json";
 import buddySelfie from "@/assets/buddy-paros-buvarok-felszinen-szelfi.jpg.asset.json";
+import diveDayDock from "@/assets/merulohely-steg-kozosseg-nyari-nap.jpg.asset.json";
+import uwStruct from "@/assets/buvar-viz-alatti-szerkezet-mellett.jpg.asset.json";
 import signOk from "@/assets/jelzes-ok.png";
 import signUp from "@/assets/jelzes-emelkedes.png";
 import signDown from "@/assets/jelzes-ereszkedes.png";

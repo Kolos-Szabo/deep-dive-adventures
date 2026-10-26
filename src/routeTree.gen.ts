@@ -9,54 +9,24 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as VizAlattiSorozoRouteImport } from './routes/viz-alatti-sorozo'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as RolunkRouteImport } from './routes/rolunk'
-import { Route as KapcsolatRouteImport } from './routes/kapcsolat'
-import { Route as GaleriaRouteImport } from './routes/galeria'
-import { Route as CsapatunkRouteImport } from './routes/csapatunk'
-import { Route as BiztonsagRouteImport } from './routes/biztonsag'
-import { Route as ArakRouteImport } from './routes/arak'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as SzolgaltatasokIndexRouteImport } from './routes/szolgaltatasok.index'
+import { Route as ArakRouteImport } from './routes/arak'
+import { Route as BiztonsagRouteImport } from './routes/biztonsag'
+import { Route as CsapatunkRouteImport } from './routes/csapatunk'
+import { Route as GaleriaRouteImport } from './routes/galeria'
+import { Route as KapcsolatRouteImport } from './routes/kapcsolat'
+import { Route as RolunkRouteImport } from './routes/rolunk'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as VizAlattiSorozoRouteImport } from './routes/viz-alatti-sorozo'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as SzolgaltatasokNauiTanfolyamRouteImport } from './routes/szolgaltatasok.naui-tanfolyam'
-import { Route as SzolgaltatasokSlugRouteImport } from './routes/szolgaltatasok.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as SzolgaltatasokIndexRouteImport } from './routes/szolgaltatasok.index'
+import { Route as SzolgaltatasokSlugRouteImport } from './routes/szolgaltatasok.$slug'
+import { Route as SzolgaltatasokNauiTanfolyamRouteImport } from './routes/szolgaltatasok.naui-tanfolyam'
 
-const VizAlattiSorozoRoute = VizAlattiSorozoRouteImport.update({
-  id: '/viz-alatti-sorozo',
-  path: '/viz-alatti-sorozo',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RolunkRoute = RolunkRouteImport.update({
-  id: '/rolunk',
-  path: '/rolunk',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const KapcsolatRoute = KapcsolatRouteImport.update({
-  id: '/kapcsolat',
-  path: '/kapcsolat',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GaleriaRoute = GaleriaRouteImport.update({
-  id: '/galeria',
-  path: '/galeria',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CsapatunkRoute = CsapatunkRouteImport.update({
-  id: '/csapatunk',
-  path: '/csapatunk',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BiztonsagRoute = BiztonsagRouteImport.update({
-  id: '/biztonsag',
-  path: '/biztonsag',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArakRoute = ArakRouteImport.update({
@@ -64,9 +34,49 @@ const ArakRoute = ArakRouteImport.update({
   path: '/arak',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const BiztonsagRoute = BiztonsagRouteImport.update({
+  id: '/biztonsag',
+  path: '/biztonsag',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CsapatunkRoute = CsapatunkRouteImport.update({
+  id: '/csapatunk',
+  path: '/csapatunk',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GaleriaRoute = GaleriaRouteImport.update({
+  id: '/galeria',
+  path: '/galeria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KapcsolatRoute = KapcsolatRouteImport.update({
+  id: '/kapcsolat',
+  path: '/kapcsolat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RolunkRoute = RolunkRouteImport.update({
+  id: '/rolunk',
+  path: '/rolunk',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VizAlattiSorozoRoute = VizAlattiSorozoRouteImport.update({
+  id: '/viz-alatti-sorozo',
+  path: '/viz-alatti-sorozo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SzolgaltatasokIndexRoute = SzolgaltatasokIndexRouteImport.update({
@@ -74,9 +84,9 @@ const SzolgaltatasokIndexRoute = SzolgaltatasokIndexRouteImport.update({
   path: '/szolgaltatasok/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogIndexRoute = BlogIndexRouteImport.update({
-  id: '/blog/',
-  path: '/blog/',
+const SzolgaltatasokSlugRoute = SzolgaltatasokSlugRouteImport.update({
+  id: '/szolgaltatasok/$slug',
+  path: '/szolgaltatasok/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SzolgaltatasokNauiTanfolyamRoute =
@@ -85,16 +95,6 @@ const SzolgaltatasokNauiTanfolyamRoute =
     path: '/szolgaltatasok/naui-tanfolyam',
     getParentRoute: () => rootRouteImport,
   } as any)
-const SzolgaltatasokSlugRoute = SzolgaltatasokSlugRouteImport.update({
-  id: '/szolgaltatasok/$slug',
-  path: '/szolgaltatasok/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BlogSlugRoute = BlogSlugRouteImport.update({
-  id: '/blog/$slug',
-  path: '/blog/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -215,53 +215,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/viz-alatti-sorozo': {
-      id: '/viz-alatti-sorozo'
-      path: '/viz-alatti-sorozo'
-      fullPath: '/viz-alatti-sorozo'
-      preLoaderRoute: typeof VizAlattiSorozoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/rolunk': {
-      id: '/rolunk'
-      path: '/rolunk'
-      fullPath: '/rolunk'
-      preLoaderRoute: typeof RolunkRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/kapcsolat': {
-      id: '/kapcsolat'
-      path: '/kapcsolat'
-      fullPath: '/kapcsolat'
-      preLoaderRoute: typeof KapcsolatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/galeria': {
-      id: '/galeria'
-      path: '/galeria'
-      fullPath: '/galeria'
-      preLoaderRoute: typeof GaleriaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/csapatunk': {
-      id: '/csapatunk'
-      path: '/csapatunk'
-      fullPath: '/csapatunk'
-      preLoaderRoute: typeof CsapatunkRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/biztonsag': {
-      id: '/biztonsag'
-      path: '/biztonsag'
-      fullPath: '/biztonsag'
-      preLoaderRoute: typeof BiztonsagRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/arak': {
@@ -271,18 +229,53 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArakRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/biztonsag': {
+      id: '/biztonsag'
+      path: '/biztonsag'
+      fullPath: '/biztonsag'
+      preLoaderRoute: typeof BiztonsagRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/szolgaltatasok/': {
-      id: '/szolgaltatasok/'
-      path: '/szolgaltatasok'
-      fullPath: '/szolgaltatasok/'
-      preLoaderRoute: typeof SzolgaltatasokIndexRouteImport
+    '/csapatunk': {
+      id: '/csapatunk'
+      path: '/csapatunk'
+      fullPath: '/csapatunk'
+      preLoaderRoute: typeof CsapatunkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galeria': {
+      id: '/galeria'
+      path: '/galeria'
+      fullPath: '/galeria'
+      preLoaderRoute: typeof GaleriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kapcsolat': {
+      id: '/kapcsolat'
+      path: '/kapcsolat'
+      fullPath: '/kapcsolat'
+      preLoaderRoute: typeof KapcsolatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rolunk': {
+      id: '/rolunk'
+      path: '/rolunk'
+      fullPath: '/rolunk'
+      preLoaderRoute: typeof RolunkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/viz-alatti-sorozo': {
+      id: '/viz-alatti-sorozo'
+      path: '/viz-alatti-sorozo'
+      fullPath: '/viz-alatti-sorozo'
+      preLoaderRoute: typeof VizAlattiSorozoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/': {
@@ -292,11 +285,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/szolgaltatasok/naui-tanfolyam': {
-      id: '/szolgaltatasok/naui-tanfolyam'
-      path: '/szolgaltatasok/naui-tanfolyam'
-      fullPath: '/szolgaltatasok/naui-tanfolyam'
-      preLoaderRoute: typeof SzolgaltatasokNauiTanfolyamRouteImport
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/szolgaltatasok/': {
+      id: '/szolgaltatasok/'
+      path: '/szolgaltatasok'
+      fullPath: '/szolgaltatasok/'
+      preLoaderRoute: typeof SzolgaltatasokIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/szolgaltatasok/$slug': {
@@ -306,11 +306,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SzolgaltatasokSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/$slug': {
-      id: '/blog/$slug'
-      path: '/blog/$slug'
-      fullPath: '/blog/$slug'
-      preLoaderRoute: typeof BlogSlugRouteImport
+    '/szolgaltatasok/naui-tanfolyam': {
+      id: '/szolgaltatasok/naui-tanfolyam'
+      path: '/szolgaltatasok/naui-tanfolyam'
+      fullPath: '/szolgaltatasok/naui-tanfolyam'
+      preLoaderRoute: typeof SzolgaltatasokNauiTanfolyamRouteImport
       parentRoute: typeof rootRouteImport
     }
   }

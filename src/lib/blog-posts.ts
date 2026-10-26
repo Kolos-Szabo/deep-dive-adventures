@@ -1844,7 +1844,7 @@ export const blogPosts: BlogPost[] = [
       { type: "quote", text: "A jó merülés mértéke nem a mélység és nem az idő. Hanem hogy fent, a stégen mennyi mondatod van róla." },
       { type: "h2", text: "Felszínre érkezés — és a merülés utáni fél óra" },
       { type: "p", text: "A biztonsági megálló után, a felszínen mindig ugyanaz a jelenet: maszk a homlokon, első mondat a párnak, aztán az OK-jelzés a part felé. Innentől a merülés „hivatalos” része véget ért — de a nap messze nem." },
-      { type: "img", src: okSign.url, alt: "Búvár az OK kézjelet mutatja a felszínen merülés után", caption: "Az OK-jel a felszínen nem formaiság: ezzel jelzed a partnak, hogy minden rendben." },
+      { type: "img", src: okSign, alt: "Búvár az OK kézjelet mutatja a felszínen merülés után", caption: "Az OK-jel a felszínen nem formaiság: ezzel jelzed a partnak, hogy minden rendben." },
       { type: "p", text: "A stégen szétcsatolunk, kicseréljük a palackokat, és jön a nap talán legjobb része: a merülés újramesélése. Ki mit látott, hol volt a rák, kinél fogyott gyorsabban a levegő. Ezekből a beszélgetésekből tanul a csapat a legtöbbet — az oktató is." },
       { type: "img", src: trioAfter.url, alt: "Három búvár beszélget a stégen a merülés után, felszerelésben", caption: "Merülés után a stég a napló, a tanulság és a nevetés helye egyszerre." },
       { type: "h2", text: "Naplóírás: a merülés, amit nem írsz fel, elvész" },
